@@ -1,0 +1,32 @@
+/* Kaomoji CSS API */
+.kaomoji {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.body-soft-left::after {
+  content: "(";
+}
+.body-soft-right::after {
+  content: ")";
+}
+
+.arms-hugging::after {
+  content: "つ";
+}
+
+.face-happy::after {
+  content: "￣ ▽ ￣";
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.blush::after {
+  content: "⁄ ⁄ ⁄     ⁄ ⁄ ⁄";
+  white-space: pre;
+}
