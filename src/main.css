@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  min-height: 1em;
 }
 .layer {
   position: absolute;
@@ -55,20 +56,4 @@
 .blush::after {
   content: "⁄ ⁄ ⁄";
   white-space: pre;
-}
-
-/* animations & animation utilities */
-.bounce {
-  animation: bounce;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-}
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-0.5em);
-  }
 }

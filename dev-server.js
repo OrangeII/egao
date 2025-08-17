@@ -8,6 +8,7 @@ const PORT = process.env.PORT || 3000;
 
 const liveReloadServer = livereload.createServer();
 liveReloadServer.watch(path.join(__dirname, "dist"));
+liveReloadServer.watch(path.join(__dirname, "demo"));
 liveReloadServer.watch(path.join(__dirname, "index.html"));
 liveReloadServer.watch(path.join(__dirname, "src"));
 
@@ -18,7 +19,7 @@ app.listen(PORT, () => {
   console.log(`Dev server running at http://localhost:${PORT}`);
 });
 
-devServerReload = () => liveReloadServer.refresh("/");
+devServerReload = () => liveReloadServer.refresh("/demo");
 liveReloadServer.server.once("connection", () => {
   setTimeout(devServerReload, 100);
 });
