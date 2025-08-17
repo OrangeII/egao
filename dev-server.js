@@ -49,7 +49,7 @@ function debouncedBuild() {
 const filesToWatch = [
   "src/main.css",
   "src/parts.js",
-  "postcss-kaomoji-plugin.js",
+  "src/build-part-classes.js",
 ];
 
 console.log("👀 Watching files for changes...");

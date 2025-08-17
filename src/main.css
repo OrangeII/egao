@@ -35,9 +35,4 @@
   margin: 0 calc(var(--base-space) * 0.25);
 }
 
-.blush:after {
-  content: "⁄ ⁄ ⁄";
-  white-space: pre;
-}
-
 /* Dynamic classes will be generated here by postcss-kaomoji-plugin */
