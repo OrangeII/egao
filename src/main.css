@@ -1,11 +1,39 @@
 /* Kaomoji CSS API */
+:root {
+  --base-space: 0.6em;
+}
+
+/* base components */
 .kaomoji {
   position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
+/* Spacing Utilities */
+.space {
+  margin: 0 var(--base-space);
+}
+.space-double {
+  margin: 0 calc(var(--base-space) * 2);
+}
+.space-triple {
+  margin: 0 calc(var(--base-space) * 3);
+}
+.space-half {
+  margin: 0 calc(var(--base-space) * 0.5);
+}
+.space-quarter {
+  margin: 0 calc(var(--base-space) * 0.25);
+}
+
+/* bodies */
 .body-soft-left::after {
   content: "(";
 }
@@ -13,20 +41,34 @@
   content: ")";
 }
 
+/* arms */
 .arms-hugging::after {
   content: "つ";
 }
 
+/* faces */
 .face-happy::after {
   content: "￣ ▽ ￣";
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+/* accessories */
 .blush::after {
-  content: "⁄ ⁄ ⁄     ⁄ ⁄ ⁄";
+  content: "⁄ ⁄ ⁄";
   white-space: pre;
+}
+
+/* animations & animation utilities */
+.bounce {
+  animation: bounce;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.5em);
+  }
 }
