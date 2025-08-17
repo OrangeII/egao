@@ -97,10 +97,6 @@ const parts = {
       left: "(",
       right: ")",
     },
-    square: {
-      left: "[",
-      right: "]",
-    },
   },
   arms: {
     hugging: "つ",
@@ -108,7 +104,6 @@ const parts = {
   },
   face: {
     happy: "￣ ▽ ￣",
-    sad: "╥ ﹏ ╥",
   },
 };
 ```
@@ -117,6 +112,5 @@ This automatically generates CSS classes like:
 
 - `.body-round-left` → `(`
 - `.body-round-right` → `)`
-- `.body-square-left` → `[`
 - `.arms-hugging` → `つ`
 - `.face-happy` → `￣ ▽ ￣`
