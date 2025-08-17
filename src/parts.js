@@ -11,7 +11,7 @@ const parts = {
   face: {
     happy: "￣ ▽ ￣",
   },
-  flower: "🌸",
+  flower: "C",
 };
 
 module.exports = { parts };

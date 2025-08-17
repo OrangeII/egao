@@ -5,7 +5,7 @@
   "main": "dist/main.css",
   "scripts": {
     "build": "postcss src/main.css -o dist/main.css",
-    "dev": "npm run build -- --watch & node dev-server.js"
+    "dev": "node dev-server.js"
   },
   "keywords": [
     "css",
