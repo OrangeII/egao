@@ -1,7 +1,7 @@
 {
-  "name": "egao-css",
+  "name": "egao",
   "version": "0.1.0",
-  "description": "A CSS utility create kaomoji.",
+  "description": "A CSS library to create kaomoji.",
   "main": "dist/main.css",
   "scripts": {
     "build": "postcss src/main.css -o dist/main.css",
@@ -9,7 +9,7 @@
   },
   "keywords": [
     "css",
-    "utility",
+    "kaomoji",
     "postcss"
   ],
   "author": "",
