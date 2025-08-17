@@ -1,6 +1,7 @@
 /* Kaomoji CSS API */
 :root {
   --base-space: 0.6em;
+  --base-animation-duration: 0.5s;
 }
 
 /* base components */
@@ -34,26 +35,9 @@
   margin: 0 calc(var(--base-space) * 0.25);
 }
 
-/* bodies */
-.body-soft-left::after {
-  content: "(";
-}
-.body-soft-right::after {
-  content: ")";
-}
-
-/* arms */
-.arms-hugging::after {
-  content: "つ";
-}
-
-/* faces */
-.face-happy::after {
-  content: "￣ ▽ ￣";
-}
-
-/* accessories */
-.blush::after {
+.blush:after {
   content: "⁄ ⁄ ⁄";
   white-space: pre;
 }
+
+/* Dynamic classes will be generated here by postcss-kaomoji-plugin */

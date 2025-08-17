@@ -1,3 +1,7 @@
 module.exports = {
-  plugins: [require("autoprefixer"), require("cssnano")({ preset: "default" })],
+  plugins: [
+    require("./src/build-part-classes"),
+    //require("autoprefixer"),
+    //require("cssnano")({ preset: "default" }),
+  ],
 };
