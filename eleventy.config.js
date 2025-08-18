@@ -9,6 +9,7 @@ export default async function (eleventyConfig) {
     }
   });
   eleventyConfig.addPassthroughCopy("dist");
+  eleventyConfig.addPassthroughCopy("docs");
   eleventyConfig.addWatchTarget("docs");
   eleventyConfig.addWatchTarget("src");
 };

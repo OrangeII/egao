@@ -19,6 +19,10 @@ const parts: Part = {
     content: "⁄ ⁄ ⁄",
     "white-space": "pre",
   },
+  star: {
+    content: "✩",
+    "white-space": "pre",
+  },
 };
 
 export { parts, Part };
