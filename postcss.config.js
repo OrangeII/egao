@@ -1,5 +1,5 @@
 import autoprefixer from "autoprefixer";
-import buildPartClasses from "./build/build-part-classes.js";
+import buildPartClasses from "./build/buildPartClasses.js";
 // import cssnano from "cssnano";
 
 export default {
