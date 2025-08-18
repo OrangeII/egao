@@ -1,0 +1,115 @@
+/* Kaomoji CSS API */
+:root {
+  --base-space: 0.6em;
+  --base-animation-duration: 0.5s;
+}
+
+/* base components */
+.kaomoji {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 1em;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Spacing Utilities */
+.space {
+  margin: 0 var(--base-space);
+}
+.space-double {
+  margin: 0 calc(var(--base-space) * 2);
+}
+.space-triple {
+  margin: 0 calc(var(--base-space) * 3);
+}
+.space-half {
+  margin: 0 calc(var(--base-space) * 0.5);
+}
+.space-quarter {
+  margin: 0 calc(var(--base-space) * 0.25);
+}
+
+/* Dynamic classes will be generated here by postcss-kaomoji-plugin */
+
+.body-round-left::after {
+  content: "(";
+}
+
+.body-round-right::after {
+  content: ")";
+}
+
+.arms-hugging::after {
+  content: "つ";
+}
+
+.face-happy::after {
+  content: "￣ ▽ ￣";
+}
+
+.face-angry::after {
+  content: "ಠ 益 ಠ";
+}
+
+.eyes-line-bliss::after {
+  content: "￣";
+}
+
+.eyes-line-happy::after {
+  content: "⁀";
+}
+
+.eyes-o-disapproving::after {
+  content: "ಠ";
+}
+
+.eyes-o-tiny::after {
+  content: "°";
+}
+
+.eyes-o-happy::after {
+  content: "◕";
+}
+
+.eyes-o-sad::after {
+  content: "⊙";
+}
+
+.eyes-o-side-look::after {
+  content: "￢";
+}
+
+.eyes-o-excited-left::after {
+  content: ">";
+}
+
+.eyes-o-excited-right::after {
+  content: "<";
+}
+
+.eyes-o-very-excited-left::after {
+  content: "≧";
+}
+
+.eyes-o-very-excited-right::after {
+  content: "≦";
+}
+
+.blush::after {
+  content: "⁄ ⁄ ⁄";
+  white-space: pre;
+}
+
+.veins::after {
+  content: "╬";
+}
+
+.sweat::after {
+  content: "；";
+}

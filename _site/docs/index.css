@@ -85,10 +85,3 @@
     transform: translateY(0) scale(1);
   }
 }
-
-.inline-code {
-  font-family: monospace;
-  background: #f0f0f0;
-  padding: 0.2em 0.4em;
-  border-radius: 0.2em;
-}

@@ -1,3 +1,4 @@
+import { rename } from "fs";
 import runBuild from "./build/runBuild.js";
 
 export default async function (eleventyConfig) {
@@ -8,9 +9,8 @@ export default async function (eleventyConfig) {
       console.error(error);
     }
   });
-  eleventyConfig.addPassthroughCopy("dist");
+  eleventyConfig.addPassthroughCopy({ "dist/egao.css": "egao.css" });
+  eleventyConfig.addPassthroughCopy("docs/index.css");
   eleventyConfig.addWatchTarget("docs");
   eleventyConfig.addWatchTarget("src");
-};
-
-
+}

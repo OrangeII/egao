@@ -4,9 +4,9 @@
   "description": "A CSS library to create kaomoji.",
   "main": "dist/main.css",
   "scripts": {
-    "build": "npm run build:ts && postcss src/main.css -o dist/main.css",
+    "build": "npm run build:ts && postcss src/main.css -o dist/egao.css",
     "build:ts": "tsc",
-    "dev": "npx @11ty/eleventy --serve"
+    "dev": "npm run build && npx @11ty/eleventy --serve"
   },
   "keywords": [
     "css",
