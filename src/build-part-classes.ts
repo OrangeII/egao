@@ -4,13 +4,13 @@ import { PluginCreator, Root, Helpers } from "postcss";
 /**
  * PostCSS plugin to generate kaomoji classes from parts object
  */
-const buildPartClasses: PluginCreator<{}> = (opts = {}) => {
+const buildPartClasses: PluginCreator<{}> = (_opts = {}) => {
   return {
     postcssPlugin: "postcss-kaomoji",
     Once(root: Root, helpers: Helpers) {
       // Generate classes for each part type
-      Object.entries(parts).forEach(([partType, variations]) => {
-        buildClassRecursive(root, helpers, partType, variations);
+      Object.entries(parts).forEach(([key, value]) => {
+        buildClassRecursive(root, helpers, key, value);
       });
     },
   };
