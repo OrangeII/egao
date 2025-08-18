@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>egao Demo</title>
-    <link rel="stylesheet" href="./egao.css" />
-    <link rel="stylesheet" href="./index.css" />
-  </head>
-
-  <body>
-    <h1 class="text-center">egao</h1>
-    <p>the <span>kaomoji</span> class will stack elements horizontally</p>
+---
+{ "title": "Getting Started", layout: "layout.liquid" }
+---
+<p>the <span>kaomoji</span> class will stack elements horizontally</p>
+<div class="flex">
+  <!-- code -->
+  <div>
     <div class="kaomoji">
       <div class="body-round-left"></div>
       <div class="arms-hugging"></div>
@@ -18,62 +12,73 @@
       <div class="body-round-right"></div>
       <div class="arms-hugging"></div>
     </div>
-
-    <p>you can use the <span>layer</span> class to overlap elements</p>
+  </div>
+  <!-- result -->
+  <div>
     <div class="kaomoji">
       <div class="body-round-left"></div>
       <div class="arms-hugging"></div>
-      <div class="kaomoji">
-        <div class="face-happy"></div>
-        <div class="kaomoji layer">
-          <div class="blush"></div>
-          <div class="space"></div>
-          <div class="blush"></div>
-        </div>
-      </div>
+      <div class="face-happy"></div>
       <div class="body-round-right"></div>
       <div class="arms-hugging"></div>
     </div>
+  </div>
+</div>
 
-    <p>
-      <span>kaomoji</span> and <span>layer</span> can be combined to create
-      animation groups
-    </p>
-    <div class="kaomoji">
-      <div #face class="kaomoji layer bounce">
-        <div class="space"></div>
-        <div class="face-happy"></div>
-      </div>
-      <div #body class="kaomoji layer bounce delay-50">
-        <div class="body-round-left"></div>
-        <div class="space-triple"></div>
-        <div class="space-half"></div>
-        <div class="body-round-right"></div>
-      </div>
-      <div #hands class="kaomoji layer bounce delay-100">
-        <div class="space-quarter"></div>
-        <div class="arms-hugging"></div>
-        <div class="space-double"></div>
-        <div class="space"></div>
-        <div class="arms-hugging"></div>
-      </div>
+<p>you can use the <span>layer</span> class to overlap elements</p>
+<div class="kaomoji">
+  <div class="body-round-left"></div>
+  <div class="arms-hugging"></div>
+  <div class="kaomoji">
+    <div class="face-happy"></div>
+    <div class="kaomoji layer">
+      <div class="blush"></div>
+      <div class="space"></div>
+      <div class="blush"></div>
     </div>
+  </div>
+  <div class="body-round-right"></div>
+  <div class="arms-hugging"></div>
+</div>
 
-    <p>of course you can style and animate individual elements as well</p>
-    <div class="kaomoji">
-      <div class="body-round-left"></div>
-      <div class="arms-hugging attack"></div>
-      <div class="kaomoji">
-        <div class="face-happy"></div>
-        <div class="kaomoji layer">
-          <div class="blush" style="color: salmon"></div>
-          <div class="space"></div>
-          <div class="blush" style="color: salmon"></div>
-        </div>
-      </div>
-      <div class="body-round-right"></div>
-      <div class="arms-hugging attack delay-70"></div>
-      <div class="stagger">🥁</div>
+<p>
+  <span>kaomoji</span> and <span>layer</span> can be combined to create
+  animation groups
+</p>
+<div class="kaomoji">
+  <div #face class="kaomoji layer bounce">
+    <div class="space"></div>
+    <div class="face-happy"></div>
+  </div>
+  <div #body class="kaomoji layer bounce delay-50">
+    <div class="body-round-left"></div>
+    <div class="space-triple"></div>
+    <div class="space-half"></div>
+    <div class="body-round-right"></div>
+  </div>
+  <div #hands class="kaomoji layer bounce delay-100">
+    <div class="space-quarter"></div>
+    <div class="arms-hugging"></div>
+    <div class="space-double"></div>
+    <div class="space"></div>
+    <div class="arms-hugging"></div>
+  </div>
+</div>
+
+<p>of course you can style and animate individual elements as well</p>
+<div class="kaomoji">
+  <div class="body-round-left"></div>
+  <div class="arms-hugging attack"></div>
+  <div class="kaomoji">
+    <div class="face-happy"></div>
+    <div class="kaomoji layer">
+      <div class="blush" style="color: salmon"></div>
+      <div class="space"></div>
+      <div class="blush" style="color: salmon"></div>
     </div>
-  </body>
-</html>
+  </div>
+  <div class="body-round-right"></div>
+  <div class="arms-hugging attack delay-70"></div>
+  <div class="stagger">🥁</div>
+</div>
+</body>
