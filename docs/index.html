@@ -1,7 +1,7 @@
 ---
 { "title": "Getting Started", layout: "layout.liquid" }
 ---
-<p>the <span class="inline-code">kaomoji</span> class will stack elements horizontally</p>
+<p class="mt-4">The <span class="inline-code">kaomoji</span> class will stack elements horizontally.</p>
 <div class="grid grid-cols-2 place-content-stretch">
   <!-- code -->
   <div>
@@ -25,7 +25,7 @@
   </div>
 </div>
 
-<p>you can use the <span class="inline-code">layer</span> class to overlap elements</p>
+<p class="mt-4">You can use the <span class="inline-code">layer</span> class to overlap elements.</p>
 <div class="grid grid-cols-2 place-content-stretch">
   <!-- code -->
   <div>
@@ -64,9 +64,10 @@
   </div>
 </div>
 
-<p>
+
+<p class="mt-4">
   <span class="inline-code">kaomoji</span> and <span class="inline-code">layer</span> can be combined to create
-  animation groups
+  animation groups.
 </p>
 <div class="grid grid-cols-2 place-content-stretch">
   <!-- code  -->
@@ -94,7 +95,7 @@
 
   <!-- result -->
   <div class="flex justify-center items-center">
-    <div class="kaomoji">
+    <div class="kaomoji" style="width: 6em;">
       <div #face class="kaomoji layer bounce">
         <div class="space"></div>
         <div class="face-happy"></div>
@@ -116,7 +117,7 @@
   </div>
 </div>
 
-<p>of course you can style and animate individual elements as well</p>
+<p class="mt-4">Of course you can style and animate individual elements as well.</p>
 <div class="grid grid-cols-2 place-content-stretch">
   <!-- code -->
   <div>
@@ -156,3 +157,15 @@
     </div>
   </div>
 </div>
+<p>Note this library doesn't provide styles or animations so you'll need to add your own.
+  <span class="inline-block">
+    <span class="kaomoji">
+      <span class="body-round-left"></span>
+      <span class="face-smile-awkward"></span>
+      <span class="space-quarter"></span>
+      <span class="sweat"></span>
+      <span class="space-quarter"></span>
+      <span class="body-round-right"></span>
+    </span>
+  </span>
+</p>

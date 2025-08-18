@@ -15,26 +15,27 @@ const parts: Part = {
   face: {
     happy: "￣ ▽ ￣",
     angry: "ಠ 益 ಠ",
+    "smile-awkward": "⌒_⌒",
   },
   eyes: {
     line: {
       bliss: "￣",
       happy: "⁀",
     },
+    "side-look": "￢",
+    excited: {
+      left: ">",
+      right: "<",
+    },
+    "very-excited": {
+      left: "≧",
+      right: "≦",
+    },
     o: {
       disapproving: "ಠ",
       tiny: "°",
       happy: "◕",
       sad: "⊙",
-      "side-look": "￢",
-      excited: {
-        left: ">",
-        right: "<",
-      },
-      "very-excited": {
-        left: "≧",
-        right: "≦",
-      },
     },
   },
   //accessories
@@ -43,7 +44,7 @@ const parts: Part = {
     "white-space": "pre",
   },
   veins: "╬",
-  sweat: "；",
+  sweat: ";",
 };
 
 export { parts, Part };

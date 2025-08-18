@@ -61,12 +61,36 @@
   content: "ಠ 益 ಠ";
 }
 
+.face-smile-awkward::after {
+  content: "⌒_⌒";
+}
+
 .eyes-line-bliss::after {
   content: "￣";
 }
 
 .eyes-line-happy::after {
   content: "⁀";
+}
+
+.eyes-side-look::after {
+  content: "￢";
+}
+
+.eyes-excited-left::after {
+  content: ">";
+}
+
+.eyes-excited-right::after {
+  content: "<";
+}
+
+.eyes-very-excited-left::after {
+  content: "≧";
+}
+
+.eyes-very-excited-right::after {
+  content: "≦";
 }
 
 .eyes-o-disapproving::after {
@@ -85,26 +109,6 @@
   content: "⊙";
 }
 
-.eyes-o-side-look::after {
-  content: "￢";
-}
-
-.eyes-o-excited-left::after {
-  content: ">";
-}
-
-.eyes-o-excited-right::after {
-  content: "<";
-}
-
-.eyes-o-very-excited-left::after {
-  content: "≧";
-}
-
-.eyes-o-very-excited-right::after {
-  content: "≦";
-}
-
 .blush::after {
   content: "⁄ ⁄ ⁄";
   white-space: pre;
@@ -115,5 +119,5 @@
 }
 
 .sweat::after {
-  content: "；";
+  content: ";";
 }
