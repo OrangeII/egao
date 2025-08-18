@@ -1,3 +1,10 @@
+.inline-code {
+  font-family: monospace;
+  background-color: #f5f2f0;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
 /* animations & animation utilities */
 .bounce {
   animation: bounce 500ms infinite;
