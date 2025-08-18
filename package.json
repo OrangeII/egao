@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run build:ts && postcss src/main.css -o dist/main.css",
     "build:ts": "tsc",
-    "dev": "ts-node dev-server.ts"
+    "dev": "npx @11ty/eleventy --serve"
   },
   "keywords": [
     "css",
@@ -16,6 +16,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
     "@types/connect-livereload": "^0.6.3",
     "@types/express": "^5.0.3",
     "@types/livereload": "^0.9.5",
@@ -29,5 +30,6 @@
     "postcss-cli": "^11.0.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
-  }
+  },
+  "type": "module"
 }

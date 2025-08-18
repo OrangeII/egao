@@ -1,9 +1,11 @@
-require('ts-node/register');
+import autoprefixer from "autoprefixer";
+import buildPartClasses from "./build/build-part-classes.js";
+// import cssnano from "cssnano";
 
-module.exports = {
+export default {
   plugins: [
-    require("./src/build-part-classes.ts"),
-    require("autoprefixer"),
-    //require("cssnano")({ preset: "default" }),
+    buildPartClasses,
+    autoprefixer,
+    // cssnano({ preset: "default" }),
   ],
 };

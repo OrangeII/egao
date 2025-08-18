@@ -1,23 +1,8 @@
-import express from "express";
 import path from "path";
-import livereload from "livereload";
-import connectLivereload from "connect-livereload";
 import fs from "fs";
 import { spawn, ChildProcess } from "child_process";
 
-const app = express();
 const PORT = process.env.PORT || 3000;
-
-// Live reload setup
-const liveReloadServer = livereload.createServer();
-liveReloadServer.watch(path.join(__dirname, "dist"));
-liveReloadServer.watch(path.join(__dirname, "build"));
-liveReloadServer.watch(path.join(__dirname, "docs"));
-liveReloadServer.watch(path.join(__dirname, "index.html"));
-liveReloadServer.watch(path.join(__dirname, "src"));
-
-app.use(connectLivereload());
-app.use(express.static(__dirname));
 
 // CSS build watch functionality
 let buildTimeout: NodeJS.Timeout;
@@ -33,8 +18,6 @@ function runBuild(): void {
   build.on("close", (code: number | null) => {
     if (code === 0) {
       console.log("✅ Build complete");
-      // Trigger live reload after successful build
-      setTimeout(() => liveReloadServer.refresh("/"), 100);
     } else {
       console.log("❌ Build failed");
     }
@@ -65,11 +48,6 @@ filesToWatch.forEach((file: string) => {
   });
 });
 
-// Start the server
-app.listen(PORT, () => {
-  console.log(`🚀 Dev server running at http://localhost:${PORT}`);
-  console.log(`📁 Serving files from: ${__dirname}`);
-});
 
 // Initial build
 console.log("🏗️  Starting initial build...");
@@ -78,6 +56,5 @@ runBuild();
 // Handle graceful shutdown
 process.on("SIGINT", () => {
   console.log("\n👋 Stopping dev server and watch...");
-  liveReloadServer.close();
   process.exit(0);
 });

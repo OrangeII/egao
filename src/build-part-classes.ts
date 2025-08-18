@@ -1,4 +1,4 @@
-import { parts, Part } from "./parts";
+import { parts, Part } from "./parts.js";
 import { PluginCreator, Root, Helpers } from "postcss";
 
 /**
@@ -53,4 +53,4 @@ function buildClassRecursive(
 
 buildPartClasses.postcss = true;
 
-export = buildPartClasses;
+export default buildPartClasses;
