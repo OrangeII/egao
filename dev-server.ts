@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3000;
 const liveReloadServer = livereload.createServer();
 liveReloadServer.watch(path.join(__dirname, "dist"));
 liveReloadServer.watch(path.join(__dirname, "build"));
-liveReloadServer.watch(path.join(__dirname, "demo"));
+liveReloadServer.watch(path.join(__dirname, "docs"));
 liveReloadServer.watch(path.join(__dirname, "index.html"));
 liveReloadServer.watch(path.join(__dirname, "src"));
 
