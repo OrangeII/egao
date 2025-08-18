@@ -1,6 +1,6 @@
 # egao (つ￣ ▽ ￣)つ
 
-A CSS library to create kaomoji
+A CSS library to create kaomoji, written in TypeScript
 
 ## Quick Start
 
@@ -18,17 +18,20 @@ npm install
 ### Development
 
 ```bash
-# Start development server with live reload
+# Start development server with live reload (TypeScript)
 npm run dev
 
-# Build CSS only
+# Build TypeScript and CSS
 npm run build
+
+# Build only TypeScript
+npm run build:ts
 ```
 
 The dev server will start at `http://localhost:3000` and automatically:
 
-- Watch for changes in source files
-- Rebuild CSS when needed
+- Watch for changes in TypeScript and CSS source files
+- Rebuild TypeScript and CSS when needed
 - Refresh the browser on changes
 
 ## Usage
@@ -88,10 +91,10 @@ Use the `layer` class to overlap elements:
 
 ### Adding New Parts
 
-Edit `src/parts.js` to add new kaomoji components:
+Edit `src/parts.ts` to add new kaomoji components:
 
-```javascript
-const parts = {
+```typescript
+const parts: Parts = {
   body: {
     round: {
       left: "(",
