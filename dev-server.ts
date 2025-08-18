@@ -1,9 +1,9 @@
-const express = require("express");
-const path = require("path");
-const livereload = require("livereload");
-const connectLivereload = require("connect-livereload");
-const fs = require("fs");
-const { spawn } = require("child_process");
+import express from "express";
+import path from "path";
+import livereload from "livereload";
+import connectLivereload from "connect-livereload";
+import fs from "fs";
+import { spawn, ChildProcess } from "child_process";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -11,6 +11,7 @@ const PORT = process.env.PORT || 3000;
 // Live reload setup
 const liveReloadServer = livereload.createServer();
 liveReloadServer.watch(path.join(__dirname, "dist"));
+liveReloadServer.watch(path.join(__dirname, "build"));
 liveReloadServer.watch(path.join(__dirname, "demo"));
 liveReloadServer.watch(path.join(__dirname, "index.html"));
 liveReloadServer.watch(path.join(__dirname, "src"));
@@ -19,17 +20,17 @@ app.use(connectLivereload());
 app.use(express.static(__dirname));
 
 // CSS build watch functionality
-let buildTimeout;
+let buildTimeout: NodeJS.Timeout;
 
-function runBuild() {
+function runBuild(): void {
   console.log("🔄 Building CSS...");
 
-  const build = spawn("npm", ["run", "build"], {
+  const build: ChildProcess = spawn("npm", ["run", "build"], {
     stdio: "inherit",
     shell: true,
   });
 
-  build.on("close", (code) => {
+  build.on("close", (code: number | null) => {
     if (code === 0) {
       console.log("✅ Build complete");
       // Trigger live reload after successful build
@@ -40,23 +41,23 @@ function runBuild() {
   });
 }
 
-function debouncedBuild() {
+function debouncedBuild(): void {
   clearTimeout(buildTimeout);
   buildTimeout = setTimeout(runBuild, 100);
 }
 
 // Watch files for changes
-const filesToWatch = [
+const filesToWatch: string[] = [
   "src/main.css",
-  "src/parts.js",
-  "src/build-part-classes.js",
+  "src/parts.ts",
+  "src/build-part-classes.ts",
 ];
 
 console.log("👀 Watching files for changes...");
-filesToWatch.forEach((file) => {
+filesToWatch.forEach((file: string) => {
   console.log(`   - ${file}`);
 
-  fs.watchFile(file, { interval: 500 }, (curr, prev) => {
+  fs.watchFile(file, { interval: 500 }, (curr: fs.Stats, prev: fs.Stats) => {
     if (curr.mtime !== prev.mtime) {
       console.log(`📝 ${file} changed`);
       debouncedBuild();

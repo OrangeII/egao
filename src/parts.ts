@@ -1,4 +1,8 @@
-const parts = {
+interface Part {
+  [key: string]: string | Part;
+}
+
+const parts: Part = {
   body: {
     round: {
       left: "(",
@@ -17,4 +21,4 @@ const parts = {
   },
 };
 
-module.exports = { parts };
+export { parts, Part };
