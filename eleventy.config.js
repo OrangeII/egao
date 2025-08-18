@@ -9,6 +9,9 @@ export default async function (eleventyConfig) {
       console.error(error);
     }
   });
+  eleventyConfig.setInputDirectory("docs");
+  eleventyConfig.setOutputDirectory("_site");
+
   eleventyConfig.addPassthroughCopy({ "dist/egao.css": "egao.css" });
   eleventyConfig.addPassthroughCopy("docs/index.css");
   eleventyConfig.addWatchTarget("docs");
