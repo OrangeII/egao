@@ -23,67 +23,79 @@
 
     <!-- Main Content Area -->
     <main class="flex-1 p-4 overflow-y-auto border-r border-gray-200">
-      <div class="star"></div>
+      
+
+<div class="star"></div>
 <p class="mt-4">The <span class="inline-code">kaomoji</span> class will stack elements horizontally.</p>
 <div class="grid grid-cols-2 place-content-stretch">
+  
   <!-- code -->
   <div>
-    <pre><code class="language-html">&lt;div class="kaomoji"&gt;
-  &lt;div class="body-round-left"&gt;&lt;/div&gt;
-  &lt;div class="arms-hugging"&gt;&lt;/div&gt;
-  &lt;div class="face-happy"&gt;&lt;/div&gt;
-  &lt;div class="body-round-right"&gt;&lt;/div&gt;
-  &lt;div class="arms-hugging"&gt;&lt;/div&gt;
-&lt;/div&gt;</code></pre>
+    <pre><code class="language-html">
+  &lt;div class=&#34;kaomoji&#34;&gt;
+    &lt;div class=&#34;body-round-left&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;arms-hugging&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;face-happy&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;body-round-right&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;arms-hugging&#34;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  </code></pre>
   </div>
   <!-- result -->
   <div class="flex justify-center items-center">
-    <div class="kaomoji">
-      <div class="body-round-left"></div>
-      <div class="arms-hugging"></div>
-      <div class="face-happy"></div>
-      <div class="body-round-right"></div>
-      <div class="arms-hugging"></div>
-    </div>
+    
+  <div class="kaomoji">
+    <div class="body-round-left"></div>
+    <div class="arms-hugging"></div>
+    <div class="face-happy"></div>
+    <div class="body-round-right"></div>
+    <div class="arms-hugging"></div>
+  </div>
+  
   </div>
 </div>
 
 <p class="mt-4">You can use the <span class="inline-code">layer</span> class to overlap elements.</p>
 <div class="grid grid-cols-2 place-content-stretch">
+  
   <!-- code -->
   <div>
-    <pre><code class="language-html">&lt;div class="kaomoji"&gt;
-  &lt;div class="body-round-left"&gt;&lt;/div&gt;
-  &lt;div class="arms-hugging"&gt;&lt;/div&gt;
-  &lt;div class="kaomoji"&gt;
-    &lt;div class="face-happy"&gt;&lt;/div&gt;
-    &lt;div class="kaomoji layer"&gt;
-      &lt;div class="blush"&gt;&lt;/div&gt;
-      &lt;div class="space"&gt;&lt;/div&gt;
-      &lt;div class="blush"&gt;&lt;/div&gt;
+    <pre><code class="language-html">
+  &lt;div class=&#34;kaomoji&#34;&gt;
+    &lt;div class=&#34;body-round-left&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;arms-hugging&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;kaomoji&#34;&gt;
+      &lt;div class=&#34;face-happy&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;kaomoji layer&#34;&gt;
+        &lt;div class=&#34;blush&#34;&gt;&lt;/div&gt;
+        &lt;div class=&#34;space&#34;&gt;&lt;/div&gt;
+        &lt;div class=&#34;blush&#34;&gt;&lt;/div&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
+    &lt;div class=&#34;body-round-right&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;arms-hugging&#34;&gt;&lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class="body-round-right"&gt;&lt;/div&gt;
-  &lt;div class="arms-hugging"&gt;&lt;/div&gt;
-&lt;/div&gt;</code></pre>
+  </code></pre>
   </div>
 
   <!-- result -->
   <div class="flex justify-center items-center">
+    
+  <div class="kaomoji">
+    <div class="body-round-left"></div>
+    <div class="arms-hugging"></div>
     <div class="kaomoji">
-      <div class="body-round-left"></div>
-      <div class="arms-hugging"></div>
-      <div class="kaomoji">
-        <div class="face-happy"></div>
-        <div class="kaomoji layer">
-          <div class="blush"></div>
-          <div class="space"></div>
-          <div class="blush"></div>
-        </div>
+      <div class="face-happy"></div>
+      <div class="kaomoji layer">
+        <div class="blush"></div>
+        <div class="space"></div>
+        <div class="blush"></div>
       </div>
-      <div class="body-round-right"></div>
-      <div class="arms-hugging"></div>
     </div>
+    <div class="body-round-right"></div>
+    <div class="arms-hugging"></div>
+  </div>
+  
   </div>
 </div>
 
@@ -93,91 +105,101 @@
   animation groups.
 </p>
 <div class="grid grid-cols-2 place-content-stretch">
+  
   <!-- code  -->
   <div>
-    <pre><code class="language-html">&lt;div class="kaomoji"&gt;
-  &lt;div #face class="kaomoji layer bounce"&gt;
-    &lt;div class="space"&gt;&lt;/div&gt;
-    &lt;div class="face-happy"&gt;&lt;/div&gt;
+    <pre><code class="language-html">
+  &lt;div class=&#34;kaomoji&#34; style=&#34;width: 6em;&#34;&gt;
+    &lt;div #face class=&#34;kaomoji layer bounce&#34;&gt;
+      &lt;div class=&#34;space&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;face-happy&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div #body class=&#34;kaomoji layer bounce delay-50&#34;&gt;
+      &lt;div class=&#34;body-round-left&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;space-triple&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;space-half&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;body-round-right&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div #hands class=&#34;kaomoji layer bounce delay-100&#34;&gt;
+      &lt;div class=&#34;space-quarter&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;arms-hugging&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;space-double&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;space&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;arms-hugging&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div #body class="kaomoji layer bounce delay-50"&gt;
-    &lt;div class="body-round-left"&gt;&lt;/div&gt;
-    &lt;div class="space-triple"&gt;&lt;/div&gt;
-    &lt;div class="space-half"&gt;&lt;/div&gt;
-    &lt;div class="body-round-right"&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div #hands class="kaomoji layer bounce delay-100"&gt;
-    &lt;div class="space-quarter"&gt;&lt;/div&gt;
-    &lt;div class="arms-hugging"&gt;&lt;/div&gt;
-    &lt;div class="space-double"&gt;&lt;/div&gt;
-    &lt;div class="space"&gt;&lt;/div&gt;
-    &lt;div class="arms-hugging"&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+  </code></pre>
   </div>
 
   <!-- result -->
   <div class="flex justify-center items-center">
-    <div class="kaomoji" style="width: 6em;">
-      <div #face class="kaomoji layer bounce">
-        <div class="space"></div>
-        <div class="face-happy"></div>
-      </div>
-      <div #body class="kaomoji layer bounce delay-50">
-        <div class="body-round-left"></div>
-        <div class="space-triple"></div>
-        <div class="space-half"></div>
-        <div class="body-round-right"></div>
-      </div>
-      <div #hands class="kaomoji layer bounce delay-100">
-        <div class="space-quarter"></div>
-        <div class="arms-hugging"></div>
-        <div class="space-double"></div>
-        <div class="space"></div>
-        <div class="arms-hugging"></div>
-      </div>
+    
+  <div class="kaomoji" style="width: 6em;">
+    <div #face class="kaomoji layer bounce">
+      <div class="space"></div>
+      <div class="face-happy"></div>
     </div>
+    <div #body class="kaomoji layer bounce delay-50">
+      <div class="body-round-left"></div>
+      <div class="space-triple"></div>
+      <div class="space-half"></div>
+      <div class="body-round-right"></div>
+    </div>
+    <div #hands class="kaomoji layer bounce delay-100">
+      <div class="space-quarter"></div>
+      <div class="arms-hugging"></div>
+      <div class="space-double"></div>
+      <div class="space"></div>
+      <div class="arms-hugging"></div>
+    </div>
+  </div>
+  
   </div>
 </div>
 
 <p class="mt-4">Of course you can style and animate individual elements as well.</p>
 <div class="grid grid-cols-2 place-content-stretch">
+  
   <!-- code -->
   <div>
-    <pre><code class="language-html">&lt;div class="kaomoji"&gt;
-  &lt;div class="body-round-left"&gt;&lt;/div&gt;
-  &lt;div class="arms-hugging attack"&gt;&lt;/div&gt;
-  &lt;div class="kaomoji"&gt;
-    &lt;div class="face-happy"&gt;&lt;/div&gt;
-    &lt;div class="kaomoji layer"&gt;
-      &lt;div class="blush" style="color: salmon"&gt;&lt;/div&gt;
-      &lt;div class="space"&gt;&lt;/div&gt;
-      &lt;div class="blush" style="color: salmon"&gt;&lt;/div&gt;
+    <pre><code class="language-html">
+  &lt;div class=&#34;kaomoji&#34;&gt;
+    &lt;div class=&#34;body-round-left&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;arms-hugging attack&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;kaomoji&#34;&gt;
+      &lt;div class=&#34;face-happy&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;kaomoji layer&#34;&gt;
+        &lt;div class=&#34;blush&#34; style=&#34;color: salmon&#34;&gt;&lt;/div&gt;
+        &lt;div class=&#34;space&#34;&gt;&lt;/div&gt;
+        &lt;div class=&#34;blush&#34; style=&#34;color: salmon&#34;&gt;&lt;/div&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
+    &lt;div class=&#34;body-round-right&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;arms-hugging attack delay-70&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;stagger&#34;&gt;🥁&lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class="body-round-right"&gt;&lt;/div&gt;
-  &lt;div class="arms-hugging attack delay-70"&gt;&lt;/div&gt;
-  &lt;div class="stagger"&gt;🥁&lt;/div&gt;
-&lt;/div&gt;</code></pre>
+  </code></pre>
   </div>
 
   <!-- result -->
   <div class="flex justify-center items-center">
+    
+  <div class="kaomoji">
+    <div class="body-round-left"></div>
+    <div class="arms-hugging attack"></div>
     <div class="kaomoji">
-      <div class="body-round-left"></div>
-      <div class="arms-hugging attack"></div>
-      <div class="kaomoji">
-        <div class="face-happy"></div>
-        <div class="kaomoji layer">
-          <div class="blush" style="color: salmon"></div>
-          <div class="space"></div>
-          <div class="blush" style="color: salmon"></div>
-        </div>
+      <div class="face-happy"></div>
+      <div class="kaomoji layer">
+        <div class="blush" style="color: salmon"></div>
+        <div class="space"></div>
+        <div class="blush" style="color: salmon"></div>
       </div>
-      <div class="body-round-right"></div>
-      <div class="arms-hugging attack delay-70"></div>
-      <div class="stagger">🥁</div>
     </div>
+    <div class="body-round-right"></div>
+    <div class="arms-hugging attack delay-70"></div>
+    <div class="stagger">🥁</div>
+  </div>
+  
   </div>
 </div>
 <p>Note this library doesn't provide styles or animations so you'll need to add your own.
