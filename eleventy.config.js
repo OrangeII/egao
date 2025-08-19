@@ -1,6 +1,3 @@
-import { rename } from "fs";
-import runBuild from "./build/runBuild.js";
-
 export default async function (eleventyConfig) {
   eleventyConfig.on("eleventy.before", async () => {
     try {
@@ -15,6 +12,4 @@ export default async function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("docs/egao.css");
   eleventyConfig.addPassthroughCopy("docs/index.css");
-
-
 }
