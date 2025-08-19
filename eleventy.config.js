@@ -4,7 +4,8 @@ import runBuild from "./build/runBuild.js";
 export default async function (eleventyConfig) {
   eleventyConfig.on("eleventy.before", async () => {
     try {
-      await runBuild();
+      console.log("Running build...");
+      //await runBuild();
     } catch (error) {
       console.error(error);
     }
@@ -12,8 +13,8 @@ export default async function (eleventyConfig) {
   eleventyConfig.setInputDirectory("docs");
   eleventyConfig.setOutputDirectory("_site");
 
-  eleventyConfig.addPassthroughCopy({ "dist/egao.css": "egao.css" });
+  eleventyConfig.addPassthroughCopy("docs/egao.css");
   eleventyConfig.addPassthroughCopy("docs/index.css");
-  eleventyConfig.addWatchTarget("docs");
-  eleventyConfig.addWatchTarget("src");
+
+
 }

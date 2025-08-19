@@ -1,4 +1,5 @@
 /* Kaomoji CSS API */
+/* Test comment - testing file watch */
 :root {
   --base-space: 0.6em;
   --base-animation-duration: 0.5s;
@@ -12,12 +13,14 @@
   align-items: center;
   min-height: 1em;
 }
+
 .layer {
   position: absolute;
   top: 0;
   left: 0;
 }
-.layer > * {
+
+.layer>* {
   width: max-content;
 }
 
@@ -25,15 +28,19 @@
 .space {
   margin: 0 var(--base-space);
 }
+
 .space-double {
   margin: 0 calc(var(--base-space) * 2);
 }
+
 .space-triple {
   margin: 0 calc(var(--base-space) * 3);
 }
+
 .space-half {
   margin: 0 calc(var(--base-space) * 0.5);
 }
+
 .space-quarter {
   margin: 0 calc(var(--base-space) * 0.25);
 }

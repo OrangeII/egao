@@ -4,9 +4,11 @@
   "description": "A CSS library to create kaomoji.",
   "main": "dist/main.css",
   "scripts": {
-    "build": "npm run build:ts && postcss src/main.css -o dist/egao.css",
+    "build": "npm run build:ts && npm run build:css",
     "build:ts": "tsc",
-    "dev": "npm run build && npx @11ty/eleventy --serve"
+    "build:css": "postcss src/main.css -o dist/egao.css",
+    "watch:css": "onchange \"src/main.css\" \"build/**/*.js\" -- \"postcss src/main.css -o dist/egao.css && postcss src/main.css -o docs/egao.css\"",
+    "dev": "npm run build && concurrently \"npx @11ty/eleventy --serve\" \"tsc --watch\" \"npm run watch:css\""
   },
   "keywords": [
     "css",
@@ -22,7 +24,9 @@
     "@types/livereload": "^0.9.5",
     "@types/node": "^24.3.0",
     "autoprefixer": "^10.0.0",
+    "concurrently": "^9.2.0",
     "cssnano": "^7.0.0",
+    "onchange": "^7.1.0",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
     "typescript": "^5.9.2"

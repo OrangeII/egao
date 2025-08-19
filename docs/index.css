@@ -10,10 +10,12 @@
   animation: bounce 500ms infinite;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
 .attack {
   animation: attack 140ms infinite;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
 .stagger {
   animation: stagger 70ms infinite;
   animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
@@ -22,21 +24,26 @@
 .delay-50 {
   animation-delay: 50ms;
 }
+
 .delay-70 {
   animation-delay: 70ms;
 }
+
 .delay-100 {
   animation-delay: 100ms;
 }
 
 @keyframes bounce {
+
   0%,
   100% {
     transform: translateY(0) scale(1, 1);
   }
+
   50% {
     transform: translateY(-0.5em) scale(0.9, 1.1);
   }
+
   80% {
     transform: translateY(0) scale(1, 0.9);
   }
@@ -46,48 +53,61 @@
   0% {
     rotate: 0deg;
   }
+
   25% {
     rotate: 3deg;
   }
+
   50% {
     rotate: 0deg;
     transform: translateY(-4px);
   }
+
   85% {
     transform: translateX(2px);
   }
+
   75% {
     rotate: -2deg;
   }
+
   100% {
     rotate: 0deg;
   }
 }
 
 @keyframes stagger {
+
   0%,
   70%,
   100% {
     transform: translateY(0) scale(1);
   }
+
   5% {
     transform: translateY(-2px) scale(0.9);
   }
+
   10% {
     transform: translateY(1px) scale(1.1);
   }
+
   20% {
     transform: translateY(-1px) scale(0.95);
   }
+
   25% {
     transform: translateY(0.5px) scale(1.05);
   }
+
   35% {
     transform: translateY(-0.5px) scale(0.98);
   }
+
   40% {
     transform: translateY(0) scale(1.02);
   }
+
   50% {
     transform: translateY(0) scale(1);
   }

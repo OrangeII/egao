@@ -1,3 +1,5 @@
+import { start } from "repl";
+
 interface Part {
   [key: string]: string | Part;
 }
@@ -45,6 +47,8 @@ const parts: Part = {
   },
   veins: "╬",
   sweat: ";",
+  star: "✧",
+  sparkles: "✨",
 };
 
 export { parts, Part };
