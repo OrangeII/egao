@@ -1,9 +1,9 @@
 import { parts, Part } from "./parts.js";
 
 interface ParsedPart {
-  source: Part;
+  source: Record<string, Part | string>;
   path: string[];
-  cssClass: string;
+  cssClassName: string;
   exampleDiv: string;
 }
 
@@ -12,10 +12,30 @@ interface ParsedPart {
  */
 export default function parseParts(): ParsedPart[] {
   const result: ParsedPart[] = [];
-  parsePartsRec("", parts, [], result);
+  for (const [key, value] of Object.entries(parts)) {
+    parsePartsRec(key, value, [], result);
+  }
+  console.log(result);
   return result;
 }
 
-function parsePartsRec(key: string, value: Part, path: string[], result: ParsedPart[]) {
-
+function parsePartsRec(key: string, value: Part | string, path: string[], result: ParsedPart[]) {
+  const currentPath = [...path, key];
+  //if value is of type part and does not have 'content' property
+  if (typeof value === "object" && !("content" in value)) {
+    for (const [childKey, childValue] of Object.entries(value)) {
+      parsePartsRec(childKey, childValue, currentPath, result);
+    }
+  } else {
+    const className = `${currentPath.join("-")}`;
+    const exampleDiv = `<div class="${className}"></div>`;
+    result.push({
+      source: { [key]: value },
+      path: currentPath,
+      cssClassName: className,
+      exampleDiv,
+    });
+  }
 }
+
+parseParts();
