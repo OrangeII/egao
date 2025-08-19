@@ -128,11 +128,3 @@
 .sweat::after {
   content: ";";
 }
-
-.star::after {
-  content: "✧";
-}
-
-.sparkles::after {
-  content: "✨";
-}

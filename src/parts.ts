@@ -47,8 +47,6 @@ const parts: Part = {
   },
   veins: "╬",
   sweat: ";",
-  star: "✧",
-  sparkles: "✨",
 };
 
 export { parts, Part };
