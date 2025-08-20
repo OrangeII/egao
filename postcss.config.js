@@ -3,9 +3,5 @@ import buildPartClasses from "./build/buildPartClasses.js";
 // import cssnano from "cssnano";
 
 export default {
-  plugins: [
-    buildPartClasses,
-    autoprefixer,
-    // cssnano({ preset: "default" }),
-  ],
+  plugins: [buildPartClasses, autoprefixer, cssnano({ preset: "default" })],
 };
