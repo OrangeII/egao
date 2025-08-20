@@ -8,7 +8,7 @@ import {GroupDisplay, AccessoriesDisplay} from "@site/src/components/GroupDispla
 
 # Kaomoji Parts
 
-You can render a kaomoji part by giving an element the corresponding css class.
+You render a kaomoji part by giving an element the corresponding css class.
 
 ### Body
 
