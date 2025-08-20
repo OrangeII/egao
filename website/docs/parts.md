@@ -18,6 +18,10 @@ You render a kaomoji part by giving an element the corresponding css class.
 
 <GroupDisplay group="face" />
 
+### Mouth
+
+<GroupDisplay group="mouth" />
+
 ### Eyes
 
 <GroupDisplay group="eyes" />

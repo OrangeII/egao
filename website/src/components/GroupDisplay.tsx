@@ -1,7 +1,7 @@
 import React from "react";
 import parts from "@site/static/data/parts.json";
 
-const groups = ["body", "face", "eyes", "arms"];
+const groups = ["body", "face", "eyes", "arms", "mouth"];
 
 // Type definition for a part
 interface Part {

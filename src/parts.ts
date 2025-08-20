@@ -15,16 +15,88 @@ const parts: Part = {
       left: "(",
       right: ")",
     },
+    square: {
+      left: "[",
+      right: "]",
+    },
+    bear: {
+      left: "ʕ",
+      right: "ʔ",
+    },
   },
   arms: {
     hugging: "つ",
+    "raised-fist": {
+      left: "٩",
+      right: "۶",
+    },
+    out: {
+      left: "＼",
+      right: "／",
+    },
+    raised: {
+      left: "╰",
+      right: "╯",
+    },
+    "thumbs-up": "d",
   },
   face: {
     happy: "￣ ▽ ￣",
+    excited: "˃ᴗ˂",
+    "very-excited": "≧▽≦",
+    "wide-happy": "◕‿◕",
     angry: "ಠ 益 ಠ",
     "smile-awkward": "⌒_⌒",
+    smug: "￣︶￣",
+    "very-smug": "￣ω￣",
+    sly: "￢‿￢",
+    tearful: "╥﹏╥",
+    despair: "꒦ິ꒳꒦ີ",
+    animal: "• ᴥ •",
+  },
+  mouth: {
+    triangle: {
+      down: "▽",
+      up: "△",
+    },
+    frown: "益",
+    smug: "︶",
+    smile: "‿",
+    "smile-small": "ᴗ",
+    "very-smug": "ω",
+    "downturned-small": "꒳",
+    pouting: {
+      left: "ε",
+      right: "з",
+    },
+    squiggly: "﹏",
+    square: "口",
+    "square-small": "□",
+    "square-slanted": "Д",
+    "square-slanted-small": "д",
+    tulip: "ᗢ",
+    "tulip-down": "ᗣ",
+    "tulip-side": "ᗤ",
+    kata: "ヮ",
+    flipped: "∀",
+    m: "ｍ",
+    disapproval: "︿",
+    "disapproval-slanted": "ヘ",
+    animal: "ᴥ",
   },
   eyes: {
+    fury: {
+      left: "◣",
+      right: "◢",
+    },
+    sunglasses: "▼",
+    tear: {
+      single: "T",
+      double: "╥",
+      despair: "꒦ີ",
+      heart: "ಥ",
+      "heart-side": "ಡ",
+    },
     line: {
       bliss: "￣",
       happy: "⁀",
@@ -33,6 +105,10 @@ const parts: Part = {
     excited: {
       left: ">",
       right: "<",
+    },
+    distress: {
+      left: "ᗒ",
+      right: "ᗕ",
     },
     "very-excited": {
       left: "≧",
@@ -43,6 +119,7 @@ const parts: Part = {
       tiny: "°",
       happy: "◕",
       sad: "⊙",
+      bear: "•",
     },
   },
   //accessories

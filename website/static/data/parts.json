@@ -12,6 +12,89 @@
   },
   {
     "source": {
+      "left": "＼"
+    },
+    "path": [
+      "arms",
+      "out",
+      "left"
+    ],
+    "cssClassName": "arms-out-left",
+    "exampleDiv": "<div class=\"arms-out-left\"></div>"
+  },
+  {
+    "source": {
+      "right": "／"
+    },
+    "path": [
+      "arms",
+      "out",
+      "right"
+    ],
+    "cssClassName": "arms-out-right",
+    "exampleDiv": "<div class=\"arms-out-right\"></div>"
+  },
+  {
+    "source": {
+      "left": "٩"
+    },
+    "path": [
+      "arms",
+      "raised-fist",
+      "left"
+    ],
+    "cssClassName": "arms-raised-fist-left",
+    "exampleDiv": "<div class=\"arms-raised-fist-left\"></div>"
+  },
+  {
+    "source": {
+      "right": "۶"
+    },
+    "path": [
+      "arms",
+      "raised-fist",
+      "right"
+    ],
+    "cssClassName": "arms-raised-fist-right",
+    "exampleDiv": "<div class=\"arms-raised-fist-right\"></div>"
+  },
+  {
+    "source": {
+      "left": "╰"
+    },
+    "path": [
+      "arms",
+      "raised",
+      "left"
+    ],
+    "cssClassName": "arms-raised-left",
+    "exampleDiv": "<div class=\"arms-raised-left\"></div>"
+  },
+  {
+    "source": {
+      "right": "╯"
+    },
+    "path": [
+      "arms",
+      "raised",
+      "right"
+    ],
+    "cssClassName": "arms-raised-right",
+    "exampleDiv": "<div class=\"arms-raised-right\"></div>"
+  },
+  {
+    "source": {
+      "thumbs-up": "d"
+    },
+    "path": [
+      "arms",
+      "thumbs-up"
+    ],
+    "cssClassName": "arms-thumbs-up",
+    "exampleDiv": "<div class=\"arms-thumbs-up\"></div>"
+  },
+  {
+    "source": {
       "blush": {
         "content": "⁄ ⁄ ⁄",
         "white-space": "pre"
@@ -22,6 +105,30 @@
     ],
     "cssClassName": "blush",
     "exampleDiv": "<div class=\"blush\"></div>"
+  },
+  {
+    "source": {
+      "left": "ʕ"
+    },
+    "path": [
+      "body",
+      "bear",
+      "left"
+    ],
+    "cssClassName": "body-bear-left",
+    "exampleDiv": "<div class=\"body-bear-left\"></div>"
+  },
+  {
+    "source": {
+      "right": "ʔ"
+    },
+    "path": [
+      "body",
+      "bear",
+      "right"
+    ],
+    "cssClassName": "body-bear-right",
+    "exampleDiv": "<div class=\"body-bear-right\"></div>"
   },
   {
     "source": {
@@ -49,6 +156,54 @@
   },
   {
     "source": {
+      "left": "["
+    },
+    "path": [
+      "body",
+      "square",
+      "left"
+    ],
+    "cssClassName": "body-square-left",
+    "exampleDiv": "<div class=\"body-square-left\"></div>"
+  },
+  {
+    "source": {
+      "right": "]"
+    },
+    "path": [
+      "body",
+      "square",
+      "right"
+    ],
+    "cssClassName": "body-square-right",
+    "exampleDiv": "<div class=\"body-square-right\"></div>"
+  },
+  {
+    "source": {
+      "left": "ᗒ"
+    },
+    "path": [
+      "eyes",
+      "distress",
+      "left"
+    ],
+    "cssClassName": "eyes-distress-left",
+    "exampleDiv": "<div class=\"eyes-distress-left\"></div>"
+  },
+  {
+    "source": {
+      "right": "ᗕ"
+    },
+    "path": [
+      "eyes",
+      "distress",
+      "right"
+    ],
+    "cssClassName": "eyes-distress-right",
+    "exampleDiv": "<div class=\"eyes-distress-right\"></div>"
+  },
+  {
+    "source": {
       "left": ">"
     },
     "path": [
@@ -73,6 +228,30 @@
   },
   {
     "source": {
+      "left": "◣"
+    },
+    "path": [
+      "eyes",
+      "fury",
+      "left"
+    ],
+    "cssClassName": "eyes-fury-left",
+    "exampleDiv": "<div class=\"eyes-fury-left\"></div>"
+  },
+  {
+    "source": {
+      "right": "◢"
+    },
+    "path": [
+      "eyes",
+      "fury",
+      "right"
+    ],
+    "cssClassName": "eyes-fury-right",
+    "exampleDiv": "<div class=\"eyes-fury-right\"></div>"
+  },
+  {
+    "source": {
       "bliss": "￣"
     },
     "path": [
@@ -94,6 +273,18 @@
     ],
     "cssClassName": "eyes-line-happy",
     "exampleDiv": "<div class=\"eyes-line-happy\"></div>"
+  },
+  {
+    "source": {
+      "bear": "•"
+    },
+    "path": [
+      "eyes",
+      "o",
+      "bear"
+    ],
+    "cssClassName": "eyes-o-bear",
+    "exampleDiv": "<div class=\"eyes-o-bear\"></div>"
   },
   {
     "source": {
@@ -156,6 +347,77 @@
   },
   {
     "source": {
+      "sunglasses": "▼"
+    },
+    "path": [
+      "eyes",
+      "sunglasses"
+    ],
+    "cssClassName": "eyes-sunglasses",
+    "exampleDiv": "<div class=\"eyes-sunglasses\"></div>"
+  },
+  {
+    "source": {
+      "despair": "꒦ີ"
+    },
+    "path": [
+      "eyes",
+      "tear",
+      "despair"
+    ],
+    "cssClassName": "eyes-tear-despair",
+    "exampleDiv": "<div class=\"eyes-tear-despair\"></div>"
+  },
+  {
+    "source": {
+      "double": "╥"
+    },
+    "path": [
+      "eyes",
+      "tear",
+      "double"
+    ],
+    "cssClassName": "eyes-tear-double",
+    "exampleDiv": "<div class=\"eyes-tear-double\"></div>"
+  },
+  {
+    "source": {
+      "heart": "ಥ"
+    },
+    "path": [
+      "eyes",
+      "tear",
+      "heart"
+    ],
+    "cssClassName": "eyes-tear-heart",
+    "exampleDiv": "<div class=\"eyes-tear-heart\"></div>"
+  },
+  {
+    "source": {
+      "heart-side": "ಡ"
+    },
+    "path": [
+      "eyes",
+      "tear",
+      "heart-side"
+    ],
+    "cssClassName": "eyes-tear-heart-side",
+    "exampleDiv": "<div class=\"eyes-tear-heart-side\"></div>"
+  },
+  {
+    "source": {
+      "single": "T"
+    },
+    "path": [
+      "eyes",
+      "tear",
+      "single"
+    ],
+    "cssClassName": "eyes-tear-single",
+    "exampleDiv": "<div class=\"eyes-tear-single\"></div>"
+  },
+  {
+    "source": {
       "left": "≧"
     },
     "path": [
@@ -191,6 +453,39 @@
   },
   {
     "source": {
+      "animal": "• ᴥ •"
+    },
+    "path": [
+      "face",
+      "animal"
+    ],
+    "cssClassName": "face-animal",
+    "exampleDiv": "<div class=\"face-animal\"></div>"
+  },
+  {
+    "source": {
+      "despair": "꒦ິ꒳꒦ີ"
+    },
+    "path": [
+      "face",
+      "despair"
+    ],
+    "cssClassName": "face-despair",
+    "exampleDiv": "<div class=\"face-despair\"></div>"
+  },
+  {
+    "source": {
+      "excited": "˃ᴗ˂"
+    },
+    "path": [
+      "face",
+      "excited"
+    ],
+    "cssClassName": "face-excited",
+    "exampleDiv": "<div class=\"face-excited\"></div>"
+  },
+  {
+    "source": {
       "happy": "￣ ▽ ￣"
     },
     "path": [
@@ -202,6 +497,17 @@
   },
   {
     "source": {
+      "sly": "￢‿￢"
+    },
+    "path": [
+      "face",
+      "sly"
+    ],
+    "cssClassName": "face-sly",
+    "exampleDiv": "<div class=\"face-sly\"></div>"
+  },
+  {
+    "source": {
       "smile-awkward": "⌒_⌒"
     },
     "path": [
@@ -210,6 +516,329 @@
     ],
     "cssClassName": "face-smile-awkward",
     "exampleDiv": "<div class=\"face-smile-awkward\"></div>"
+  },
+  {
+    "source": {
+      "smug": "￣︶￣"
+    },
+    "path": [
+      "face",
+      "smug"
+    ],
+    "cssClassName": "face-smug",
+    "exampleDiv": "<div class=\"face-smug\"></div>"
+  },
+  {
+    "source": {
+      "tearful": "╥﹏╥"
+    },
+    "path": [
+      "face",
+      "tearful"
+    ],
+    "cssClassName": "face-tearful",
+    "exampleDiv": "<div class=\"face-tearful\"></div>"
+  },
+  {
+    "source": {
+      "very-excited": "≧▽≦"
+    },
+    "path": [
+      "face",
+      "very-excited"
+    ],
+    "cssClassName": "face-very-excited",
+    "exampleDiv": "<div class=\"face-very-excited\"></div>"
+  },
+  {
+    "source": {
+      "very-smug": "￣ω￣"
+    },
+    "path": [
+      "face",
+      "very-smug"
+    ],
+    "cssClassName": "face-very-smug",
+    "exampleDiv": "<div class=\"face-very-smug\"></div>"
+  },
+  {
+    "source": {
+      "wide-happy": "◕‿◕"
+    },
+    "path": [
+      "face",
+      "wide-happy"
+    ],
+    "cssClassName": "face-wide-happy",
+    "exampleDiv": "<div class=\"face-wide-happy\"></div>"
+  },
+  {
+    "source": {
+      "animal": "ᴥ"
+    },
+    "path": [
+      "mouth",
+      "animal"
+    ],
+    "cssClassName": "mouth-animal",
+    "exampleDiv": "<div class=\"mouth-animal\"></div>"
+  },
+  {
+    "source": {
+      "disapproval": "︿"
+    },
+    "path": [
+      "mouth",
+      "disapproval"
+    ],
+    "cssClassName": "mouth-disapproval",
+    "exampleDiv": "<div class=\"mouth-disapproval\"></div>"
+  },
+  {
+    "source": {
+      "disapproval-slanted": "ヘ"
+    },
+    "path": [
+      "mouth",
+      "disapproval-slanted"
+    ],
+    "cssClassName": "mouth-disapproval-slanted",
+    "exampleDiv": "<div class=\"mouth-disapproval-slanted\"></div>"
+  },
+  {
+    "source": {
+      "downturned-small": "꒳"
+    },
+    "path": [
+      "mouth",
+      "downturned-small"
+    ],
+    "cssClassName": "mouth-downturned-small",
+    "exampleDiv": "<div class=\"mouth-downturned-small\"></div>"
+  },
+  {
+    "source": {
+      "flipped": "∀"
+    },
+    "path": [
+      "mouth",
+      "flipped"
+    ],
+    "cssClassName": "mouth-flipped",
+    "exampleDiv": "<div class=\"mouth-flipped\"></div>"
+  },
+  {
+    "source": {
+      "frown": "益"
+    },
+    "path": [
+      "mouth",
+      "frown"
+    ],
+    "cssClassName": "mouth-frown",
+    "exampleDiv": "<div class=\"mouth-frown\"></div>"
+  },
+  {
+    "source": {
+      "kata": "ヮ"
+    },
+    "path": [
+      "mouth",
+      "kata"
+    ],
+    "cssClassName": "mouth-kata",
+    "exampleDiv": "<div class=\"mouth-kata\"></div>"
+  },
+  {
+    "source": {
+      "m": "ｍ"
+    },
+    "path": [
+      "mouth",
+      "m"
+    ],
+    "cssClassName": "mouth-m",
+    "exampleDiv": "<div class=\"mouth-m\"></div>"
+  },
+  {
+    "source": {
+      "left": "ε"
+    },
+    "path": [
+      "mouth",
+      "pouting",
+      "left"
+    ],
+    "cssClassName": "mouth-pouting-left",
+    "exampleDiv": "<div class=\"mouth-pouting-left\"></div>"
+  },
+  {
+    "source": {
+      "right": "з"
+    },
+    "path": [
+      "mouth",
+      "pouting",
+      "right"
+    ],
+    "cssClassName": "mouth-pouting-right",
+    "exampleDiv": "<div class=\"mouth-pouting-right\"></div>"
+  },
+  {
+    "source": {
+      "smile": "‿"
+    },
+    "path": [
+      "mouth",
+      "smile"
+    ],
+    "cssClassName": "mouth-smile",
+    "exampleDiv": "<div class=\"mouth-smile\"></div>"
+  },
+  {
+    "source": {
+      "smile-small": "ᴗ"
+    },
+    "path": [
+      "mouth",
+      "smile-small"
+    ],
+    "cssClassName": "mouth-smile-small",
+    "exampleDiv": "<div class=\"mouth-smile-small\"></div>"
+  },
+  {
+    "source": {
+      "smug": "︶"
+    },
+    "path": [
+      "mouth",
+      "smug"
+    ],
+    "cssClassName": "mouth-smug",
+    "exampleDiv": "<div class=\"mouth-smug\"></div>"
+  },
+  {
+    "source": {
+      "square": "口"
+    },
+    "path": [
+      "mouth",
+      "square"
+    ],
+    "cssClassName": "mouth-square",
+    "exampleDiv": "<div class=\"mouth-square\"></div>"
+  },
+  {
+    "source": {
+      "square-slanted": "Д"
+    },
+    "path": [
+      "mouth",
+      "square-slanted"
+    ],
+    "cssClassName": "mouth-square-slanted",
+    "exampleDiv": "<div class=\"mouth-square-slanted\"></div>"
+  },
+  {
+    "source": {
+      "square-slanted-small": "д"
+    },
+    "path": [
+      "mouth",
+      "square-slanted-small"
+    ],
+    "cssClassName": "mouth-square-slanted-small",
+    "exampleDiv": "<div class=\"mouth-square-slanted-small\"></div>"
+  },
+  {
+    "source": {
+      "square-small": "□"
+    },
+    "path": [
+      "mouth",
+      "square-small"
+    ],
+    "cssClassName": "mouth-square-small",
+    "exampleDiv": "<div class=\"mouth-square-small\"></div>"
+  },
+  {
+    "source": {
+      "squiggly": "﹏"
+    },
+    "path": [
+      "mouth",
+      "squiggly"
+    ],
+    "cssClassName": "mouth-squiggly",
+    "exampleDiv": "<div class=\"mouth-squiggly\"></div>"
+  },
+  {
+    "source": {
+      "down": "▽"
+    },
+    "path": [
+      "mouth",
+      "triangle",
+      "down"
+    ],
+    "cssClassName": "mouth-triangle-down",
+    "exampleDiv": "<div class=\"mouth-triangle-down\"></div>"
+  },
+  {
+    "source": {
+      "up": "△"
+    },
+    "path": [
+      "mouth",
+      "triangle",
+      "up"
+    ],
+    "cssClassName": "mouth-triangle-up",
+    "exampleDiv": "<div class=\"mouth-triangle-up\"></div>"
+  },
+  {
+    "source": {
+      "tulip": "ᗢ"
+    },
+    "path": [
+      "mouth",
+      "tulip"
+    ],
+    "cssClassName": "mouth-tulip",
+    "exampleDiv": "<div class=\"mouth-tulip\"></div>"
+  },
+  {
+    "source": {
+      "tulip-down": "ᗣ"
+    },
+    "path": [
+      "mouth",
+      "tulip-down"
+    ],
+    "cssClassName": "mouth-tulip-down",
+    "exampleDiv": "<div class=\"mouth-tulip-down\"></div>"
+  },
+  {
+    "source": {
+      "tulip-side": "ᗤ"
+    },
+    "path": [
+      "mouth",
+      "tulip-side"
+    ],
+    "cssClassName": "mouth-tulip-side",
+    "exampleDiv": "<div class=\"mouth-tulip-side\"></div>"
+  },
+  {
+    "source": {
+      "very-smug": "ω"
+    },
+    "path": [
+      "mouth",
+      "very-smug"
+    ],
+    "cssClassName": "mouth-very-smug",
+    "exampleDiv": "<div class=\"mouth-very-smug\"></div>"
   },
   {
     "source": {
