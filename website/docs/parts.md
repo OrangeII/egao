@@ -4,10 +4,28 @@ title: Kaomoji Parts
 sidebar_position: 2
 ---
 
-import PartsDisplay from '@site/src/components/PartsDisplay';
+import {GroupDisplay, AccessoriesDisplay} from "@site/src/components/GroupDisplay";
 
 # Kaomoji Parts
 
 You can render a kaomoji part by giving an element the corresponding css class.
 
-<PartsDisplay />
+### Body
+
+<GroupDisplay group="body" />
+
+### Face
+
+<GroupDisplay group="face" />
+
+### Eyes
+
+<GroupDisplay group="eyes" />
+
+### Arms
+
+<GroupDisplay group="arms" />
+
+### Accessories
+
+<AccessoriesDisplay/>
