@@ -1,0 +1,126 @@
+/* Kaomoji CSS API */
+/* Test comment - testing file watch */
+:root {
+  --base-space: 0.6em;
+  --base-animation-duration: 0.5s;
+}
+
+/* base components */
+.kaomoji {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 1em;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.layer > * {
+  width: -moz-max-content;
+  width: max-content;
+}
+
+/* Spacing Utilities */
+.space {
+  margin: 0 var(--base-space);
+}
+
+.space-double {
+  margin: 0 calc(var(--base-space) * 2);
+}
+
+.space-triple {
+  margin: 0 calc(var(--base-space) * 3);
+}
+
+.space-half {
+  margin: 0 calc(var(--base-space) * 0.5);
+}
+
+.space-quarter {
+  margin: 0 calc(var(--base-space) * 0.25);
+}
+
+/* Dynamic classes will be generated here by postcss-kaomoji-plugin */
+
+/* arms */
+.arms-hugging:before {
+  content: "つ";
+}
+.arms-raised:before {
+  content: "╯";
+}
+.arms-lowered:before {
+  content: "╰";
+}
+.arms-raised-left:before {
+  content: "╯";
+}
+.arms-lowered-left:before {
+  content: "╰";
+}
+.arms-raised-right:after {
+  content: "╯";
+}
+.arms-lowered-right:after {
+  content: "╰";
+}
+
+/* body */
+.body-round-left:before {
+  content: "(";
+}
+.body-round-right:after {
+  content: ")";
+}
+.body-square-left:before {
+  content: "[";
+}
+.body-square-right:after {
+  content: "]";
+}
+
+/* face */
+.face-happy:before {
+  content: "◕‿◕";
+}
+.face-sad:before {
+  content: "◕︵◕";
+}
+.face-neutral:before {
+  content: "◕_◕";
+}
+.face-surprised:before {
+  content: "◕o◕";
+}
+
+/* eyes */
+.eyes-happy:before {
+  content: "^_^";
+}
+.eyes-closed:before {
+  content: "-_-";
+}
+.eyes-wink:before {
+  content: "^_~";
+}
+
+/* accessories */
+.blush:before {
+  content: "⁄ ⁄ ⁄";
+  white-space: pre;
+}
+.star:before {
+  content: "✦";
+}
+.sparkle:before {
+  content: "✨";
+}
+.sweat:before {
+  content: "💧";
+}

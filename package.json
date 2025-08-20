@@ -6,10 +6,15 @@
   "scripts": {
     "build": "npm run build:ts && npm run build:css",
     "build:ts": "tsc",
-    "build:css": "postcss src/main.css -o dist/egao.css",
+    "build:css": "postcss src/main.css -o dist/egao.css && npm run sync-docs-css",
     "watch:css": "onchange \"src/main.css\" \"src/**/*.ts\" -- \"npm run build:css && cp dist/egao.css docs/egao.css && npm run export-docs-data\"",
     "export-docs-data": "node -e 'require(\"./build/parseParts.js\").writeParsedParts(\"docs/_data/parts.json\")'",
-    "dev": "npm run build && concurrently \"npx @11ty/eleventy --serve\" \"tsc --watch\" \"npm run watch:css\""
+    "sync-docs-css": "cp dist/egao.css website/static/css/egao.css",
+    "dev": "npm run build && concurrently \"npx @11ty/eleventy --serve\" \"tsc --watch\" \"npm run watch:css\"",
+    "docs:start": "cd website && npm start",
+    "docs:build": "cd website && npm run build",
+    "docs:serve": "cd website && npm run serve",
+    "docs:dev": "npm run build && cd website && npm start"
   },
   "keywords": [
     "css",
