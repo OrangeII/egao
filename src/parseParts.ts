@@ -1,4 +1,6 @@
 import { parts, Part, PartClass } from "./parts.js";
+import path from "path";
+import fs from "fs";
 
 export interface ParsedPart {
   source: Record<string, Part | string | PartClass>;
@@ -40,4 +42,18 @@ function parsePartsRec(
       exampleDiv,
     });
   }
+}
+
+export function writeParsedParts(outputFilePath: string) {
+  if (!outputFilePath) return;
+
+  //create the export path if it doesn't exist
+  const exportPath = path.dirname(outputFilePath);
+  if (!fs.existsSync(exportPath)) {
+    fs.mkdirSync(exportPath, { recursive: true });
+  }
+
+  const parsedParts = parseParts();
+  const content = JSON.stringify(parsedParts, null, 2);
+  fs.writeFileSync(outputFilePath, content, "utf8");
 }

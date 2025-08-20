@@ -128,3 +128,8 @@
 .sweat::after {
   content: ";";
 }
+
+.sparkles::after {
+  content: "✧ ✧ ✧";
+  white-space: pre;
+}
