@@ -17,7 +17,7 @@ export function parseParts(): ParsedPart[] {
   for (const [key, value] of Object.entries(parts)) {
     parsePartsRec(key, value, [], result);
   }
-  return result;
+  return result.sort((a, b) => a.cssClassName.localeCompare(b.cssClassName));
 }
 
 function parsePartsRec(

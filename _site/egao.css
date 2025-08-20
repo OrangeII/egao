@@ -48,40 +48,21 @@
 
 /* Dynamic classes will be generated here by postcss-kaomoji-plugin */
 
+.arms-hugging::after {
+  content: "つ";
+}
+
+.blush::after {
+  content: "⁄ ⁄ ⁄";
+  white-space: pre;
+}
+
 .body-round-left::after {
   content: "(";
 }
 
 .body-round-right::after {
   content: ")";
-}
-
-.arms-hugging::after {
-  content: "つ";
-}
-
-.face-happy::after {
-  content: "￣ ▽ ￣";
-}
-
-.face-angry::after {
-  content: "ಠ 益 ಠ";
-}
-
-.face-smile-awkward::after {
-  content: "⌒_⌒";
-}
-
-.eyes-line-bliss::after {
-  content: "￣";
-}
-
-.eyes-line-happy::after {
-  content: "⁀";
-}
-
-.eyes-side-look::after {
-  content: "￢";
 }
 
 .eyes-excited-left::after {
@@ -92,20 +73,16 @@
   content: "<";
 }
 
-.eyes-very-excited-left::after {
-  content: "≧";
+.eyes-line-bliss::after {
+  content: "￣";
 }
 
-.eyes-very-excited-right::after {
-  content: "≦";
+.eyes-line-happy::after {
+  content: "⁀";
 }
 
 .eyes-o-disapproving::after {
   content: "ಠ";
-}
-
-.eyes-o-tiny::after {
-  content: "°";
 }
 
 .eyes-o-happy::after {
@@ -116,20 +93,38 @@
   content: "⊙";
 }
 
-.blush::after {
-  content: "⁄ ⁄ ⁄";
-  white-space: pre;
+.eyes-o-tiny::after {
+  content: "°";
 }
 
-.veins::after {
-  content: "╬";
+.eyes-side-look::after {
+  content: "￢";
+}
+
+.eyes-very-excited-left::after {
+  content: "≧";
+}
+
+.eyes-very-excited-right::after {
+  content: "≦";
+}
+
+.face-angry::after {
+  content: "ಠ 益 ಠ";
+}
+
+.face-happy::after {
+  content: "￣ ▽ ￣";
+}
+
+.face-smile-awkward::after {
+  content: "⌒_⌒";
 }
 
 .sweat::after {
   content: ";";
 }
 
-.sparkles::after {
-  content: "✧ ✧ ✧";
-  white-space: pre;
+.veins::after {
+  content: "╬";
 }

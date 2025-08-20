@@ -1,6 +1,30 @@
 [
   {
     "source": {
+      "hugging": "つ"
+    },
+    "path": [
+      "arms",
+      "hugging"
+    ],
+    "cssClassName": "arms-hugging",
+    "exampleDiv": "<div class=\"arms-hugging\"></div>"
+  },
+  {
+    "source": {
+      "blush": {
+        "content": "⁄ ⁄ ⁄",
+        "white-space": "pre"
+      }
+    },
+    "path": [
+      "blush"
+    ],
+    "cssClassName": "blush",
+    "exampleDiv": "<div class=\"blush\"></div>"
+  },
+  {
+    "source": {
       "left": "("
     },
     "path": [
@@ -22,85 +46,6 @@
     ],
     "cssClassName": "body-round-right",
     "exampleDiv": "<div class=\"body-round-right\"></div>"
-  },
-  {
-    "source": {
-      "hugging": "つ"
-    },
-    "path": [
-      "arms",
-      "hugging"
-    ],
-    "cssClassName": "arms-hugging",
-    "exampleDiv": "<div class=\"arms-hugging\"></div>"
-  },
-  {
-    "source": {
-      "happy": "￣ ▽ ￣"
-    },
-    "path": [
-      "face",
-      "happy"
-    ],
-    "cssClassName": "face-happy",
-    "exampleDiv": "<div class=\"face-happy\"></div>"
-  },
-  {
-    "source": {
-      "angry": "ಠ 益 ಠ"
-    },
-    "path": [
-      "face",
-      "angry"
-    ],
-    "cssClassName": "face-angry",
-    "exampleDiv": "<div class=\"face-angry\"></div>"
-  },
-  {
-    "source": {
-      "smile-awkward": "⌒_⌒"
-    },
-    "path": [
-      "face",
-      "smile-awkward"
-    ],
-    "cssClassName": "face-smile-awkward",
-    "exampleDiv": "<div class=\"face-smile-awkward\"></div>"
-  },
-  {
-    "source": {
-      "bliss": "￣"
-    },
-    "path": [
-      "eyes",
-      "line",
-      "bliss"
-    ],
-    "cssClassName": "eyes-line-bliss",
-    "exampleDiv": "<div class=\"eyes-line-bliss\"></div>"
-  },
-  {
-    "source": {
-      "happy": "⁀"
-    },
-    "path": [
-      "eyes",
-      "line",
-      "happy"
-    ],
-    "cssClassName": "eyes-line-happy",
-    "exampleDiv": "<div class=\"eyes-line-happy\"></div>"
-  },
-  {
-    "source": {
-      "side-look": "￢"
-    },
-    "path": [
-      "eyes",
-      "side-look"
-    ],
-    "cssClassName": "eyes-side-look",
-    "exampleDiv": "<div class=\"eyes-side-look\"></div>"
   },
   {
     "source": {
@@ -128,27 +73,27 @@
   },
   {
     "source": {
-      "left": "≧"
+      "bliss": "￣"
     },
     "path": [
       "eyes",
-      "very-excited",
-      "left"
+      "line",
+      "bliss"
     ],
-    "cssClassName": "eyes-very-excited-left",
-    "exampleDiv": "<div class=\"eyes-very-excited-left\"></div>"
+    "cssClassName": "eyes-line-bliss",
+    "exampleDiv": "<div class=\"eyes-line-bliss\"></div>"
   },
   {
     "source": {
-      "right": "≦"
+      "happy": "⁀"
     },
     "path": [
       "eyes",
-      "very-excited",
-      "right"
+      "line",
+      "happy"
     ],
-    "cssClassName": "eyes-very-excited-right",
-    "exampleDiv": "<div class=\"eyes-very-excited-right\"></div>"
+    "cssClassName": "eyes-line-happy",
+    "exampleDiv": "<div class=\"eyes-line-happy\"></div>"
   },
   {
     "source": {
@@ -161,18 +106,6 @@
     ],
     "cssClassName": "eyes-o-disapproving",
     "exampleDiv": "<div class=\"eyes-o-disapproving\"></div>"
-  },
-  {
-    "source": {
-      "tiny": "°"
-    },
-    "path": [
-      "eyes",
-      "o",
-      "tiny"
-    ],
-    "cssClassName": "eyes-o-tiny",
-    "exampleDiv": "<div class=\"eyes-o-tiny\"></div>"
   },
   {
     "source": {
@@ -200,26 +133,83 @@
   },
   {
     "source": {
-      "blush": {
-        "content": "⁄ ⁄ ⁄",
-        "white-space": "pre"
-      }
+      "tiny": "°"
     },
     "path": [
-      "blush"
+      "eyes",
+      "o",
+      "tiny"
     ],
-    "cssClassName": "blush",
-    "exampleDiv": "<div class=\"blush\"></div>"
+    "cssClassName": "eyes-o-tiny",
+    "exampleDiv": "<div class=\"eyes-o-tiny\"></div>"
   },
   {
     "source": {
-      "veins": "╬"
+      "side-look": "￢"
     },
     "path": [
-      "veins"
+      "eyes",
+      "side-look"
     ],
-    "cssClassName": "veins",
-    "exampleDiv": "<div class=\"veins\"></div>"
+    "cssClassName": "eyes-side-look",
+    "exampleDiv": "<div class=\"eyes-side-look\"></div>"
+  },
+  {
+    "source": {
+      "left": "≧"
+    },
+    "path": [
+      "eyes",
+      "very-excited",
+      "left"
+    ],
+    "cssClassName": "eyes-very-excited-left",
+    "exampleDiv": "<div class=\"eyes-very-excited-left\"></div>"
+  },
+  {
+    "source": {
+      "right": "≦"
+    },
+    "path": [
+      "eyes",
+      "very-excited",
+      "right"
+    ],
+    "cssClassName": "eyes-very-excited-right",
+    "exampleDiv": "<div class=\"eyes-very-excited-right\"></div>"
+  },
+  {
+    "source": {
+      "angry": "ಠ 益 ಠ"
+    },
+    "path": [
+      "face",
+      "angry"
+    ],
+    "cssClassName": "face-angry",
+    "exampleDiv": "<div class=\"face-angry\"></div>"
+  },
+  {
+    "source": {
+      "happy": "￣ ▽ ￣"
+    },
+    "path": [
+      "face",
+      "happy"
+    ],
+    "cssClassName": "face-happy",
+    "exampleDiv": "<div class=\"face-happy\"></div>"
+  },
+  {
+    "source": {
+      "smile-awkward": "⌒_⌒"
+    },
+    "path": [
+      "face",
+      "smile-awkward"
+    ],
+    "cssClassName": "face-smile-awkward",
+    "exampleDiv": "<div class=\"face-smile-awkward\"></div>"
   },
   {
     "source": {
@@ -233,15 +223,12 @@
   },
   {
     "source": {
-      "sparkles": {
-        "content": "✧ ✧ ✧",
-        "white-space": "pre"
-      }
+      "veins": "╬"
     },
     "path": [
-      "sparkles"
+      "veins"
     ],
-    "cssClassName": "sparkles",
-    "exampleDiv": "<div class=\"sparkles\"></div>"
+    "cssClassName": "veins",
+    "exampleDiv": "<div class=\"veins\"></div>"
   }
 ]

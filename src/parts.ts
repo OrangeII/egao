@@ -52,10 +52,6 @@ const parts: Part = {
   },
   veins: "╬",
   sweat: ";",
-  sparkles: {
-    content: "✧ ✧ ✧",
-    "white-space": "pre",
-  },
 };
 
 export { parts, Part, PartClass };

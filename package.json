@@ -7,7 +7,7 @@
     "build": "npm run build:ts && npm run build:css",
     "build:ts": "tsc",
     "build:css": "postcss src/main.css -o dist/egao.css",
-    "watch:css": "onchange \"src/main.css\" \"build/**/*.js\" -- \"postcss src/main.css -o dist/egao.css && cp dist/egao.css docs/egao.css && npm run export-docs-data\"",
+    "watch:css": "onchange \"src/main.css\" \"src/**/*.ts\" -- \"npm run build:css && cp dist/egao.css docs/egao.css && npm run export-docs-data\"",
     "export-docs-data": "node -e 'require(\"./build/parseParts.js\").writeParsedParts(\"docs/_data/parts.json\")'",
     "dev": "npm run build && concurrently \"npx @11ty/eleventy --serve\" \"tsc --watch\" \"npm run watch:css\""
   },
