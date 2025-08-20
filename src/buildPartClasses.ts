@@ -1,4 +1,4 @@
-import parseParts, { ParsedPart } from "./parseParts.js";
+import { parseParts, ParsedPart } from "./parseParts.js";
 import { PluginCreator, Root, Helpers } from "postcss";
 
 /**

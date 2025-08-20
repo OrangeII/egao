@@ -10,7 +10,7 @@ export interface ParsedPart {
 /**
  * read the parts object declared in parts.ts an recursively builds an array of ParsedPart
  */
-export default function parseParts(): ParsedPart[] {
+export function parseParts(): ParsedPart[] {
   const result: ParsedPart[] = [];
   for (const [key, value] of Object.entries(parts)) {
     parsePartsRec(key, value, [], result);
@@ -41,5 +41,3 @@ function parsePartsRec(
     });
   }
 }
-
-parseParts();
