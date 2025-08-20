@@ -52,7 +52,7 @@ The `kaomoji` class will stack elements horizontally.
   </div>
 </div>
 
-## Layering Elements
+## Layering elements
 
 You can use the `layer` class to overlap elements.
 

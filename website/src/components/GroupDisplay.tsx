@@ -55,30 +55,15 @@ function PartDisplay({ part, index }: { part: Part; index: number }) {
     <div key={index} style={{ marginBottom: "1.5rem" }}>
       <p>
         <code>{part.cssClassName}</code>
+        <span
+          className={part.cssClassName}
+          style={{ marginLeft: "1rem" }}
+        ></span>
       </p>
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gap: "1rem",
-          alignItems: "center",
-        }}
-      >
-        <div>
-          <pre>
-            <code className="language-html">{part.exampleDiv}</code>
-          </pre>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            minHeight: "3rem",
-          }}
-        >
-          <div className={part.cssClassName}></div>
-        </div>
+      <div>
+        <pre>
+          <code className="language-html">{part.exampleDiv}</code>
+        </pre>
       </div>
     </div>
   );

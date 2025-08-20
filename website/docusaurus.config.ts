@@ -81,19 +81,6 @@ const config: Config = {
       style: "dark",
       links: [
         {
-          title: "Documentation",
-          items: [
-            {
-              label: "Getting Started",
-              to: "/docs/getting-started",
-            },
-            {
-              label: "Kaomoji Parts",
-              to: "/docs/parts",
-            },
-          ],
-        },
-        {
           title: "More",
           items: [
             {
@@ -103,7 +90,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} OrangeII. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
