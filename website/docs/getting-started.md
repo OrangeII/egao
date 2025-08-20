@@ -85,3 +85,107 @@ You can use the `layer` class to overlap elements.
     </div>
   </div>
 </div>
+
+## Gouping elements
+
+`kaomoji` and `layer` can be combined to create animation groups.
+
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '1rem'}}>
+  <div>
+    ```html
+    <div class="kaomoji" style="width: 6em;">
+      <div id="face" class="kaomoji layer bounce">
+        <div class="space"></div>
+        <div class="face-happy"></div>
+      </div>
+      <div id="body" class="kaomoji layer bounce delay-50">
+        <div class="body-round-left"></div>
+        <div class="space-triple"></div>
+        <div class="space-half"></div>
+        <div class="body-round-right"></div>
+      </div>
+      <div id="hands" class="kaomoji layer bounce delay-100">
+        <div class="space-quarter"></div>
+        <div class="arms-hugging"></div>
+        <div class="space-double"></div>
+        <div class="space"></div>
+        <div class="arms-hugging"></div>
+      </div>
+    </div>
+    ```
+  </div>
+  <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+    <div class="kaomoji" style={{width: '6em'}}>
+      <div id="face" class="kaomoji layer bounce">
+        <div class="space"></div>
+        <div class="face-happy"></div>
+      </div>
+      <div id="body" class="kaomoji layer bounce delay-50">
+        <div class="body-round-left"></div>
+        <div class="space-triple"></div>
+        <div class="space-half"></div>
+        <div class="body-round-right"></div>
+      </div>
+      <div id="hands" class="kaomoji layer bounce delay-100">
+        <div class="space-quarter"></div>
+        <div class="arms-hugging"></div>
+        <div class="space-double"></div>
+        <div class="space"></div>
+        <div class="arms-hugging"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+## Styling elements
+
+Of course you can style and animate individual elements as well.
+
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '1rem'}}>
+  <div>
+    ```html
+    <div class="kaomoji">
+      <div class="body-round-left"></div>
+      <div class="arms-hugging attack"></div>
+      <div class="kaomoji">
+        <div class="face-happy"></div>
+        <div class="kaomoji layer">
+          <div class="blush" style="color: salmon"></div>
+          <div class="space"></div>
+          <div class="blush" style="color: salmon"></div>
+        </div>
+      </div>
+      <div class="body-round-right"></div>
+      <div class="arms-hugging attack delay-70"></div>
+      <div class="stagger">🥁</div>
+    </div>
+    ```
+  </div>
+  <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+    <div class="kaomoji">
+      <div class="body-round-left"></div>
+      <div class="arms-hugging attack"></div>
+      <div class="kaomoji">
+        <div class="face-happy"></div>
+        <div class="kaomoji layer">
+          <div class="blush" style={{color:"salmon"}}></div>
+          <div class="space"></div>
+          <div class="blush" style={{color: "salmon"}}></div>
+        </div>
+      </div>
+      <div class="body-round-right"></div>
+      <div class="arms-hugging attack delay-70"></div>
+      <div class="stagger">🥁</div>
+    </div>
+  </div>
+</div>
+  
+Note this library doesn't provide styles or animations so you'll need to add your own.
+<span class="kaomoji">
+  <span class="body-round-left"></span>
+  <span class="face-smile-awkward"></span>
+  <span class="space-quarter"></span>
+  <span class="sweat"></span>
+  <span class="space-quarter"></span>
+  <span class="body-round-right"></span>
+</span>

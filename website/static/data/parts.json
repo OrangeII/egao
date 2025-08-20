@@ -1,0 +1,234 @@
+[
+  {
+    "source": {
+      "hugging": "つ"
+    },
+    "path": [
+      "arms",
+      "hugging"
+    ],
+    "cssClassName": "arms-hugging",
+    "exampleDiv": "<div class=\"arms-hugging\"></div>"
+  },
+  {
+    "source": {
+      "blush": {
+        "content": "⁄ ⁄ ⁄",
+        "white-space": "pre"
+      }
+    },
+    "path": [
+      "blush"
+    ],
+    "cssClassName": "blush",
+    "exampleDiv": "<div class=\"blush\"></div>"
+  },
+  {
+    "source": {
+      "left": "("
+    },
+    "path": [
+      "body",
+      "round",
+      "left"
+    ],
+    "cssClassName": "body-round-left",
+    "exampleDiv": "<div class=\"body-round-left\"></div>"
+  },
+  {
+    "source": {
+      "right": ")"
+    },
+    "path": [
+      "body",
+      "round",
+      "right"
+    ],
+    "cssClassName": "body-round-right",
+    "exampleDiv": "<div class=\"body-round-right\"></div>"
+  },
+  {
+    "source": {
+      "left": ">"
+    },
+    "path": [
+      "eyes",
+      "excited",
+      "left"
+    ],
+    "cssClassName": "eyes-excited-left",
+    "exampleDiv": "<div class=\"eyes-excited-left\"></div>"
+  },
+  {
+    "source": {
+      "right": "<"
+    },
+    "path": [
+      "eyes",
+      "excited",
+      "right"
+    ],
+    "cssClassName": "eyes-excited-right",
+    "exampleDiv": "<div class=\"eyes-excited-right\"></div>"
+  },
+  {
+    "source": {
+      "bliss": "￣"
+    },
+    "path": [
+      "eyes",
+      "line",
+      "bliss"
+    ],
+    "cssClassName": "eyes-line-bliss",
+    "exampleDiv": "<div class=\"eyes-line-bliss\"></div>"
+  },
+  {
+    "source": {
+      "happy": "⁀"
+    },
+    "path": [
+      "eyes",
+      "line",
+      "happy"
+    ],
+    "cssClassName": "eyes-line-happy",
+    "exampleDiv": "<div class=\"eyes-line-happy\"></div>"
+  },
+  {
+    "source": {
+      "disapproving": "ಠ"
+    },
+    "path": [
+      "eyes",
+      "o",
+      "disapproving"
+    ],
+    "cssClassName": "eyes-o-disapproving",
+    "exampleDiv": "<div class=\"eyes-o-disapproving\"></div>"
+  },
+  {
+    "source": {
+      "happy": "◕"
+    },
+    "path": [
+      "eyes",
+      "o",
+      "happy"
+    ],
+    "cssClassName": "eyes-o-happy",
+    "exampleDiv": "<div class=\"eyes-o-happy\"></div>"
+  },
+  {
+    "source": {
+      "sad": "⊙"
+    },
+    "path": [
+      "eyes",
+      "o",
+      "sad"
+    ],
+    "cssClassName": "eyes-o-sad",
+    "exampleDiv": "<div class=\"eyes-o-sad\"></div>"
+  },
+  {
+    "source": {
+      "tiny": "°"
+    },
+    "path": [
+      "eyes",
+      "o",
+      "tiny"
+    ],
+    "cssClassName": "eyes-o-tiny",
+    "exampleDiv": "<div class=\"eyes-o-tiny\"></div>"
+  },
+  {
+    "source": {
+      "side-look": "￢"
+    },
+    "path": [
+      "eyes",
+      "side-look"
+    ],
+    "cssClassName": "eyes-side-look",
+    "exampleDiv": "<div class=\"eyes-side-look\"></div>"
+  },
+  {
+    "source": {
+      "left": "≧"
+    },
+    "path": [
+      "eyes",
+      "very-excited",
+      "left"
+    ],
+    "cssClassName": "eyes-very-excited-left",
+    "exampleDiv": "<div class=\"eyes-very-excited-left\"></div>"
+  },
+  {
+    "source": {
+      "right": "≦"
+    },
+    "path": [
+      "eyes",
+      "very-excited",
+      "right"
+    ],
+    "cssClassName": "eyes-very-excited-right",
+    "exampleDiv": "<div class=\"eyes-very-excited-right\"></div>"
+  },
+  {
+    "source": {
+      "angry": "ಠ 益 ಠ"
+    },
+    "path": [
+      "face",
+      "angry"
+    ],
+    "cssClassName": "face-angry",
+    "exampleDiv": "<div class=\"face-angry\"></div>"
+  },
+  {
+    "source": {
+      "happy": "￣ ▽ ￣"
+    },
+    "path": [
+      "face",
+      "happy"
+    ],
+    "cssClassName": "face-happy",
+    "exampleDiv": "<div class=\"face-happy\"></div>"
+  },
+  {
+    "source": {
+      "smile-awkward": "⌒_⌒"
+    },
+    "path": [
+      "face",
+      "smile-awkward"
+    ],
+    "cssClassName": "face-smile-awkward",
+    "exampleDiv": "<div class=\"face-smile-awkward\"></div>"
+  },
+  {
+    "source": {
+      "sweat": ";"
+    },
+    "path": [
+      "sweat"
+    ],
+    "cssClassName": "sweat",
+    "exampleDiv": "<div class=\"sweat\"></div>"
+  },
+  {
+    "source": {
+      "veins": "╬"
+    },
+    "path": [
+      "veins"
+    ],
+    "cssClassName": "veins",
+    "exampleDiv": "<div class=\"veins\"></div>"
+  }
+]
