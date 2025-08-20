@@ -1,7 +1,12 @@
 import { start } from "repl";
 
+interface PartClass {
+  content: string;
+  [key: string]: string;
+}
+
 interface Part {
-  [key: string]: string | Part;
+  [key: string]: Part | string | PartClass;
 }
 
 const parts: Part = {
@@ -49,4 +54,4 @@ const parts: Part = {
   sweat: ";",
 };
 
-export { parts, Part };
+export { parts, Part, PartClass };

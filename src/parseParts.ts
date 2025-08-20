@@ -1,7 +1,7 @@
-import { parts, Part } from "./parts.js";
+import { parts, Part, PartClass } from "./parts.js";
 
-interface ParsedPart {
-  source: Record<string, Part | string>;
+export interface ParsedPart {
+  source: Record<string, Part | string | PartClass>;
   path: string[];
   cssClassName: string;
   exampleDiv: string;
@@ -15,11 +15,15 @@ export default function parseParts(): ParsedPart[] {
   for (const [key, value] of Object.entries(parts)) {
     parsePartsRec(key, value, [], result);
   }
-  console.log(result);
   return result;
 }
 
-function parsePartsRec(key: string, value: Part | string, path: string[], result: ParsedPart[]) {
+function parsePartsRec(
+  key: string,
+  value: Part | string,
+  path: string[],
+  result: ParsedPart[]
+) {
   const currentPath = [...path, key];
   //if value is of type part and does not have 'content' property
   if (typeof value === "object" && !("content" in value)) {
