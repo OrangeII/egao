@@ -18,11 +18,16 @@ Include the CSS file in your HTML:
 
 ## Basic Usage
 
-<div className="star"></div>
-
 The `kaomoji` class will stack elements horizontally.
 
-<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '1rem'}}>
+<div
+  style={{
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr",
+    gap: "1rem",
+    marginTop: "1rem",
+  }}
+>
   <div>
     ```html
     <div class="kaomoji">
@@ -34,7 +39,9 @@ The `kaomoji` class will stack elements horizontally.
     </div>
     ```
   </div>
-  <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+  <div
+    style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+  >
     <div className="kaomoji">
       <div className="body-round-left"></div>
       <div className="arms-hugging"></div>
@@ -49,7 +56,14 @@ The `kaomoji` class will stack elements horizontally.
 
 You can use the `layer` class to overlap elements.
 
-<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '1rem'}}>
+<div
+  style={{
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr",
+    gap: "1rem",
+    marginTop: "1rem",
+  }}
+>
   <div>
     ```html
     <div class="kaomoji">
@@ -68,7 +82,9 @@ You can use the `layer` class to overlap elements.
     </div>
     ```
   </div>
-  <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+  <div
+    style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+  >
     <div className="kaomoji">
       <div className="body-round-left"></div>
       <div className="arms-hugging"></div>
@@ -90,7 +106,14 @@ You can use the `layer` class to overlap elements.
 
 `kaomoji` and `layer` can be combined to create animation groups.
 
-<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '1rem'}}>
+<div
+  style={{
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr",
+    gap: "1rem",
+    marginTop: "1rem",
+  }}
+>
   <div>
     ```html
     <div class="kaomoji" style="width: 6em;">
@@ -114,8 +137,10 @@ You can use the `layer` class to overlap elements.
     </div>
     ```
   </div>
-  <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-    <div class="kaomoji" style={{width: '6em'}}>
+  <div
+    style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+  >
+    <div class="kaomoji" style={{ width: "6em" }}>
       <div id="face" class="kaomoji layer bounce">
         <div class="space"></div>
         <div class="face-happy"></div>
@@ -141,7 +166,14 @@ You can use the `layer` class to overlap elements.
 
 Of course you can style and animate individual elements as well.
 
-<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '1rem'}}>
+<div
+  style={{
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr",
+    gap: "1rem",
+    marginTop: "1rem",
+  }}
+>
   <div>
     ```html
     <div class="kaomoji">
@@ -161,16 +193,18 @@ Of course you can style and animate individual elements as well.
     </div>
     ```
   </div>
-  <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+  <div
+    style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+  >
     <div class="kaomoji">
       <div class="body-round-left"></div>
       <div class="arms-hugging attack"></div>
       <div class="kaomoji">
         <div class="face-happy"></div>
         <div class="kaomoji layer">
-          <div class="blush" style={{color:"salmon"}}></div>
+          <div class="blush" style={{ color: "salmon" }}></div>
           <div class="space"></div>
-          <div class="blush" style={{color: "salmon"}}></div>
+          <div class="blush" style={{ color: "salmon" }}></div>
         </div>
       </div>
       <div class="body-round-right"></div>
@@ -179,8 +213,8 @@ Of course you can style and animate individual elements as well.
     </div>
   </div>
 </div>
-  
-Note this library doesn't provide styles or animations so you'll need to add your own.
+Note this library doesn't provide styles or animations so you'll need to add your
+own.
 <span class="kaomoji">
   <span class="body-round-left"></span>
   <span class="face-smile-awkward"></span>
