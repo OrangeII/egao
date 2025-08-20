@@ -24,10 +24,6 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.2",
-    "@types/connect-livereload": "^0.6.3",
-    "@types/express": "^5.0.3",
-    "@types/livereload": "^0.9.5",
     "@types/node": "^24.3.0",
     "autoprefixer": "^10.0.0",
     "concurrently": "^9.2.0",
