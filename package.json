@@ -14,7 +14,8 @@
     "docs:start": "cd website && npm start",
     "docs:build": "cd website && npm run build",
     "docs:serve": "cd website && npm run serve",
-    "docs:dev": "npm run build && cd website && npm start"
+    "docs:dev": "npm run build && cd website && npm start",
+    "docs:install": "cd website && npm install"
   },
   "keywords": [
     "css",
