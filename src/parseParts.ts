@@ -45,15 +45,21 @@ function parsePartsRec(
 }
 
 export function writeParsedParts(outputFilePath: string) {
-  if (!outputFilePath) return;
+  if (!outputFilePath) {
+    console.error("❌ No output file path specified.");
+    return;
+  }
 
   //create the export path if it doesn't exist
   const exportPath = path.dirname(outputFilePath);
   if (!fs.existsSync(exportPath)) {
+    console.log(`📁 Creating export directory at ${exportPath}`);
     fs.mkdirSync(exportPath, { recursive: true });
   }
 
   const parsedParts = parseParts();
   const content = JSON.stringify(parsedParts, null, 2);
+  console.log(`✍️ Writing parsed parts to ${outputFilePath}`);
   fs.writeFileSync(outputFilePath, content, "utf8");
+  console.log(`✅ Finished writing parsed parts to ${outputFilePath}`);
 }

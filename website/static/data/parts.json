@@ -252,6 +252,17 @@
   },
   {
     "source": {
+      "lenny": " ͡°"
+    },
+    "path": [
+      "eyes",
+      "lenny"
+    ],
+    "cssClassName": "eyes-lenny",
+    "exampleDiv": "<div class=\"eyes-lenny\"></div>"
+  },
+  {
+    "source": {
       "bliss": "￣"
     },
     "path": [
@@ -497,6 +508,17 @@
   },
   {
     "source": {
+      "lenny": " ͡° ͜ʖ ͡°"
+    },
+    "path": [
+      "face",
+      "lenny"
+    ],
+    "cssClassName": "face-lenny",
+    "exampleDiv": "<div class=\"face-lenny\"></div>"
+  },
+  {
+    "source": {
       "sly": "￢‿￢"
     },
     "path": [
@@ -648,6 +670,17 @@
     ],
     "cssClassName": "mouth-kata",
     "exampleDiv": "<div class=\"mouth-kata\"></div>"
+  },
+  {
+    "source": {
+      "lenny": " ͜ʖ"
+    },
+    "path": [
+      "mouth",
+      "lenny"
+    ],
+    "cssClassName": "mouth-lenny",
+    "exampleDiv": "<div class=\"mouth-lenny\"></div>"
   },
   {
     "source": {
