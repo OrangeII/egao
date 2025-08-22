@@ -46,7 +46,7 @@ function parsePartsRec(
 
 export function writeParsedParts(outputFilePath: string) {
   if (!outputFilePath) {
-    console.error("❌ No output file path specified.");
+    console.error("❌ No output file path specified for parsed parts.");
     return;
   }
 
@@ -59,7 +59,7 @@ export function writeParsedParts(outputFilePath: string) {
 
   const parsedParts = parseParts();
   const content = JSON.stringify(parsedParts, null, 2);
-  console.log(`✍️ Writing parsed parts to ${outputFilePath}`);
+  console.log(`✍️  Writing parsed parts to ${outputFilePath}`);
   fs.writeFileSync(outputFilePath, content, "utf8");
   console.log(`✅ Finished writing parsed parts to ${outputFilePath}`);
 }

@@ -5,6 +5,10 @@
   --base-animation-duration: 0.5s;
 }
 
+.flip {
+  transform: rotateY(180deg);
+}
+
 /* base components */
 .kaomoji {
   position: relative;
