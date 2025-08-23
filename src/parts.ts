@@ -53,7 +53,7 @@ const parts: Part = {
     tearful: "╥﹏╥",
     despair: "꒦ິ꒳꒦ີ",
     animal: "• ᴥ •",
-    lenny: " ͡° ͜ʖ ͡°"
+    lenny: " ͡° ͜ʖ ͡°",
   },
   mouth: {
     triangle: {
@@ -84,7 +84,7 @@ const parts: Part = {
     disapproval: "︿",
     "disapproval-slanted": "ヘ",
     animal: "ᴥ",
-    lenny: " ͜ʖ"
+    lenny: " ͜ʖ",
   },
   eyes: {
     fury: {
@@ -123,7 +123,7 @@ const parts: Part = {
       sad: "⊙",
       bear: "•",
     },
-    lenny: " ͡°"
+    lenny: " ͡°",
   },
   //accessories
   blush: {
