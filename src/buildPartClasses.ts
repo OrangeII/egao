@@ -6,7 +6,7 @@ import { PluginCreator, Root, Helpers } from "postcss";
  */
 const buildPartClasses: PluginCreator<{}> = (_opts = {}) => {
   return {
-    postcssPlugin: "postcss-kaomoji",
+    postcssPlugin: "postcss-egao-parts",
     Once(root: Root, helpers: Helpers) {
       const parsedParts = parseParts();
       for (const parsedPart of parsedParts) {

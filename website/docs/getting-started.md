@@ -73,7 +73,7 @@ You can use the `layer` class to overlap elements.
         <div class="face-happy"></div>
         <div class="kaomoji layer">
           <div class="blush"></div>
-          <div class="space"></div>
+          <div class="space-1"></div>
           <div class="blush"></div>
         </div>
       </div>
@@ -92,7 +92,7 @@ You can use the `layer` class to overlap elements.
         <div className="face-happy"></div>
         <div className="kaomoji layer">
           <div className="blush"></div>
-          <div className="space"></div>
+          <div className="space-1"></div>
           <div className="blush"></div>
         </div>
       </div>
@@ -118,20 +118,20 @@ You can use the `layer` class to overlap elements.
     ```html
     <div class="kaomoji" style="width: 6em;">
       <div id="face" class="kaomoji layer bounce">
-        <div class="space"></div>
+        <div class="space-1"></div>
         <div class="face-happy"></div>
       </div>
       <div id="body" class="kaomoji layer bounce delay-50">
         <div class="body-round-left"></div>
-        <div class="space-triple"></div>
-        <div class="space-half"></div>
+        <div class="space-3"></div>
+        <div class="space-0-5"></div>
         <div class="body-round-right"></div>
       </div>
       <div id="hands" class="kaomoji layer bounce delay-100">
-        <div class="space-quarter"></div>
+        <div class="space-0-25"></div>
         <div class="arms-hugging"></div>
-        <div class="space-double"></div>
-        <div class="space"></div>
+        <div class="space-2"></div>
+        <div class="space-1"></div>
         <div class="arms-hugging"></div>
       </div>
     </div>
@@ -142,20 +142,20 @@ You can use the `layer` class to overlap elements.
   >
     <div class="kaomoji" style={{ width: "6em" }}>
       <div id="face" class="kaomoji layer bounce">
-        <div class="space"></div>
+        <div class="space-1"></div>
         <div class="face-happy"></div>
       </div>
       <div id="body" class="kaomoji layer bounce delay-50">
         <div class="body-round-left"></div>
-        <div class="space-triple"></div>
-        <div class="space-half"></div>
+        <div class="space-3"></div>
+        <div class="space-0-5"></div>
         <div class="body-round-right"></div>
       </div>
       <div id="hands" class="kaomoji layer bounce delay-100">
-        <div class="space-quarter"></div>
+        <div class="space-0-25"></div>
         <div class="arms-hugging"></div>
-        <div class="space-double"></div>
-        <div class="space"></div>
+        <div class="space-2"></div>
+        <div class="space-1"></div>
         <div class="arms-hugging"></div>
       </div>
     </div>
@@ -183,7 +183,7 @@ Of course you can style and animate individual elements as well.
         <div class="face-happy"></div>
         <div class="kaomoji layer">
           <div class="blush" style="color: salmon"></div>
-          <div class="space"></div>
+          <div class="space-1"></div>
           <div class="blush" style="color: salmon"></div>
         </div>
       </div>
@@ -203,7 +203,7 @@ Of course you can style and animate individual elements as well.
         <div class="face-happy"></div>
         <div class="kaomoji layer">
           <div class="blush" style={{ color: "salmon" }}></div>
-          <div class="space"></div>
+          <div class="space-1"></div>
           <div class="blush" style={{ color: "salmon" }}></div>
         </div>
       </div>
@@ -218,8 +218,8 @@ own.
 <span class="kaomoji">
   <span class="body-round-left"></span>
   <span class="face-smile-awkward"></span>
-  <span class="space-quarter"></span>
+  <span class="space-0-25"></span>
   <span class="sweat"></span>
-  <span class="space-quarter"></span>
+  <span class="space-0-25"></span>
   <span class="body-round-right"></span>
 </span>

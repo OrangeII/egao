@@ -1,9 +1,4 @@
 /* Kaomoji CSS API */
-/* Test comment - testing file watch */
-:root {
-  --base-space: 0.6em;
-  --base-animation-duration: 0.5s;
-}
 
 .flip-h {
   transform: rotateY(180deg);
@@ -30,27 +25,6 @@
 
 .layer > * {
   width: max-content;
-}
-
-/* Spacing Utilities */
-.space {
-  margin: 0 var(--base-space);
-}
-
-.space-double {
-  margin: 0 calc(var(--base-space) * 2);
-}
-
-.space-triple {
-  margin: 0 calc(var(--base-space) * 3);
-}
-
-.space-half {
-  margin: 0 calc(var(--base-space) * 0.5);
-}
-
-.space-quarter {
-  margin: 0 calc(var(--base-space) * 0.25);
 }
 
 /* Dynamic classes will be generated here by postcss-kaomoji-plugin */
