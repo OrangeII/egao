@@ -19,77 +19,43 @@ export default function EgaoMascot() {
     if (!mascotRef.current || !leftArmRef.current || !rightArmRef.current)
       return;
 
-    // Get mascot center position for flipping
+    // Get mascot center position
     const mascotRect = mascotRef.current.getBoundingClientRect();
     const mascotCenterX = mascotRect.left + mascotRect.width / 2;
     const mascotCenterY = mascotRect.top + mascotRect.height / 2;
 
-    // Determine if mascot should be flipped based on mouse position
-    const shouldFlipHorizontally = mousePosition.x < mascotCenterX;
-    const shouldFlipVertically = mousePosition.y > mascotCenterY;
+    // Determine flip states
+    const isMouseLeft = mousePosition.x < mascotCenterX;
+    const isMouseBelow = mousePosition.y > mascotCenterY;
 
-    // Get positions of each arm
-    const leftArmRect = leftArmRef.current.getBoundingClientRect();
-    const rightArmRect = rightArmRef.current.getBoundingClientRect();
-
-    // Calculate center positions of each arm
-    const leftArmCenterX = leftArmRect.left + leftArmRect.width / 2;
-    const leftArmCenterY = leftArmRect.top + leftArmRect.height / 2;
-
-    const rightArmCenterX = rightArmRect.left + rightArmRect.width / 2;
-    const rightArmCenterY = rightArmRect.top + rightArmRect.height / 2;
-
-    // Calculate angle from each arm to mouse
-    const leftDeltaX = mousePosition.x - leftArmCenterX;
-    const leftDeltaY = mousePosition.y - leftArmCenterY;
-    const leftAngle = Math.atan2(leftDeltaY, leftDeltaX) * (180 / Math.PI);
-
-    const rightDeltaX = mousePosition.x - rightArmCenterX;
-    const rightDeltaY = mousePosition.y - rightArmCenterY;
-    const rightAngle = Math.atan2(rightDeltaY, rightDeltaX) * (180 / Math.PI);
-
-    const horizontalMultiplier = shouldFlipHorizontally ? -1 : 1;
-    const verticalMultiplier = shouldFlipVertically ? -1 : 1;
-
-    //get mouse quadrant with respect to the kaomoji center
-    const mouseQuadrant = {
-      x: mousePosition.x < mascotCenterX ? "left" : "right",
-      y: mousePosition.y < mascotCenterY ? "top" : "bottom",
+    // Calculate angles for each arm
+    const getArmAngle = (armRef: React.RefObject<HTMLDivElement>) => {
+      const armRect = armRef.current!.getBoundingClientRect();
+      const armCenterX = armRect.left + armRect.width / 2;
+      const armCenterY = armRect.top + armRect.height / 2;
+      const deltaX = mousePosition.x - armCenterX;
+      const deltaY = mousePosition.y - armCenterY;
+      return Math.atan2(deltaY, deltaX) * (180 / Math.PI);
     };
 
-    // Apply flip transform to entire mascot
-    mascotRef.current.style.transform = `scaleX(${horizontalMultiplier})`;
+    const leftAngle = getArmAngle(leftArmRef);
+    const rightAngle = getArmAngle(rightArmRef);
 
-    // Apply individual transforms to arms
-    // if mouse is in top left, flip horizontally and vertically
-    if (mouseQuadrant.x === "left" && mouseQuadrant.y === "top") {
-      leftArmRef.current.style.transform = `rotate(${
-        leftAngle * horizontalMultiplier * verticalMultiplier
-      }deg) scaleX(${horizontalMultiplier}) scaleY(${verticalMultiplier})`;
-      rightArmRef.current.style.transform = `rotate(${
-        rightAngle * horizontalMultiplier * verticalMultiplier
-      }deg) scaleX(${horizontalMultiplier}) scaleY(${verticalMultiplier})`;
-    }
-    // if mouse is in bottom left, flip horizontally
-    else if (mouseQuadrant.x === "left" && mouseQuadrant.y === "bottom") {
-      leftArmRef.current.style.transform = `rotate(${
-        leftAngle * horizontalMultiplier
-      }deg) scaleX(${horizontalMultiplier}) scaleY(${verticalMultiplier})`;
-      rightArmRef.current.style.transform = `rotate(${
-        rightAngle * horizontalMultiplier
-      }deg) scaleX(${horizontalMultiplier}) scaleY(${verticalMultiplier})`;
-    }
-    //if mouse is in top right, flip vertically
-    else if (mouseQuadrant.x === "right" && mouseQuadrant.y === "top") {
-      console.log("test");
-      leftArmRef.current.style.transform = `rotate(${leftAngle}deg) scaleY(${verticalMultiplier})`;
-      rightArmRef.current.style.transform = `rotate(${rightAngle}deg) scaleY(${verticalMultiplier})`;
-    }
-    //otherwise only set the angle
-    else {
-      leftArmRef.current.style.transform = `rotate(${leftAngle}deg)`;
-      rightArmRef.current.style.transform = `rotate(${rightAngle}deg)`;
-    }
+    // Apply transforms
+    const horizontalScale = isMouseLeft ? -1 : 1;
+    const verticalScale = isMouseBelow ? -1 : 1;
+
+    mascotRef.current.style.transform = `scaleX(${horizontalScale})`;
+
+    const leftTransform = `rotate(${
+      leftAngle * horizontalScale
+    }deg) scaleX(${horizontalScale}) scaleY(${verticalScale})`;
+    const rightTransform = `rotate(${
+      rightAngle * horizontalScale
+    }deg) scaleX(${horizontalScale}) scaleY(${verticalScale})`;
+
+    leftArmRef.current.style.transform = leftTransform;
+    rightArmRef.current.style.transform = rightTransform;
   }, [mousePosition]);
 
   return (
