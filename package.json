@@ -11,7 +11,7 @@
     "watch:css": "onchange \"src/main.css\" \"src/**/*.ts\" -- \"npm run build:css\"",
     "watch:sync": "onchange \"dist/egao.css\" -- \"npm run sync-docs-data && npm run sync-docs-css\"",
     "sync-docs-data": "node -e 'require(\"./build/parseParts.js\").writeParsedParts(\"website/static/data/parts.json\")'",
-    "sync-docs-css": "cp dist/egao.css website/static/css/egao.css",
+    "sync-docs-css": "cp dist/egao.css website/static/css/egao.css && cp dist/egao.css website/src/css/egao.module.css",
     "dev": "npm run build && concurrently --kill-others \"npm run docs:dev\" --kill-others \"npm run watch:ts\" --kill-others \"npm run watch:css\" --kill-others \"npm run watch:sync\"",
     "docs:start": "cd website && npm start",
     "docs:build": "cd website && npm run build",

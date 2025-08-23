@@ -48,7 +48,7 @@ const config: Config = {
         },
         blog: false, // Disable blog since we don't need it
         theme: {
-          customCss: "./src/css/custom.css",
+          customCss: ["./src/css/custom.css", "./static/css/egao.css"],
         },
       } satisfies Preset.Options,
     ],

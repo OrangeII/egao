@@ -875,6 +875,16 @@
   },
   {
     "source": {
+      "star": "✦"
+    },
+    "path": [
+      "star"
+    ],
+    "cssClassName": "star",
+    "exampleDiv": "<div class=\"star\"></div>"
+  },
+  {
+    "source": {
       "sweat": ";"
     },
     "path": [

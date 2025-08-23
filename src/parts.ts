@@ -132,6 +132,7 @@ const parts: Part = {
   },
   veins: "╬",
   sweat: ";",
+  star: "✦",
 };
 
 export { parts, Part, PartClass };

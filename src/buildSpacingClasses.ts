@@ -8,6 +8,7 @@ const buildPartClasses: PluginCreator<{}> = (_opts = {}) => {
     postcssPlugin: "postcss-egao-sapacing",
     Once(root: Root, helpers: Helpers) {
       const spacings: number[] = [0.25, 0.5, 1, 1.25, 1.5, 2, 3];
+      spacings.push(...spacings.map((s) => -s));
       const baseSpaceVariable: string = "--base-space";
       const baseSpace: number = 0.6;
 

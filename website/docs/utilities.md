@@ -4,6 +4,8 @@ title: Utilities
 sidebar_position: 2
 ---
 
+import { SpacingTable } from '@site/src/components/SpacingTable';
+
 # Utilities
 
 ## Spacing
@@ -12,11 +14,7 @@ These utility classes add horizontal space between elements. The amount of space
 
 ### Classes
 
-- `.space`: Applies a standard margin (`--base-space`).
-- `.space-double`: Applies a margin twice the standard size (`--base-space * 2`).
-- `.space-triple`: Applies a margin three times the standard size (`--base-space * 3`).
-- `.space-half`: Applies a margin half the standard size (`--base-space * 0.5`).
-- `.space-quarter`: Applies a margin a quarter of the standard size (`--base-space * 0.25`).
+<SpacingTable />
 
 ### Example
 
