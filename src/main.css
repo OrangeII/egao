@@ -5,8 +5,12 @@
   --base-animation-duration: 0.5s;
 }
 
-.flip {
+.flip-h {
   transform: rotateY(180deg);
+}
+
+.flip-v {
+  transform: rotateX(180deg);
 }
 
 /* base components */
@@ -24,7 +28,7 @@
   left: 0;
 }
 
-.layer>* {
+.layer > * {
   width: max-content;
 }
 

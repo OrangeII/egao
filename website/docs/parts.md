@@ -1,7 +1,7 @@
 ---
 id: parts
 title: Kaomoji Parts
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 import {GroupDisplay, AccessoriesDisplay} from "@site/src/components/GroupDisplay";
