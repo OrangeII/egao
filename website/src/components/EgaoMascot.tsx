@@ -47,12 +47,16 @@ export default function EgaoMascot() {
 
     mascotRef.current.style.transform = `scaleX(${horizontalScale})`;
 
-    const leftTransform = `rotate(${
-      leftAngle * horizontalScale
-    }deg) scaleX(${horizontalScale}) scaleY(${verticalScale})`;
-    const rightTransform = `rotate(${
-      rightAngle * horizontalScale
-    }deg) scaleX(${horizontalScale}) scaleY(${verticalScale})`;
+    const leftTransform = `
+      rotate(${leftAngle * horizontalScale}deg) 
+      scaleX(${horizontalScale}) 
+      scaleY(${verticalScale * horizontalScale * -1})
+    `;
+    const rightTransform = `
+      rotate(${rightAngle * horizontalScale}deg) 
+      scaleX(${horizontalScale}) 
+      scaleY(${verticalScale * horizontalScale * -1})
+    `;
 
     leftArmRef.current.style.transform = leftTransform;
     rightArmRef.current.style.transform = rightTransform;
