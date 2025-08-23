@@ -116,7 +116,7 @@ You can use the `layer` class to overlap elements.
 >
   <div>
     ```html
-    <div class="kaomoji" style="width: 6em;">
+    <div class="kaomoji">
       <div id="face" class="kaomoji layer bounce">
         <div class="space-1"></div>
         <div class="face-happy"></div>

@@ -18,59 +18,145 @@ These utility classes add horizontal space between elements. The amount of space
 
 ### Example
 
-```html
-<div class="kaomoji">
-  <div class="arms-hugging"></div>
-  <div class="space-quarter"></div>
-  <div class="body-round-left"></div>
-  <div class="face-happy"></div>
-  <div class="body-round-right"></div>
-  <div class="space-quarter"></div>
-  <div class="arms-hugging"></div>
-</div>
-```
-
 In layered compositions, they can precisely position elements.
 
-```html
-<div class="kaomoji" style="width: 6em;">
-  <div id="face" class="kaomoji layer">
-    <!-- Use space to center the face -->
-    <div class="space"></div>
-    <div class="face-happy"></div>
+<div
+  style={{
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr",
+    gap: "1rem",
+    marginTop: "1rem",
+  }}
+>
+  <div>
+    ```html title="without spaces"
+    <div class="kaomoji">
+      <div id="face" class="kaomoji layer bounce">
+        <div class="face-happy"></div>
+      </div>
+      <div id="body" class="kaomoji layer bounce delay-50">
+        <div class="body-round-left"></div>
+        <div class="body-round-right"></div>
+      </div>
+      <div id="hands" class="kaomoji layer bounce delay-100">
+        <div class="arms-hugging"></div>
+        <div class="arms-hugging"></div>
+      </div>
+    </div>
+    ```
   </div>
-  <div id="body" class="kaomoji layer">
-    <div class="body-round-left"></div>
-    <!-- Use multiple spaces to separate body parts -->
-    <div class="space-triple"></div>
-    <div class="space-half"></div>
-    <div class="body-round-right"></div>
+
+  <div
+    style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+  >
+    <div class="kaomoji" style={{ width: "6em" }}>
+      <div id="face" class="kaomoji layer ">
+        <div class="face-happy"></div>
+      </div>
+      <div id="body" class="kaomoji layer">
+        <div class="body-round-left"></div>
+        <div class="body-round-right"></div>
+      </div>
+      <div id="hands" class="kaomoji layer">
+        <div class="arms-hugging"></div>
+        <div class="arms-hugging"></div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    ```html title="with spaces"
+    <div class="kaomoji">
+      <div id="face" class="kaomoji layer bounce">
+      <div class="space-1"></div>
+        <div class="face-happy"></div>
+      </div>
+      <div id="body" class="kaomoji layer bounce delay-50">
+        <div class="body-round-left"></div>
+        <div class="space-3"></div>
+        <div class="space-0-5"></div>
+        <div class="body-round-right"></div>
+      </div>
+      <div id="hands" class="kaomoji layer bounce delay-100">
+        <div class="space-0-25"></div>
+        <div class="arms-hugging"></div>
+        <div class="space-2"></div>
+        <div class="space-1"></div>
+        <div class="arms-hugging"></div>
+      </div>
+    </div>
+    ```
+  </div>
+  
+  <div
+    style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+  >
+    <div class="kaomoji" style={{ width: "6em" }}>
+      <div id="face" class="kaomoji layer">
+        <div class="space-1"></div>
+        <div class="face-happy"></div>
+      </div>
+      <div id="body" class="kaomoji layer ">
+        <div class="body-round-left"></div>
+        <div class="space-3"></div>
+        <div class="space-0-5"></div>
+        <div class="body-round-right"></div>
+      </div>
+      <div id="hands" class="kaomoji layer">
+        <div class="space-0-25"></div>
+        <div class="arms-hugging"></div>
+        <div class="space-2"></div>
+        <div class="space-1"></div>
+        <div class="arms-hugging"></div>
+      </div>
+    </div>
   </div>
 </div>
-```
 
 ## Flipping
 
-These utility classes allow you to flip elements horizontally or vertically. This is useful for creating symmetrical kaomoji by reusing elements.
+These utility classes allow you to flip elements horizontally or vertically.
 
 ### Classes
 
-- `.flip-h`: Flips an element horizontally.
-- `.flip-v`: Flips an element vertically.
+| Class Name | Description                    |
+| ---------- | ------------------------------ |
+| `flip-h`   | Flips an element horizontally. |
+| `flip-v`   | Flips an element vertically.   |
 
 ### Example
 
-Instead of creating separate classes for left and right parts (e.g., `arm-left`, `arm-right`), you can reuse a single class and flip it.
+This is useful when a kaomoji part is only available for one side.
 
-```html
-<div class="kaomoji">
-  <!-- Left arm -->
-  <div class="arms-up"></div>
-  <div class="space-quarter"></div>
-  <!-- Face -->
-  <div class="face-happy"></div>
-  <div class="space-quarter"></div>
-  <!-- Right arm (flipped version of the left) -->
-  <div class="arms-up flip-h"></div>
+<div
+  style={{
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr",
+    gap: "1rem",
+    marginTop: "1rem",
+  }}
+>
+  <div>
+    ```html
+    <div class="kaomoji">
+      <div class="arms-hugging flip-h"></div>
+      <div class="space-quarter"></div>
+      <div class="face-happy"></div>
+      <div class="space-quarter"></div>
+      <div class="arms-hugging"></div>
+    </div>
+    ```
+  </div>
+
+  <div
+    style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+  >
+    <div class="kaomoji">
+      <div class="arms-hugging flip-h"></div>
+      <div class="space-quarter"></div>
+      <div class="face-happy"></div>
+      <div class="space-quarter"></div>
+      <div class="arms-hugging"></div>
+    </div>
+  </div>
 </div>
-```
