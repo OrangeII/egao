@@ -1,5 +1,8 @@
 import React from "react";
 import parts from "@site/static/data/parts.json";
+import { Highlight } from "prism-react-renderer";
+import { useColorMode } from "@docusaurus/theme-common";
+import { useThemeConfig } from "@docusaurus/theme-common";
 
 const groups = ["body", "face", "eyes", "arms", "mouth"];
 
@@ -51,6 +54,10 @@ export function GroupDisplay({ group }: { group: string }) {
 }
 
 function PartDisplay({ part, index }: { part: Part; index: number }) {
+  const { colorMode } = useColorMode();
+  const { prism } = useThemeConfig();
+  const theme = colorMode === "dark" ? prism.darkTheme : prism.theme;
+
   return (
     <div key={index} style={{ marginBottom: "1.5rem" }}>
       <p>
@@ -60,11 +67,19 @@ function PartDisplay({ part, index }: { part: Part; index: number }) {
           style={{ marginLeft: "1rem" }}
         ></span>
       </p>
-      <div>
-        <pre>
-          <code className="language-html">{part.exampleDiv}</code>
-        </pre>
-      </div>
+      <Highlight language="html" code={part.exampleDiv} theme={theme}>
+        {({ className, style, tokens, getLineProps, getTokenProps }) => (
+          <pre className={className} style={style}>
+            {tokens.map((line, i) => (
+              <div key={i} {...getLineProps({ line, key: i })}>
+                {line.map((token, key) => (
+                  <span key={key} {...getTokenProps({ token, key })} />
+                ))}
+              </div>
+            ))}
+          </pre>
+        )}
+      </Highlight>
     </div>
   );
 }
