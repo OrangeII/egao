@@ -1,6 +1,6 @@
 # egao (つ￣ ▽ ￣)つ
 
-A CSS library to create kaomoji, written in TypeScript
+A CSS library to create kaomoji.
 
 ## Quick Start
 
@@ -59,7 +59,7 @@ Use the `kaomoji` class to arrange elements horizontally:
 ```html
 <div class="kaomoji">
   <div class="face-happy"></div>
-  <div class="space"></div>
+  <div class="space-1"></div>
   <div class="face-happy"></div>
 </div>
 ```
@@ -79,14 +79,6 @@ Use the `layer` class to overlap elements:
 </div>
 ```
 
-### Spacing Utilities
-
-- `.space` - Base spacing (0.6em)
-- `.space-double` - Double spacing (1.2em)
-- `.space-triple` - Triple spacing (1.8em)
-- `.space-half` - Half spacing (0.3em)
-- `.space-quarter` - Quarter spacing (0.15em)
-
 ## Configuration
 
 ### Adding New Parts
@@ -103,7 +95,6 @@ const parts: Parts = {
   },
   arms: {
     hugging: "つ",
-    raised: "ﾉ",
   },
   face: {
     happy: "￣ ▽ ￣",
