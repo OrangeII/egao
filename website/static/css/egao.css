@@ -34,6 +34,26 @@
 
 /* Dynamic classes will be generated here by postcss-kaomoji-plugin */
 
+.arms-bent::after {
+  content: "√";
+}
+
+.arms-flexing-left::after {
+  content: "ᕙ";
+}
+
+.arms-flexing-right::after {
+  content: "ᕗ";
+}
+
+.arms-grabbing::after {
+  content: "ԅ";
+}
+
+.arms-guard::after {
+  content: "ง";
+}
+
 .arms-hugging::after {
   content: "つ";
 }
@@ -46,12 +66,20 @@
   content: "／";
 }
 
+.arms-raised-curved::after {
+  content: "ノ";
+}
+
 .arms-raised-fist-left::after {
   content: "٩";
 }
 
 .arms-raised-fist-right::after {
   content: "۶";
+}
+
+.arms-raised-high::after {
+  content: "乁";
 }
 
 .arms-raised-left::after {
@@ -62,8 +90,28 @@
   content: "╯";
 }
 
+.arms-raised-vertical::after {
+  content: "｢";
+}
+
+.arms-rolled::after {
+  content: "੭";
+}
+
+.arms-salute::after {
+  content: "ゞ";
+}
+
 .arms-thumbs-up::after {
   content: "d";
+}
+
+.arms-waving::after {
+  content: "づ";
+}
+
+.arms-yurayura::after {
+  content: "〜";
 }
 
 .blush::after {
@@ -95,6 +143,18 @@
   content: "]";
 }
 
+.cheek-roll::after {
+  content: "๑";
+}
+
+.cloud::after {
+  content: "☁";
+}
+
+.dandelion::after {
+  content: "✺";
+}
+
 .eyes-distress-left::after {
   content: "ᗒ";
 }
@@ -104,11 +164,15 @@
 }
 
 .eyes-excited-left::after {
-  content: ">";
+  content: "<";
 }
 
 .eyes-excited-right::after {
-  content: "<";
+  content: ">";
+}
+
+.eyes-fixed::after {
+  content: "ᄑ";
 }
 
 .eyes-fury-left::after {
@@ -135,6 +199,10 @@
   content: "•";
 }
 
+.eyes-o-big::after {
+  content: "〇";
+}
+
 .eyes-o-disapproving::after {
   content: "ಠ";
 }
@@ -155,7 +223,27 @@
   content: "￢";
 }
 
-.eyes-sunglasses::after {
+.eyes-sunglasses-diamond::after {
+  content: "◆";
+}
+
+.eyes-sunglasses-parallelogram::after {
+  content: "▰";
+}
+
+.eyes-sunglasses-round::after {
+  content: "●";
+}
+
+.eyes-sunglasses-sparkle::after {
+  content: "✦";
+}
+
+.eyes-sunglasses-square::after {
+  content: "■";
+}
+
+.eyes-sunglasses-triangle::after {
   content: "▼";
 }
 
@@ -167,6 +255,10 @@
   content: "╥";
 }
 
+.eyes-tear-flipped::after {
+  content: "┻";
+}
+
 .eyes-tear-heart::after {
   content: "ಥ";
 }
@@ -175,8 +267,16 @@
   content: "ಡ";
 }
 
+.eyes-tear-low::after {
+  content: "┬";
+}
+
 .eyes-tear-single::after {
   content: "T";
+}
+
+.eyes-u-big::after {
+  content: "Ｕ";
 }
 
 .eyes-very-excited-left::after {
@@ -243,6 +343,10 @@
   content: "ᴥ";
 }
 
+.mouth-beak::after {
+  content: "Θ";
+}
+
 .mouth-disapproval::after {
   content: "︿";
 }
@@ -265,6 +369,10 @@
 
 .mouth-kata::after {
   content: "ヮ";
+}
+
+.mouth-kiss::after {
+  content: "³";
 }
 
 .mouth-lenny::after {
@@ -339,8 +447,12 @@
   content: "ω";
 }
 
-.star::after {
-  content: "✦";
+.rod::after {
+  content: "━";
+}
+
+.sparkle::after {
+  content: "✧";
 }
 
 .sweat::after {
@@ -349,6 +461,10 @@
 
 .veins::after {
   content: "╬";
+}
+
+.wings::after {
+  content: "ଘ";
 }
 
 .space-0-25 {

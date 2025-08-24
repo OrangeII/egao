@@ -1,6 +1,63 @@
 [
   {
     "source": {
+      "bent": "√"
+    },
+    "path": [
+      "arms",
+      "bent"
+    ],
+    "cssClassName": "arms-bent",
+    "exampleDiv": "<div class=\"arms-bent\"></div>"
+  },
+  {
+    "source": {
+      "left": "ᕙ"
+    },
+    "path": [
+      "arms",
+      "flexing",
+      "left"
+    ],
+    "cssClassName": "arms-flexing-left",
+    "exampleDiv": "<div class=\"arms-flexing-left\"></div>"
+  },
+  {
+    "source": {
+      "right": "ᕗ"
+    },
+    "path": [
+      "arms",
+      "flexing",
+      "right"
+    ],
+    "cssClassName": "arms-flexing-right",
+    "exampleDiv": "<div class=\"arms-flexing-right\"></div>"
+  },
+  {
+    "source": {
+      "grabbing": "ԅ"
+    },
+    "path": [
+      "arms",
+      "grabbing"
+    ],
+    "cssClassName": "arms-grabbing",
+    "exampleDiv": "<div class=\"arms-grabbing\"></div>"
+  },
+  {
+    "source": {
+      "guard": "ง"
+    },
+    "path": [
+      "arms",
+      "guard"
+    ],
+    "cssClassName": "arms-guard",
+    "exampleDiv": "<div class=\"arms-guard\"></div>"
+  },
+  {
+    "source": {
       "hugging": "つ"
     },
     "path": [
@@ -36,6 +93,18 @@
   },
   {
     "source": {
+      "curved": "ノ"
+    },
+    "path": [
+      "arms",
+      "raised",
+      "curved"
+    ],
+    "cssClassName": "arms-raised-curved",
+    "exampleDiv": "<div class=\"arms-raised-curved\"></div>"
+  },
+  {
+    "source": {
       "left": "٩"
     },
     "path": [
@@ -57,6 +126,18 @@
     ],
     "cssClassName": "arms-raised-fist-right",
     "exampleDiv": "<div class=\"arms-raised-fist-right\"></div>"
+  },
+  {
+    "source": {
+      "high": "乁"
+    },
+    "path": [
+      "arms",
+      "raised",
+      "high"
+    ],
+    "cssClassName": "arms-raised-high",
+    "exampleDiv": "<div class=\"arms-raised-high\"></div>"
   },
   {
     "source": {
@@ -84,6 +165,40 @@
   },
   {
     "source": {
+      "vertical": "｢"
+    },
+    "path": [
+      "arms",
+      "raised",
+      "vertical"
+    ],
+    "cssClassName": "arms-raised-vertical",
+    "exampleDiv": "<div class=\"arms-raised-vertical\"></div>"
+  },
+  {
+    "source": {
+      "rolled": "੭"
+    },
+    "path": [
+      "arms",
+      "rolled"
+    ],
+    "cssClassName": "arms-rolled",
+    "exampleDiv": "<div class=\"arms-rolled\"></div>"
+  },
+  {
+    "source": {
+      "salute": "ゞ"
+    },
+    "path": [
+      "arms",
+      "salute"
+    ],
+    "cssClassName": "arms-salute",
+    "exampleDiv": "<div class=\"arms-salute\"></div>"
+  },
+  {
+    "source": {
       "thumbs-up": "d"
     },
     "path": [
@@ -92,6 +207,28 @@
     ],
     "cssClassName": "arms-thumbs-up",
     "exampleDiv": "<div class=\"arms-thumbs-up\"></div>"
+  },
+  {
+    "source": {
+      "waving": "づ"
+    },
+    "path": [
+      "arms",
+      "waving"
+    ],
+    "cssClassName": "arms-waving",
+    "exampleDiv": "<div class=\"arms-waving\"></div>"
+  },
+  {
+    "source": {
+      "yurayura": "〜"
+    },
+    "path": [
+      "arms",
+      "yurayura"
+    ],
+    "cssClassName": "arms-yurayura",
+    "exampleDiv": "<div class=\"arms-yurayura\"></div>"
   },
   {
     "source": {
@@ -180,6 +317,37 @@
   },
   {
     "source": {
+      "roll": "๑"
+    },
+    "path": [
+      "cheek",
+      "roll"
+    ],
+    "cssClassName": "cheek-roll",
+    "exampleDiv": "<div class=\"cheek-roll\"></div>"
+  },
+  {
+    "source": {
+      "cloud": "☁"
+    },
+    "path": [
+      "cloud"
+    ],
+    "cssClassName": "cloud",
+    "exampleDiv": "<div class=\"cloud\"></div>"
+  },
+  {
+    "source": {
+      "dandelion": "✺"
+    },
+    "path": [
+      "dandelion"
+    ],
+    "cssClassName": "dandelion",
+    "exampleDiv": "<div class=\"dandelion\"></div>"
+  },
+  {
+    "source": {
       "left": "ᗒ"
     },
     "path": [
@@ -204,7 +372,7 @@
   },
   {
     "source": {
-      "left": ">"
+      "left": "<"
     },
     "path": [
       "eyes",
@@ -216,7 +384,7 @@
   },
   {
     "source": {
-      "right": "<"
+      "right": ">"
     },
     "path": [
       "eyes",
@@ -225,6 +393,17 @@
     ],
     "cssClassName": "eyes-excited-right",
     "exampleDiv": "<div class=\"eyes-excited-right\"></div>"
+  },
+  {
+    "source": {
+      "fixed": "ᄑ"
+    },
+    "path": [
+      "eyes",
+      "fixed"
+    ],
+    "cssClassName": "eyes-fixed",
+    "exampleDiv": "<div class=\"eyes-fixed\"></div>"
   },
   {
     "source": {
@@ -299,6 +478,18 @@
   },
   {
     "source": {
+      "big": "〇"
+    },
+    "path": [
+      "eyes",
+      "o",
+      "big"
+    ],
+    "cssClassName": "eyes-o-big",
+    "exampleDiv": "<div class=\"eyes-o-big\"></div>"
+  },
+  {
+    "source": {
       "disapproving": "ಠ"
     },
     "path": [
@@ -358,14 +549,75 @@
   },
   {
     "source": {
-      "sunglasses": "▼"
+      "diamond": "◆"
     },
     "path": [
       "eyes",
-      "sunglasses"
+      "sunglasses",
+      "diamond"
     ],
-    "cssClassName": "eyes-sunglasses",
-    "exampleDiv": "<div class=\"eyes-sunglasses\"></div>"
+    "cssClassName": "eyes-sunglasses-diamond",
+    "exampleDiv": "<div class=\"eyes-sunglasses-diamond\"></div>"
+  },
+  {
+    "source": {
+      "parallelogram": "▰"
+    },
+    "path": [
+      "eyes",
+      "sunglasses",
+      "parallelogram"
+    ],
+    "cssClassName": "eyes-sunglasses-parallelogram",
+    "exampleDiv": "<div class=\"eyes-sunglasses-parallelogram\"></div>"
+  },
+  {
+    "source": {
+      "round": "●"
+    },
+    "path": [
+      "eyes",
+      "sunglasses",
+      "round"
+    ],
+    "cssClassName": "eyes-sunglasses-round",
+    "exampleDiv": "<div class=\"eyes-sunglasses-round\"></div>"
+  },
+  {
+    "source": {
+      "sparkle": "✦"
+    },
+    "path": [
+      "eyes",
+      "sunglasses",
+      "sparkle"
+    ],
+    "cssClassName": "eyes-sunglasses-sparkle",
+    "exampleDiv": "<div class=\"eyes-sunglasses-sparkle\"></div>"
+  },
+  {
+    "source": {
+      "square": "■"
+    },
+    "path": [
+      "eyes",
+      "sunglasses",
+      "square"
+    ],
+    "cssClassName": "eyes-sunglasses-square",
+    "exampleDiv": "<div class=\"eyes-sunglasses-square\"></div>"
+  },
+  {
+    "source": {
+      "triangle": "▼"
+    },
+    "path": [
+      "eyes",
+      "sunglasses",
+      "triangle"
+    ],
+    "cssClassName": "eyes-sunglasses-triangle",
+    "exampleDiv": "<div class=\"eyes-sunglasses-triangle\"></div>"
   },
   {
     "source": {
@@ -393,6 +645,18 @@
   },
   {
     "source": {
+      "flipped": "┻"
+    },
+    "path": [
+      "eyes",
+      "tear",
+      "flipped"
+    ],
+    "cssClassName": "eyes-tear-flipped",
+    "exampleDiv": "<div class=\"eyes-tear-flipped\"></div>"
+  },
+  {
+    "source": {
       "heart": "ಥ"
     },
     "path": [
@@ -417,6 +681,18 @@
   },
   {
     "source": {
+      "low": "┬"
+    },
+    "path": [
+      "eyes",
+      "tear",
+      "low"
+    ],
+    "cssClassName": "eyes-tear-low",
+    "exampleDiv": "<div class=\"eyes-tear-low\"></div>"
+  },
+  {
+    "source": {
       "single": "T"
     },
     "path": [
@@ -426,6 +702,18 @@
     ],
     "cssClassName": "eyes-tear-single",
     "exampleDiv": "<div class=\"eyes-tear-single\"></div>"
+  },
+  {
+    "source": {
+      "big": "Ｕ"
+    },
+    "path": [
+      "eyes",
+      "u",
+      "big"
+    ],
+    "cssClassName": "eyes-u-big",
+    "exampleDiv": "<div class=\"eyes-u-big\"></div>"
   },
   {
     "source": {
@@ -607,6 +895,17 @@
   },
   {
     "source": {
+      "beak": "Θ"
+    },
+    "path": [
+      "mouth",
+      "beak"
+    ],
+    "cssClassName": "mouth-beak",
+    "exampleDiv": "<div class=\"mouth-beak\"></div>"
+  },
+  {
+    "source": {
       "disapproval": "︿"
     },
     "path": [
@@ -670,6 +969,17 @@
     ],
     "cssClassName": "mouth-kata",
     "exampleDiv": "<div class=\"mouth-kata\"></div>"
+  },
+  {
+    "source": {
+      "kiss": "³"
+    },
+    "path": [
+      "mouth",
+      "kiss"
+    ],
+    "cssClassName": "mouth-kiss",
+    "exampleDiv": "<div class=\"mouth-kiss\"></div>"
   },
   {
     "source": {
@@ -875,13 +1185,23 @@
   },
   {
     "source": {
-      "star": "✦"
+      "rod": "━"
     },
     "path": [
-      "star"
+      "rod"
     ],
-    "cssClassName": "star",
-    "exampleDiv": "<div class=\"star\"></div>"
+    "cssClassName": "rod",
+    "exampleDiv": "<div class=\"rod\"></div>"
+  },
+  {
+    "source": {
+      "sparkle": "✧"
+    },
+    "path": [
+      "sparkle"
+    ],
+    "cssClassName": "sparkle",
+    "exampleDiv": "<div class=\"sparkle\"></div>"
   },
   {
     "source": {
@@ -902,5 +1222,15 @@
     ],
     "cssClassName": "veins",
     "exampleDiv": "<div class=\"veins\"></div>"
+  },
+  {
+    "source": {
+      "wings": "ଘ"
+    },
+    "path": [
+      "wings"
+    ],
+    "cssClassName": "wings",
+    "exampleDiv": "<div class=\"wings\"></div>"
   }
 ]

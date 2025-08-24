@@ -26,6 +26,7 @@ const parts: Part = {
   },
   arms: {
     hugging: "つ",
+    waving: "づ",
     "raised-fist": {
       left: "٩",
       right: "۶",
@@ -37,8 +38,21 @@ const parts: Part = {
     raised: {
       left: "╰",
       right: "╯",
+      high: "乁",
+      vertical: "｢",
+      curved: "ノ",
     },
     "thumbs-up": "d",
+    grabbing: "ԅ",
+    flexing: {
+      left: "ᕙ",
+      right: "ᕗ",
+    },
+    guard: "ง",
+    yurayura: "〜",
+    bent: "√",
+    rolled: "੭",
+    salute: "ゞ",
   },
   face: {
     happy: "￣ ▽ ￣",
@@ -85,19 +99,30 @@ const parts: Part = {
     "disapproval-slanted": "ヘ",
     animal: "ᴥ",
     lenny: " ͜ʖ",
+    kiss: "³",
+    beak: "Θ",
   },
   eyes: {
     fury: {
       left: "◣",
       right: "◢",
     },
-    sunglasses: "▼",
+    sunglasses: {
+      triangle: "▼",
+      square: "■",
+      round: "●",
+      diamond: "◆",
+      parallelogram: "▰",
+      sparkle: "✦",
+    },
     tear: {
       single: "T",
       double: "╥",
       despair: "꒦ີ",
       heart: "ಥ",
       "heart-side": "ಡ",
+      flipped: "┻",
+      low: "┬",
     },
     line: {
       bliss: "￣",
@@ -105,8 +130,8 @@ const parts: Part = {
     },
     "side-look": "￢",
     excited: {
-      left: ">",
-      right: "<",
+      left: "<",
+      right: ">",
     },
     distress: {
       left: "ᗒ",
@@ -122,8 +147,13 @@ const parts: Part = {
       happy: "◕",
       sad: "⊙",
       bear: "•",
+      big: "〇",
+    },
+    u: {
+      big: "Ｕ",
     },
     lenny: " ͡°",
+    fixed: "ᄑ",
   },
   //accessories
   blush: {
@@ -132,7 +162,14 @@ const parts: Part = {
   },
   veins: "╬",
   sweat: ";",
-  star: "✦",
+  sparkle: "✧",
+  rod: "━",
+  dandelion: "✺",
+  wings: "ଘ",
+  cloud: "☁",
+  cheek: {
+    roll: "๑",
+  },
 };
 
 export { parts, Part, PartClass };
