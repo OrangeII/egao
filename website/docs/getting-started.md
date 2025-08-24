@@ -4,11 +4,7 @@ title: Getting Started
 sidebar_position: 1
 ---
 
-import EgaoMascot from "@site/src/components/EgaoMascot";
-
 # Getting Started
-
-<EgaoMascot />
 
 Welcome to **Egao**, a CSS library to create kaomoji.
 
