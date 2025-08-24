@@ -46,6 +46,10 @@
   animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
+.float-fade {
+  animation: float-fade 0.3s infinite;
+}
+
 .delay-50 {
   animation-delay: 50ms;
 }
@@ -133,5 +137,17 @@
 
   50% {
     transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes float-fade {
+  0% {
+    transform: translateY(-30%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-80%);
+    opacity: 0;
   }
 }

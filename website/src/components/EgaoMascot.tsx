@@ -4,7 +4,10 @@ export default function EgaoMascot() {
   const mascotRef = useRef<HTMLDivElement>(null);
   const leftArmRef = useRef<HTMLDivElement>(null);
   const rightArmRef = useRef<HTMLDivElement>(null);
+  const faceRef = useRef<HTMLDivElement>(null);
+  const emoteRef = useRef<HTMLDivElement>(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isHoveringFace, setIsHoveringFace] = useState(false);
 
   useEffect(() => {
     const handleMouseMove = (event: MouseEvent) => {
@@ -20,9 +23,10 @@ export default function EgaoMascot() {
       return;
 
     // Get mascot center position
+    // Y center is much above the actual center for better arm positioning
     const mascotRect = mascotRef.current.getBoundingClientRect();
     const mascotCenterX = mascotRect.left + mascotRect.width / 2;
-    const mascotCenterY = mascotRect.top + mascotRect.height / 2;
+    const mascotCenterY = mascotRect.top - mascotRect.height * 2;
 
     // Determine flip states
     const isMouseLeft = mousePosition.x < mascotCenterX;
@@ -71,13 +75,40 @@ export default function EgaoMascot() {
           ref={leftArmRef}
           style={{ transformOrigin: "center left" }}
         ></div>
-        <div className="face-happy"></div>
+        <div
+          className="kaomoji"
+          ref={faceRef}
+          onMouseEnter={() => setIsHoveringFace(true)}
+          onMouseLeave={() => setIsHoveringFace(false)}
+        >
+          <div className="eyes-line-bliss"></div>
+          <div className="space-0-25"></div>
+          <div
+            className={isHoveringFace ? "mouth-smug" : "mouth-triangle-down"}
+          ></div>
+          <div className="space-0-25"></div>
+          <div className="eyes-line-bliss"></div>
+        </div>
         <div className="body-round-right"></div>
         <div
           className="arms-hugging"
           ref={rightArmRef}
           style={{ transformOrigin: "center left" }}
         ></div>
+
+        {isHoveringFace && (
+          <div className="kaomoji layer" style={{ zIndex: -1 }}>
+            <div className="space-3"></div>
+            <div className="space-0-5"></div>
+            <div
+              ref={emoteRef}
+              className="float-fade"
+              style={{ fontSize: "0.7em" }}
+            >
+              ❤
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
