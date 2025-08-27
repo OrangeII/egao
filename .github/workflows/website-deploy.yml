@@ -27,6 +27,7 @@ jobs:
           node-version: 18
           cache: npm
 
+      # for some reason i need to clear the parent directory or get a postcss error
       - name: Set up directory structure
         run: |
           cd ..
@@ -44,6 +45,6 @@ jobs:
         env:
           USE_SSH: true
         run: |
-          git config --global user.email "actions@github.com"
-          git config --global user.name "gh-actions"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
           npm run deploy
