@@ -30,6 +30,11 @@
   ],
   "author": "OrangeII (https://github.com/OrangeII)",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OrangeII/egao.git"
+  },
+  "homepage": "https://github.com/OrangeII/egao#readme",
   "devDependencies": {
     "@types/node": "^24.3.0",
     "autoprefixer": "^10.0.0",

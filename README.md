@@ -128,7 +128,7 @@ This automatically generates CSS classes like:
 The project uses a custom PostCSS-based build system:
 
 - **TypeScript compilation**: Source files in `src/` are compiled to `build/`
-- **CSS generation**: PostCSS plugins (`buildPartClasses` and `buildSpacingClasses`) process `src/main.css`
+- **CSS generation**: PostCSS plugins process `src/main.css`
 - **Output**: Final CSS is generated in `dist/egao.css`
 - **Documentation sync**: Generated CSS and part data are automatically synced to the documentation website
 
