@@ -37,4 +37,6 @@ jobs:
       - name: Deploy to GitHub Pages
         env:
           USE_SSH: true
-        run: npm run deploy
+        run: |
+          ls
+          npm run deploy
