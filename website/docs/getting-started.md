@@ -8,13 +8,37 @@ sidebar_position: 1
 
 Welcome to **Egao**, a CSS library to create kaomoji.
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 ## Installation
 
-Include the CSS file in your HTML:
+<Tabs>
+<TabItem value="npm" label="npm">
+
+You can install egao via npm.
+
+```bash
+npm install egao
+```
+
+Then you can import it css files.
+
+```css
+@import url("node_modules/egao/dist/egao.css");
+```
+
+</TabItem>
+<TabItem value="cdn" label="CDN">
+
+You can use the unpkg CDN to include egao directly in your HTML.
 
 ```html
-<link rel="stylesheet" href="path/to/egao.css" />
+<link rel="stylesheet" href="https://unpkg.com/egao" />
 ```
+
+</TabItem>
+</Tabs>
 
 ## Basic Usage
 

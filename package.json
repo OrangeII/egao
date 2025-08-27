@@ -2,8 +2,12 @@
   "name": "egao",
   "version": "0.1.0",
   "description": "A CSS library to create kaomoji.",
-  "main": "dist/main.css",
+  "main": "dist/egao.css",
+  "files": [
+    "dist/egao.css"
+  ],
   "scripts": {
+    "prepublishOnly": "npm run build",
     "build": "npm run build:ts && npm run build:css",
     "build:ts": "tsc",
     "build:css": "postcss src/main.css -o dist/egao.css",
@@ -24,7 +28,7 @@
     "kaomoji",
     "postcss"
   ],
-  "author": "",
+  "author": "OrangeII (https://github.com/OrangeII)",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^24.3.0",

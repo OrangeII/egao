@@ -2,43 +2,25 @@
 
 A CSS library to create kaomoji.
 
-## Quick Start
+## Quick start
 
-### Installation
+You can install egao via npm.
 
 ```bash
-# Clone the repository
-git clone <repository-url>
-cd egao
-
-# Install dependencies
-npm install
-
-# Install website dependencies (for documentation)
-npm run docs:install
+npm install egao
 ```
 
-### Usage
+Then you can import it css files.
 
-Include the built CSS file in your HTML:
+```css
+@import url("node_modules/egao/dist/egao.css");
+```
+
+Or import it via cdn
 
 ```html
-<link rel="stylesheet" href="dist/egao.css" />
+<link rel="stylesheet" href="https://unpkg.com/egao" />
 ```
-
-### Development
-
-```bash
-# Start development server with live reload and documentation
-npm run dev
-```
-
-The dev server will start the documentation website at `http://localhost:3000` and automatically:
-
-- Watch for changes in TypeScript source files and rebuild
-- Watch for changes in CSS and parts definitions
-- Sync generated CSS and data with the documentation site
-- Refresh the browser on changes
 
 ## Usage
 
@@ -87,7 +69,31 @@ Use the `layer` class to overlap elements:
 </div>
 ```
 
-## Configuration
+## Developement
+
+```bash
+# Clone the repository
+git clone <repository-url>
+cd egao
+
+# Install dependencies
+npm install
+
+# Install website dependencies (for documentation)
+npm run docs:install
+```
+
+```bash
+# Start development server with live reload and documentation
+npm run dev
+```
+
+The dev server will start the documentation website at `http://localhost:3000` and automatically:
+
+- Watch for changes in TypeScript source files and rebuild
+- Watch for changes in CSS and parts definitions
+- Sync generated CSS and data with the documentation site
+- Refresh the browser on changes
 
 ### Adding New Parts
 
