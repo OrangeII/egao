@@ -8,6 +8,6 @@ export default {
     buildPartClasses,
     buildSpacingClasses,
     autoprefixer,
-    //cssnano({ preset: "default" }),
+    cssnano({ preset: "default" }),
   ],
 };
