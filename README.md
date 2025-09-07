@@ -38,8 +38,6 @@ Or import it via cdn
 
 This creates: `(つ￣ ▽ ￣)つ`
 
-CSS classes are automatically generated from the parts definition in `src/parts.ts`. The library uses a TypeScript-based build system that processes the parts configuration and generates corresponding CSS classes using PostCSS plugins.
-
 ### Layout Classes
 
 #### Horizontal Stacking
