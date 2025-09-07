@@ -1,0 +1,48 @@
+name: Increase patch version and deploy npm package
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "package.json"
+      - "packages/**"
+      - "src/**"
+    workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    name: Build and publish npm package
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build package
+        run: npm run build
+
+      - name: Bump patch version
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          npm version patch
+          git add package.json
+          NEW_VERSION="$(npm info . version)"
+          git commit -m "chore(release): bump version to ${NEW_VERSION} [skip ci]"
+          git push
+
+      - name: Publish package
+        run: npm publish
