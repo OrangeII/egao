@@ -188,6 +188,30 @@
   },
   {
     "source": {
+      "left": "┌"
+    },
+    "path": [
+      "arms",
+      "running",
+      "left"
+    ],
+    "cssClassName": "arms-running-left",
+    "exampleDiv": "<div class=\"arms-running-left\"></div>"
+  },
+  {
+    "source": {
+      "right": "┘"
+    },
+    "path": [
+      "arms",
+      "running",
+      "right"
+    ],
+    "cssClassName": "arms-running-right",
+    "exampleDiv": "<div class=\"arms-running-right\"></div>"
+  },
+  {
+    "source": {
       "salute": "ゞ"
     },
     "path": [
@@ -317,6 +341,16 @@
   },
   {
     "source": {
+      "bubbles": "･ﾟ"
+    },
+    "path": [
+      "bubbles"
+    ],
+    "cssClassName": "bubbles",
+    "exampleDiv": "<div class=\"bubbles\"></div>"
+  },
+  {
+    "source": {
       "roll": "๑"
     },
     "path": [
@@ -325,6 +359,28 @@
     ],
     "cssClassName": "cheek-roll",
     "exampleDiv": "<div class=\"cheek-roll\"></div>"
+  },
+  {
+    "source": {
+      "center": "◦"
+    },
+    "path": [
+      "circle",
+      "center"
+    ],
+    "cssClassName": "circle-center",
+    "exampleDiv": "<div class=\"circle-center\"></div>"
+  },
+  {
+    "source": {
+      "low": "｡"
+    },
+    "path": [
+      "circle",
+      "low"
+    ],
+    "cssClassName": "circle-low",
+    "exampleDiv": "<div class=\"circle-low\"></div>"
   },
   {
     "source": {
@@ -345,6 +401,16 @@
     ],
     "cssClassName": "dandelion",
     "exampleDiv": "<div class=\"dandelion\"></div>"
+  },
+  {
+    "source": {
+      "dot": "・"
+    },
+    "path": [
+      "dot"
+    ],
+    "cssClassName": "dot",
+    "exampleDiv": "<div class=\"dot\"></div>"
   },
   {
     "source": {
@@ -404,6 +470,30 @@
     ],
     "cssClassName": "eyes-fixed",
     "exampleDiv": "<div class=\"eyes-fixed\"></div>"
+  },
+  {
+    "source": {
+      "left": "`"
+    },
+    "path": [
+      "eyes",
+      "focused",
+      "left"
+    ],
+    "cssClassName": "eyes-focused-left",
+    "exampleDiv": "<div class=\"eyes-focused-left\"></div>"
+  },
+  {
+    "source": {
+      "right": "´"
+    },
+    "path": [
+      "eyes",
+      "focused",
+      "right"
+    ],
+    "cssClassName": "eyes-focused-right",
+    "exampleDiv": "<div class=\"eyes-focused-right\"></div>"
   },
   {
     "source": {
@@ -785,6 +875,17 @@
   },
   {
     "source": {
+      "focused": "`ー´"
+    },
+    "path": [
+      "face",
+      "focused"
+    ],
+    "cssClassName": "face-focused",
+    "exampleDiv": "<div class=\"face-focused\"></div>"
+  },
+  {
+    "source": {
       "happy": "￣ ▽ ￣"
     },
     "path": [
@@ -804,6 +905,17 @@
     ],
     "cssClassName": "face-lenny",
     "exampleDiv": "<div class=\"face-lenny\"></div>"
+  },
+  {
+    "source": {
+      "serious": "￣^￣"
+    },
+    "path": [
+      "face",
+      "serious"
+    ],
+    "cssClassName": "face-serious",
+    "exampleDiv": "<div class=\"face-serious\"></div>"
   },
   {
     "source": {
@@ -939,6 +1051,28 @@
   },
   {
     "source": {
+      "drooling": "﹃"
+    },
+    "path": [
+      "mouth",
+      "drooling"
+    ],
+    "cssClassName": "mouth-drooling",
+    "exampleDiv": "<div class=\"mouth-drooling\"></div>"
+  },
+  {
+    "source": {
+      "flat": "ー"
+    },
+    "path": [
+      "mouth",
+      "flat"
+    ],
+    "cssClassName": "mouth-flat",
+    "exampleDiv": "<div class=\"mouth-flat\"></div>"
+  },
+  {
+    "source": {
       "flipped": "∀"
     },
     "path": [
@@ -1026,6 +1160,17 @@
     ],
     "cssClassName": "mouth-pouting-right",
     "exampleDiv": "<div class=\"mouth-pouting-right\"></div>"
+  },
+  {
+    "source": {
+      "serious": "^"
+    },
+    "path": [
+      "mouth",
+      "serious"
+    ],
+    "cssClassName": "mouth-serious",
+    "exampleDiv": "<div class=\"mouth-serious\"></div>"
   },
   {
     "source": {
