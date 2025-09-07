@@ -1,0 +1,47 @@
+# egao
+egao is a CSS library for creating kaomoji.
+
+- [egao docs](https://orangeii.github.io/egao/docs)
+- [egao repository](https://github.com/OrangeII/egao)
+
+## Install
+1. Install with npm:
+`npm install egao`
+Then import the CSS file:
+`@import url("node_modules/egao/dist/egao.css");`
+
+2. Or use the CDN:
+`<link rel="stylesheet" href="https://unpkg.com/egao" />`
+
+## Usage
+- Use the `.kaomoji` class on a container to arrange child elements horizontally.
+- Use the `.layer` class on a container to stack child elements on top of each other. This is useful for creating complex kaomoji with overlapping parts.
+
+### Basic Example
+This HTML structure:
+```html
+<div class="kaomoji">
+  <div class="body-round-left"></div>
+  <div class="arms-hugging"></div>
+  <div class="face-happy"></div>
+  <div class="body-round-right"></div>
+  <div class="arms-hugging"></div>
+</div>
+```
+Creates this kaomoji: `(つ￣ ▽ ￣)つ`
+
+## Utilities
+
+### Flipping
+- `.flip-h`: Flips an element horizontally.
+- `.flip-v`: Flips an element vertically.
+
+### Spacing
+- `.space-*`: A set of classes to add horizontal space between elements. The space is relative to the `--base-space` CSS variable (default: `0.6em`).
+- Examples from documentation include `space-0-25`, `space-0-5`, `space-1`, `space-2`, `space-3`.
+
+## Kaomoji Part Classes
+The following classes can be used to render kaomoji parts. Each class adds its corresponding character as content.
+
+The full list of all available classes is always up to date here: 
+- [classes list](https://orangeii.github.io/egao/docs/parts)
