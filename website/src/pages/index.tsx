@@ -22,7 +22,7 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="/docs/getting-started"
           >
-            Get Started with Egao ◕‿◕
+            Get Started with Egao
           </Link>
         </div>
       </div>

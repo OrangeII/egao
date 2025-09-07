@@ -42,6 +42,10 @@ const parts: Part = {
       vertical: "｢",
       curved: "ノ",
     },
+    running: {
+      right: "┘",
+      left: "┌",
+    },
     "thumbs-up": "d",
     grabbing: "ԅ",
     flexing: {
@@ -55,6 +59,7 @@ const parts: Part = {
     salute: "ゞ",
   },
   face: {
+    focused: "`ー´",
     happy: "￣ ▽ ￣",
     excited: "˃ᴗ˂",
     "very-excited": "≧▽≦",
@@ -68,6 +73,7 @@ const parts: Part = {
     despair: "꒦ິ꒳꒦ີ",
     animal: "• ᴥ •",
     lenny: " ͡° ͜ʖ ͡°",
+    serious: "￣^￣",
   },
   mouth: {
     triangle: {
@@ -101,8 +107,15 @@ const parts: Part = {
     lenny: " ͜ʖ",
     kiss: "³",
     beak: "Θ",
+    flat: "ー",
+    drooling: "﹃",
+    serious: "^",
   },
   eyes: {
+    focused: {
+      left: "`",
+      right: "´",
+    },
     fury: {
       left: "◣",
       right: "◢",
@@ -174,6 +187,12 @@ const parts: Part = {
   "star-decorated": "✯",
   note: "♪",
   notes: "♫",
+  dot: "・",
+  bubbles: "･ﾟ",
+  circle: {
+    low: "｡",
+    center: "◦",
+  },
 };
 
 export { parts, Part, PartClass };
