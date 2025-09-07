@@ -90,6 +90,11 @@ const config: Config = {
               label: "GitHub",
               href: "https://github.com/OrangeII/egao",
             },
+            {
+              label: "LLM Context",
+              href: "/egao/llms.txt",
+              target: "_blank",
+            },
           ],
         },
       ],
