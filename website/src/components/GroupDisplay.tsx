@@ -53,13 +53,13 @@ export function GroupDisplay({ group }: { group: string }) {
   );
 }
 
-function PartDisplay({ part, index }: { part: Part; index: number }) {
+export function PartDisplay({ part, index }: { part: Part; index: number }) {
   const { colorMode } = useColorMode();
   const { prism } = useThemeConfig();
   const theme = colorMode === "dark" ? prism.darkTheme : prism.theme;
 
   return (
-    <div key={index} style={{ marginBottom: "1.5rem" }}>
+    <div key={index}>
       <p>
         <code>{part.cssClassName}</code>
         <span

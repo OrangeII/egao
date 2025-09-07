@@ -3,6 +3,7 @@ import path from "path";
 import fs from "fs";
 
 export interface ParsedPart {
+  content: string;
   source: Record<string, Part | string | PartClass>;
   path: string[];
   cssClassName: string;
@@ -36,6 +37,7 @@ function parsePartsRec(
     const className = `${currentPath.join("-")}`;
     const exampleDiv = `<div class="${className}"></div>`;
     result.push({
+      content: value as string,
       source: { [key]: value },
       path: currentPath,
       cssClassName: className,
