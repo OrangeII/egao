@@ -193,6 +193,7 @@ const parts: Part = {
     low: "｡",
     center: "◦",
   },
+  flower: "✿",
 };
 
 export { parts, Part, PartClass };

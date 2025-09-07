@@ -1084,6 +1084,17 @@
     "exampleDiv": "<div class=\"face-wide-happy\"></div>"
   },
   {
+    "content": "✿",
+    "source": {
+      "flower": "✿"
+    },
+    "path": [
+      "flower"
+    ],
+    "cssClassName": "flower",
+    "exampleDiv": "<div class=\"flower\"></div>"
+  },
+  {
     "content": "ᴥ",
     "source": {
       "animal": "ᴥ"
