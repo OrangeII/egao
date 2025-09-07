@@ -170,6 +170,10 @@ const parts: Part = {
   cheek: {
     roll: "๑",
   },
+  star: "☆",
+  "star-decorated": "✯",
+  note: "♪",
+  notes: "♫",
 };
 
 export { parts, Part, PartClass };

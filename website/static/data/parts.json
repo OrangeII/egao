@@ -1185,6 +1185,26 @@
   },
   {
     "source": {
+      "note": "♪"
+    },
+    "path": [
+      "note"
+    ],
+    "cssClassName": "note",
+    "exampleDiv": "<div class=\"note\"></div>"
+  },
+  {
+    "source": {
+      "notes": "♫"
+    },
+    "path": [
+      "notes"
+    ],
+    "cssClassName": "notes",
+    "exampleDiv": "<div class=\"notes\"></div>"
+  },
+  {
+    "source": {
       "rod": "━"
     },
     "path": [
@@ -1202,6 +1222,26 @@
     ],
     "cssClassName": "sparkle",
     "exampleDiv": "<div class=\"sparkle\"></div>"
+  },
+  {
+    "source": {
+      "star": "☆"
+    },
+    "path": [
+      "star"
+    ],
+    "cssClassName": "star",
+    "exampleDiv": "<div class=\"star\"></div>"
+  },
+  {
+    "source": {
+      "star-decorated": "✯"
+    },
+    "path": [
+      "star-decorated"
+    ],
+    "cssClassName": "star-decorated",
+    "exampleDiv": "<div class=\"star-decorated\"></div>"
   },
   {
     "source": {
