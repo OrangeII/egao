@@ -1,6 +1,6 @@
 {
   "name": "egao",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A CSS library to create kaomoji.",
   "main": "dist/egao.css",
   "files": [
