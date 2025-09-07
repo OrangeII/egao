@@ -10,6 +10,8 @@ import {GroupDisplay, AccessoriesDisplay} from "@site/src/components/GroupDispla
 
 You render a kaomoji part by giving an element the corresponding css class.
 
+This is the full list of all available classes. If you are looking for a specific part, you can use [this tool](finder.md).
+
 ### Body
 
 <GroupDisplay group="body" />
