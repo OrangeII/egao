@@ -1,5 +1,6 @@
 [
   {
+    "content": "√",
     "source": {
       "bent": "√"
     },
@@ -11,6 +12,7 @@
     "exampleDiv": "<div class=\"arms-bent\"></div>"
   },
   {
+    "content": "ᕙ",
     "source": {
       "left": "ᕙ"
     },
@@ -23,6 +25,7 @@
     "exampleDiv": "<div class=\"arms-flexing-left\"></div>"
   },
   {
+    "content": "ᕗ",
     "source": {
       "right": "ᕗ"
     },
@@ -35,6 +38,7 @@
     "exampleDiv": "<div class=\"arms-flexing-right\"></div>"
   },
   {
+    "content": "ԅ",
     "source": {
       "grabbing": "ԅ"
     },
@@ -46,6 +50,7 @@
     "exampleDiv": "<div class=\"arms-grabbing\"></div>"
   },
   {
+    "content": "ง",
     "source": {
       "guard": "ง"
     },
@@ -57,6 +62,7 @@
     "exampleDiv": "<div class=\"arms-guard\"></div>"
   },
   {
+    "content": "つ",
     "source": {
       "hugging": "つ"
     },
@@ -68,6 +74,7 @@
     "exampleDiv": "<div class=\"arms-hugging\"></div>"
   },
   {
+    "content": "＼",
     "source": {
       "left": "＼"
     },
@@ -80,6 +87,7 @@
     "exampleDiv": "<div class=\"arms-out-left\"></div>"
   },
   {
+    "content": "／",
     "source": {
       "right": "／"
     },
@@ -92,6 +100,7 @@
     "exampleDiv": "<div class=\"arms-out-right\"></div>"
   },
   {
+    "content": "ノ",
     "source": {
       "curved": "ノ"
     },
@@ -104,6 +113,7 @@
     "exampleDiv": "<div class=\"arms-raised-curved\"></div>"
   },
   {
+    "content": "٩",
     "source": {
       "left": "٩"
     },
@@ -116,6 +126,7 @@
     "exampleDiv": "<div class=\"arms-raised-fist-left\"></div>"
   },
   {
+    "content": "۶",
     "source": {
       "right": "۶"
     },
@@ -128,6 +139,7 @@
     "exampleDiv": "<div class=\"arms-raised-fist-right\"></div>"
   },
   {
+    "content": "乁",
     "source": {
       "high": "乁"
     },
@@ -140,6 +152,7 @@
     "exampleDiv": "<div class=\"arms-raised-high\"></div>"
   },
   {
+    "content": "╰",
     "source": {
       "left": "╰"
     },
@@ -152,6 +165,7 @@
     "exampleDiv": "<div class=\"arms-raised-left\"></div>"
   },
   {
+    "content": "╯",
     "source": {
       "right": "╯"
     },
@@ -164,6 +178,7 @@
     "exampleDiv": "<div class=\"arms-raised-right\"></div>"
   },
   {
+    "content": "｢",
     "source": {
       "vertical": "｢"
     },
@@ -176,6 +191,7 @@
     "exampleDiv": "<div class=\"arms-raised-vertical\"></div>"
   },
   {
+    "content": "੭",
     "source": {
       "rolled": "੭"
     },
@@ -187,6 +203,7 @@
     "exampleDiv": "<div class=\"arms-rolled\"></div>"
   },
   {
+    "content": "┌",
     "source": {
       "left": "┌"
     },
@@ -199,6 +216,7 @@
     "exampleDiv": "<div class=\"arms-running-left\"></div>"
   },
   {
+    "content": "┘",
     "source": {
       "right": "┘"
     },
@@ -211,6 +229,7 @@
     "exampleDiv": "<div class=\"arms-running-right\"></div>"
   },
   {
+    "content": "ゞ",
     "source": {
       "salute": "ゞ"
     },
@@ -222,6 +241,7 @@
     "exampleDiv": "<div class=\"arms-salute\"></div>"
   },
   {
+    "content": "d",
     "source": {
       "thumbs-up": "d"
     },
@@ -233,6 +253,7 @@
     "exampleDiv": "<div class=\"arms-thumbs-up\"></div>"
   },
   {
+    "content": "づ",
     "source": {
       "waving": "づ"
     },
@@ -244,6 +265,7 @@
     "exampleDiv": "<div class=\"arms-waving\"></div>"
   },
   {
+    "content": "〜",
     "source": {
       "yurayura": "〜"
     },
@@ -255,6 +277,10 @@
     "exampleDiv": "<div class=\"arms-yurayura\"></div>"
   },
   {
+    "content": {
+      "content": "⁄ ⁄ ⁄",
+      "white-space": "pre"
+    },
     "source": {
       "blush": {
         "content": "⁄ ⁄ ⁄",
@@ -268,6 +294,7 @@
     "exampleDiv": "<div class=\"blush\"></div>"
   },
   {
+    "content": "ʕ",
     "source": {
       "left": "ʕ"
     },
@@ -280,6 +307,7 @@
     "exampleDiv": "<div class=\"body-bear-left\"></div>"
   },
   {
+    "content": "ʔ",
     "source": {
       "right": "ʔ"
     },
@@ -292,6 +320,7 @@
     "exampleDiv": "<div class=\"body-bear-right\"></div>"
   },
   {
+    "content": "(",
     "source": {
       "left": "("
     },
@@ -304,6 +333,7 @@
     "exampleDiv": "<div class=\"body-round-left\"></div>"
   },
   {
+    "content": ")",
     "source": {
       "right": ")"
     },
@@ -316,6 +346,7 @@
     "exampleDiv": "<div class=\"body-round-right\"></div>"
   },
   {
+    "content": "[",
     "source": {
       "left": "["
     },
@@ -328,6 +359,7 @@
     "exampleDiv": "<div class=\"body-square-left\"></div>"
   },
   {
+    "content": "]",
     "source": {
       "right": "]"
     },
@@ -340,6 +372,7 @@
     "exampleDiv": "<div class=\"body-square-right\"></div>"
   },
   {
+    "content": "･ﾟ",
     "source": {
       "bubbles": "･ﾟ"
     },
@@ -350,6 +383,7 @@
     "exampleDiv": "<div class=\"bubbles\"></div>"
   },
   {
+    "content": "๑",
     "source": {
       "roll": "๑"
     },
@@ -361,6 +395,7 @@
     "exampleDiv": "<div class=\"cheek-roll\"></div>"
   },
   {
+    "content": "◦",
     "source": {
       "center": "◦"
     },
@@ -372,6 +407,7 @@
     "exampleDiv": "<div class=\"circle-center\"></div>"
   },
   {
+    "content": "｡",
     "source": {
       "low": "｡"
     },
@@ -383,6 +419,7 @@
     "exampleDiv": "<div class=\"circle-low\"></div>"
   },
   {
+    "content": "☁",
     "source": {
       "cloud": "☁"
     },
@@ -393,6 +430,7 @@
     "exampleDiv": "<div class=\"cloud\"></div>"
   },
   {
+    "content": "✺",
     "source": {
       "dandelion": "✺"
     },
@@ -403,6 +441,7 @@
     "exampleDiv": "<div class=\"dandelion\"></div>"
   },
   {
+    "content": "・",
     "source": {
       "dot": "・"
     },
@@ -413,6 +452,7 @@
     "exampleDiv": "<div class=\"dot\"></div>"
   },
   {
+    "content": "ᗒ",
     "source": {
       "left": "ᗒ"
     },
@@ -425,6 +465,7 @@
     "exampleDiv": "<div class=\"eyes-distress-left\"></div>"
   },
   {
+    "content": "ᗕ",
     "source": {
       "right": "ᗕ"
     },
@@ -437,6 +478,7 @@
     "exampleDiv": "<div class=\"eyes-distress-right\"></div>"
   },
   {
+    "content": "<",
     "source": {
       "left": "<"
     },
@@ -449,6 +491,7 @@
     "exampleDiv": "<div class=\"eyes-excited-left\"></div>"
   },
   {
+    "content": ">",
     "source": {
       "right": ">"
     },
@@ -461,6 +504,7 @@
     "exampleDiv": "<div class=\"eyes-excited-right\"></div>"
   },
   {
+    "content": "ᄑ",
     "source": {
       "fixed": "ᄑ"
     },
@@ -472,6 +516,7 @@
     "exampleDiv": "<div class=\"eyes-fixed\"></div>"
   },
   {
+    "content": "`",
     "source": {
       "left": "`"
     },
@@ -484,6 +529,7 @@
     "exampleDiv": "<div class=\"eyes-focused-left\"></div>"
   },
   {
+    "content": "´",
     "source": {
       "right": "´"
     },
@@ -496,6 +542,7 @@
     "exampleDiv": "<div class=\"eyes-focused-right\"></div>"
   },
   {
+    "content": "◣",
     "source": {
       "left": "◣"
     },
@@ -508,6 +555,7 @@
     "exampleDiv": "<div class=\"eyes-fury-left\"></div>"
   },
   {
+    "content": "◢",
     "source": {
       "right": "◢"
     },
@@ -520,6 +568,7 @@
     "exampleDiv": "<div class=\"eyes-fury-right\"></div>"
   },
   {
+    "content": " ͡°",
     "source": {
       "lenny": " ͡°"
     },
@@ -531,6 +580,7 @@
     "exampleDiv": "<div class=\"eyes-lenny\"></div>"
   },
   {
+    "content": "￣",
     "source": {
       "bliss": "￣"
     },
@@ -543,6 +593,7 @@
     "exampleDiv": "<div class=\"eyes-line-bliss\"></div>"
   },
   {
+    "content": "⁀",
     "source": {
       "happy": "⁀"
     },
@@ -555,6 +606,7 @@
     "exampleDiv": "<div class=\"eyes-line-happy\"></div>"
   },
   {
+    "content": "•",
     "source": {
       "bear": "•"
     },
@@ -567,6 +619,7 @@
     "exampleDiv": "<div class=\"eyes-o-bear\"></div>"
   },
   {
+    "content": "〇",
     "source": {
       "big": "〇"
     },
@@ -579,6 +632,7 @@
     "exampleDiv": "<div class=\"eyes-o-big\"></div>"
   },
   {
+    "content": "ಠ",
     "source": {
       "disapproving": "ಠ"
     },
@@ -591,6 +645,7 @@
     "exampleDiv": "<div class=\"eyes-o-disapproving\"></div>"
   },
   {
+    "content": "◕",
     "source": {
       "happy": "◕"
     },
@@ -603,6 +658,7 @@
     "exampleDiv": "<div class=\"eyes-o-happy\"></div>"
   },
   {
+    "content": "⊙",
     "source": {
       "sad": "⊙"
     },
@@ -615,6 +671,7 @@
     "exampleDiv": "<div class=\"eyes-o-sad\"></div>"
   },
   {
+    "content": "°",
     "source": {
       "tiny": "°"
     },
@@ -627,6 +684,7 @@
     "exampleDiv": "<div class=\"eyes-o-tiny\"></div>"
   },
   {
+    "content": "￢",
     "source": {
       "side-look": "￢"
     },
@@ -638,6 +696,7 @@
     "exampleDiv": "<div class=\"eyes-side-look\"></div>"
   },
   {
+    "content": "◆",
     "source": {
       "diamond": "◆"
     },
@@ -650,6 +709,7 @@
     "exampleDiv": "<div class=\"eyes-sunglasses-diamond\"></div>"
   },
   {
+    "content": "▰",
     "source": {
       "parallelogram": "▰"
     },
@@ -662,6 +722,7 @@
     "exampleDiv": "<div class=\"eyes-sunglasses-parallelogram\"></div>"
   },
   {
+    "content": "●",
     "source": {
       "round": "●"
     },
@@ -674,6 +735,7 @@
     "exampleDiv": "<div class=\"eyes-sunglasses-round\"></div>"
   },
   {
+    "content": "✦",
     "source": {
       "sparkle": "✦"
     },
@@ -686,6 +748,7 @@
     "exampleDiv": "<div class=\"eyes-sunglasses-sparkle\"></div>"
   },
   {
+    "content": "■",
     "source": {
       "square": "■"
     },
@@ -698,6 +761,7 @@
     "exampleDiv": "<div class=\"eyes-sunglasses-square\"></div>"
   },
   {
+    "content": "▼",
     "source": {
       "triangle": "▼"
     },
@@ -710,6 +774,7 @@
     "exampleDiv": "<div class=\"eyes-sunglasses-triangle\"></div>"
   },
   {
+    "content": "꒦ີ",
     "source": {
       "despair": "꒦ີ"
     },
@@ -722,6 +787,7 @@
     "exampleDiv": "<div class=\"eyes-tear-despair\"></div>"
   },
   {
+    "content": "╥",
     "source": {
       "double": "╥"
     },
@@ -734,6 +800,7 @@
     "exampleDiv": "<div class=\"eyes-tear-double\"></div>"
   },
   {
+    "content": "┻",
     "source": {
       "flipped": "┻"
     },
@@ -746,6 +813,7 @@
     "exampleDiv": "<div class=\"eyes-tear-flipped\"></div>"
   },
   {
+    "content": "ಥ",
     "source": {
       "heart": "ಥ"
     },
@@ -758,6 +826,7 @@
     "exampleDiv": "<div class=\"eyes-tear-heart\"></div>"
   },
   {
+    "content": "ಡ",
     "source": {
       "heart-side": "ಡ"
     },
@@ -770,6 +839,7 @@
     "exampleDiv": "<div class=\"eyes-tear-heart-side\"></div>"
   },
   {
+    "content": "┬",
     "source": {
       "low": "┬"
     },
@@ -782,6 +852,7 @@
     "exampleDiv": "<div class=\"eyes-tear-low\"></div>"
   },
   {
+    "content": "T",
     "source": {
       "single": "T"
     },
@@ -794,6 +865,7 @@
     "exampleDiv": "<div class=\"eyes-tear-single\"></div>"
   },
   {
+    "content": "Ｕ",
     "source": {
       "big": "Ｕ"
     },
@@ -806,6 +878,7 @@
     "exampleDiv": "<div class=\"eyes-u-big\"></div>"
   },
   {
+    "content": "≧",
     "source": {
       "left": "≧"
     },
@@ -818,6 +891,7 @@
     "exampleDiv": "<div class=\"eyes-very-excited-left\"></div>"
   },
   {
+    "content": "≦",
     "source": {
       "right": "≦"
     },
@@ -830,6 +904,7 @@
     "exampleDiv": "<div class=\"eyes-very-excited-right\"></div>"
   },
   {
+    "content": "ಠ 益 ಠ",
     "source": {
       "angry": "ಠ 益 ಠ"
     },
@@ -841,6 +916,7 @@
     "exampleDiv": "<div class=\"face-angry\"></div>"
   },
   {
+    "content": "• ᴥ •",
     "source": {
       "animal": "• ᴥ •"
     },
@@ -852,6 +928,7 @@
     "exampleDiv": "<div class=\"face-animal\"></div>"
   },
   {
+    "content": "꒦ິ꒳꒦ີ",
     "source": {
       "despair": "꒦ິ꒳꒦ີ"
     },
@@ -863,6 +940,7 @@
     "exampleDiv": "<div class=\"face-despair\"></div>"
   },
   {
+    "content": "˃ᴗ˂",
     "source": {
       "excited": "˃ᴗ˂"
     },
@@ -874,6 +952,7 @@
     "exampleDiv": "<div class=\"face-excited\"></div>"
   },
   {
+    "content": "`ー´",
     "source": {
       "focused": "`ー´"
     },
@@ -885,6 +964,7 @@
     "exampleDiv": "<div class=\"face-focused\"></div>"
   },
   {
+    "content": "￣ ▽ ￣",
     "source": {
       "happy": "￣ ▽ ￣"
     },
@@ -896,6 +976,7 @@
     "exampleDiv": "<div class=\"face-happy\"></div>"
   },
   {
+    "content": " ͡° ͜ʖ ͡°",
     "source": {
       "lenny": " ͡° ͜ʖ ͡°"
     },
@@ -907,6 +988,7 @@
     "exampleDiv": "<div class=\"face-lenny\"></div>"
   },
   {
+    "content": "￣^￣",
     "source": {
       "serious": "￣^￣"
     },
@@ -918,6 +1000,7 @@
     "exampleDiv": "<div class=\"face-serious\"></div>"
   },
   {
+    "content": "￢‿￢",
     "source": {
       "sly": "￢‿￢"
     },
@@ -929,6 +1012,7 @@
     "exampleDiv": "<div class=\"face-sly\"></div>"
   },
   {
+    "content": "⌒_⌒",
     "source": {
       "smile-awkward": "⌒_⌒"
     },
@@ -940,6 +1024,7 @@
     "exampleDiv": "<div class=\"face-smile-awkward\"></div>"
   },
   {
+    "content": "￣︶￣",
     "source": {
       "smug": "￣︶￣"
     },
@@ -951,6 +1036,7 @@
     "exampleDiv": "<div class=\"face-smug\"></div>"
   },
   {
+    "content": "╥﹏╥",
     "source": {
       "tearful": "╥﹏╥"
     },
@@ -962,6 +1048,7 @@
     "exampleDiv": "<div class=\"face-tearful\"></div>"
   },
   {
+    "content": "≧▽≦",
     "source": {
       "very-excited": "≧▽≦"
     },
@@ -973,6 +1060,7 @@
     "exampleDiv": "<div class=\"face-very-excited\"></div>"
   },
   {
+    "content": "￣ω￣",
     "source": {
       "very-smug": "￣ω￣"
     },
@@ -984,6 +1072,7 @@
     "exampleDiv": "<div class=\"face-very-smug\"></div>"
   },
   {
+    "content": "◕‿◕",
     "source": {
       "wide-happy": "◕‿◕"
     },
@@ -995,6 +1084,18 @@
     "exampleDiv": "<div class=\"face-wide-happy\"></div>"
   },
   {
+    "content": "✿",
+    "source": {
+      "flower": "✿"
+    },
+    "path": [
+      "flower"
+    ],
+    "cssClassName": "flower",
+    "exampleDiv": "<div class=\"flower\"></div>"
+  },
+  {
+    "content": "ᴥ",
     "source": {
       "animal": "ᴥ"
     },
@@ -1006,6 +1107,7 @@
     "exampleDiv": "<div class=\"mouth-animal\"></div>"
   },
   {
+    "content": "Θ",
     "source": {
       "beak": "Θ"
     },
@@ -1017,6 +1119,7 @@
     "exampleDiv": "<div class=\"mouth-beak\"></div>"
   },
   {
+    "content": "︿",
     "source": {
       "disapproval": "︿"
     },
@@ -1028,6 +1131,7 @@
     "exampleDiv": "<div class=\"mouth-disapproval\"></div>"
   },
   {
+    "content": "ヘ",
     "source": {
       "disapproval-slanted": "ヘ"
     },
@@ -1039,6 +1143,7 @@
     "exampleDiv": "<div class=\"mouth-disapproval-slanted\"></div>"
   },
   {
+    "content": "꒳",
     "source": {
       "downturned-small": "꒳"
     },
@@ -1050,6 +1155,7 @@
     "exampleDiv": "<div class=\"mouth-downturned-small\"></div>"
   },
   {
+    "content": "﹃",
     "source": {
       "drooling": "﹃"
     },
@@ -1061,6 +1167,7 @@
     "exampleDiv": "<div class=\"mouth-drooling\"></div>"
   },
   {
+    "content": "ー",
     "source": {
       "flat": "ー"
     },
@@ -1072,6 +1179,7 @@
     "exampleDiv": "<div class=\"mouth-flat\"></div>"
   },
   {
+    "content": "∀",
     "source": {
       "flipped": "∀"
     },
@@ -1083,6 +1191,7 @@
     "exampleDiv": "<div class=\"mouth-flipped\"></div>"
   },
   {
+    "content": "益",
     "source": {
       "frown": "益"
     },
@@ -1094,6 +1203,7 @@
     "exampleDiv": "<div class=\"mouth-frown\"></div>"
   },
   {
+    "content": "ヮ",
     "source": {
       "kata": "ヮ"
     },
@@ -1105,6 +1215,7 @@
     "exampleDiv": "<div class=\"mouth-kata\"></div>"
   },
   {
+    "content": "³",
     "source": {
       "kiss": "³"
     },
@@ -1116,6 +1227,7 @@
     "exampleDiv": "<div class=\"mouth-kiss\"></div>"
   },
   {
+    "content": " ͜ʖ",
     "source": {
       "lenny": " ͜ʖ"
     },
@@ -1127,6 +1239,7 @@
     "exampleDiv": "<div class=\"mouth-lenny\"></div>"
   },
   {
+    "content": "ｍ",
     "source": {
       "m": "ｍ"
     },
@@ -1138,6 +1251,7 @@
     "exampleDiv": "<div class=\"mouth-m\"></div>"
   },
   {
+    "content": "ε",
     "source": {
       "left": "ε"
     },
@@ -1150,6 +1264,7 @@
     "exampleDiv": "<div class=\"mouth-pouting-left\"></div>"
   },
   {
+    "content": "з",
     "source": {
       "right": "з"
     },
@@ -1162,6 +1277,7 @@
     "exampleDiv": "<div class=\"mouth-pouting-right\"></div>"
   },
   {
+    "content": "^",
     "source": {
       "serious": "^"
     },
@@ -1173,6 +1289,7 @@
     "exampleDiv": "<div class=\"mouth-serious\"></div>"
   },
   {
+    "content": "‿",
     "source": {
       "smile": "‿"
     },
@@ -1184,6 +1301,7 @@
     "exampleDiv": "<div class=\"mouth-smile\"></div>"
   },
   {
+    "content": "ᴗ",
     "source": {
       "smile-small": "ᴗ"
     },
@@ -1195,6 +1313,7 @@
     "exampleDiv": "<div class=\"mouth-smile-small\"></div>"
   },
   {
+    "content": "︶",
     "source": {
       "smug": "︶"
     },
@@ -1206,6 +1325,7 @@
     "exampleDiv": "<div class=\"mouth-smug\"></div>"
   },
   {
+    "content": "口",
     "source": {
       "square": "口"
     },
@@ -1217,6 +1337,7 @@
     "exampleDiv": "<div class=\"mouth-square\"></div>"
   },
   {
+    "content": "Д",
     "source": {
       "square-slanted": "Д"
     },
@@ -1228,6 +1349,7 @@
     "exampleDiv": "<div class=\"mouth-square-slanted\"></div>"
   },
   {
+    "content": "д",
     "source": {
       "square-slanted-small": "д"
     },
@@ -1239,6 +1361,7 @@
     "exampleDiv": "<div class=\"mouth-square-slanted-small\"></div>"
   },
   {
+    "content": "□",
     "source": {
       "square-small": "□"
     },
@@ -1250,6 +1373,7 @@
     "exampleDiv": "<div class=\"mouth-square-small\"></div>"
   },
   {
+    "content": "﹏",
     "source": {
       "squiggly": "﹏"
     },
@@ -1261,6 +1385,7 @@
     "exampleDiv": "<div class=\"mouth-squiggly\"></div>"
   },
   {
+    "content": "▽",
     "source": {
       "down": "▽"
     },
@@ -1273,6 +1398,7 @@
     "exampleDiv": "<div class=\"mouth-triangle-down\"></div>"
   },
   {
+    "content": "△",
     "source": {
       "up": "△"
     },
@@ -1285,6 +1411,7 @@
     "exampleDiv": "<div class=\"mouth-triangle-up\"></div>"
   },
   {
+    "content": "ᗢ",
     "source": {
       "tulip": "ᗢ"
     },
@@ -1296,6 +1423,7 @@
     "exampleDiv": "<div class=\"mouth-tulip\"></div>"
   },
   {
+    "content": "ᗣ",
     "source": {
       "tulip-down": "ᗣ"
     },
@@ -1307,6 +1435,7 @@
     "exampleDiv": "<div class=\"mouth-tulip-down\"></div>"
   },
   {
+    "content": "ᗤ",
     "source": {
       "tulip-side": "ᗤ"
     },
@@ -1318,6 +1447,7 @@
     "exampleDiv": "<div class=\"mouth-tulip-side\"></div>"
   },
   {
+    "content": "ω",
     "source": {
       "very-smug": "ω"
     },
@@ -1329,6 +1459,7 @@
     "exampleDiv": "<div class=\"mouth-very-smug\"></div>"
   },
   {
+    "content": "♪",
     "source": {
       "note": "♪"
     },
@@ -1339,6 +1470,7 @@
     "exampleDiv": "<div class=\"note\"></div>"
   },
   {
+    "content": "♫",
     "source": {
       "notes": "♫"
     },
@@ -1349,6 +1481,7 @@
     "exampleDiv": "<div class=\"notes\"></div>"
   },
   {
+    "content": "━",
     "source": {
       "rod": "━"
     },
@@ -1359,6 +1492,7 @@
     "exampleDiv": "<div class=\"rod\"></div>"
   },
   {
+    "content": "✧",
     "source": {
       "sparkle": "✧"
     },
@@ -1369,6 +1503,7 @@
     "exampleDiv": "<div class=\"sparkle\"></div>"
   },
   {
+    "content": "☆",
     "source": {
       "star": "☆"
     },
@@ -1379,6 +1514,7 @@
     "exampleDiv": "<div class=\"star\"></div>"
   },
   {
+    "content": "✯",
     "source": {
       "star-decorated": "✯"
     },
@@ -1389,6 +1525,7 @@
     "exampleDiv": "<div class=\"star-decorated\"></div>"
   },
   {
+    "content": ";",
     "source": {
       "sweat": ";"
     },
@@ -1399,6 +1536,7 @@
     "exampleDiv": "<div class=\"sweat\"></div>"
   },
   {
+    "content": "╬",
     "source": {
       "veins": "╬"
     },
@@ -1409,6 +1547,7 @@
     "exampleDiv": "<div class=\"veins\"></div>"
   },
   {
+    "content": "ଘ",
     "source": {
       "wings": "ଘ"
     },
