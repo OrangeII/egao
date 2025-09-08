@@ -18,6 +18,9 @@ export function parseParts(): ParsedPart[] {
   for (const [key, value] of Object.entries(parts)) {
     parsePartsRec(key, value, [], result);
   }
+
+  analyzeParts(result);
+
   return result.sort((a, b) => a.cssClassName.localeCompare(b.cssClassName));
 }
 
@@ -43,6 +46,32 @@ function parsePartsRec(
       cssClassName: className,
       exampleDiv,
     });
+  }
+}
+
+function analyzeParts(parts: ParsedPart[]) {
+  checkDuplicateContent(parts);
+}
+
+function checkDuplicateContent(parts: ParsedPart[]) {
+  // waring when multiple parts have the same content
+  const contentMap: Record<string, ParsedPart[]> = {};
+  for (const part of parts) {
+    if (!contentMap[part.content]) {
+      contentMap[part.content] = [];
+    }
+    contentMap[part.content].push(part);
+  }
+
+  for (const [content, parts] of Object.entries(contentMap)) {
+    if (parts.length > 1) {
+      console.warn(`⚠️  Duplicate content found for "${content}":`);
+      for (const part of parts) {
+        console.warn(
+          ` - ${part.cssClassName} (defined in ${part.path.join(" > ")})`
+        );
+      }
+    }
   }
 }
 
