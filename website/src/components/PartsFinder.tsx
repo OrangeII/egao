@@ -65,13 +65,7 @@ export default function PartsFinder() {
         style={{ width: "100%", marginBottom: "1rem" }}
       />
       {foundParts.length ? <h2>Found Parts</h2> : null}
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(max(250px, 45%), 1fr))",
-          gap: "1rem",
-        }}
-      >
+      <div className="grid-adaptive">
         {foundParts.map((part, index) => (
           <PartDisplay key={index} part={part} index={index} />
         ))}
@@ -133,14 +127,7 @@ function ExampleDisplay({
   const exampleParts = mergeParts(input, parts, missingParts);
 
   return (
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr",
-        gap: "1rem",
-        marginTop: "1rem",
-      }}
-    >
+    <div className="grid-two-column">
       <Highlight
         language="html"
         code={getExampleCode(exampleParts)}

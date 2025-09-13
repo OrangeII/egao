@@ -71,6 +71,20 @@
   transition: border-color 200ms;
 }
 
+/* Grid layout utilities */
+.grid-adaptive {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(250px, 45%), 1fr));
+  gap: 1rem;
+}
+
+.grid-two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
 @keyframes bounce {
   0%,
   100% {

@@ -20,14 +20,7 @@ These utility classes add horizontal space between elements. The amount of space
 
 In layered compositions, they can precisely position elements.
 
-<div
-  style={{
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr",
-    gap: "1rem",
-    marginTop: "1rem",
-  }}
->
+<div className="grid-two-column">
   <div>
     ```html title="without spaces"
     <div class="kaomoji">
@@ -128,14 +121,7 @@ These utility classes allow you to flip elements horizontally or vertically.
 
 This is useful when a kaomoji part is only available for one side.
 
-<div
-  style={{
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr",
-    gap: "1rem",
-    marginTop: "1rem",
-  }}
->
+<div className="grid-two-column">
   <div>
     ```html
     <div class="kaomoji">

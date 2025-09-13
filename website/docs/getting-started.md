@@ -44,14 +44,7 @@ You can use the unpkg CDN to include egao directly in your HTML.
 
 The `kaomoji` class will stack elements horizontally.
 
-<div
-  style={{
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr",
-    gap: "1rem",
-    marginTop: "1rem",
-  }}
->
+<div className="grid-two-column">
   <div>
     ```html
     <div class="kaomoji">
@@ -80,14 +73,7 @@ The `kaomoji` class will stack elements horizontally.
 
 You can use the `layer` class to overlap elements.
 
-<div
-  style={{
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr",
-    gap: "1rem",
-    marginTop: "1rem",
-  }}
->
+<div className="grid-two-column">
   <div>
     ```html
     <div class="kaomoji">
@@ -130,14 +116,7 @@ You can use the `layer` class to overlap elements.
 
 `kaomoji` and `layer` can be combined to create animation groups.
 
-<div
-  style={{
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr",
-    gap: "1rem",
-    marginTop: "1rem",
-  }}
->
+<div className="grid-two-column">
   <div>
     ```html
     <div class="kaomoji">
@@ -190,14 +169,7 @@ You can use the `layer` class to overlap elements.
 
 Of course you can style and animate individual elements as well.
 
-<div
-  style={{
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr",
-    gap: "1rem",
-    marginTop: "1rem",
-  }}
->
+<div className="grid-two-column">
   <div>
     ```html
     <div class="kaomoji">
