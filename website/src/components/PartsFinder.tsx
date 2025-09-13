@@ -1,6 +1,9 @@
 import React, { useMemo, useState } from "react";
+import { renderToString } from "react-dom/server";
+import { Highlight } from "prism-react-renderer";
 import parts from "@site/static/data/parts.json";
 import { PartDisplay, type Part } from "./GroupDisplay";
+import { useColorMode, useThemeConfig } from "@docusaurus/theme-common";
 
 function findParts(input: string): Part[] {
   const foundParts: Part[] = [];
@@ -12,6 +15,29 @@ function findParts(input: string): Part[] {
     foundParts.push(...matchingParts);
   }
   return foundParts;
+}
+
+interface ExamplePart {
+  type: "part" | "missing";
+  part: Part | string;
+}
+
+function mergeParts(
+  reference: string,
+  parts: Part[],
+  missingParts: string[]
+): ExamplePart[] {
+  const result: ExamplePart[] = [];
+  const referenceChars = reference.split("");
+  for (const char of referenceChars) {
+    const part = parts.find((p) => p.content === char);
+    if (part) {
+      result.push({ type: "part", part });
+    } else if (missingParts.includes(char)) {
+      result.push({ type: "missing", part: char });
+    }
+  }
+  return result;
 }
 
 export default function PartsFinder() {
@@ -61,11 +87,34 @@ export default function PartsFinder() {
           </ul>
         </>
       ) : null}
+      {input ? (
+        <>
+          <h2>Example</h2>
+          <ExampleDisplay
+            input={input}
+            parts={foundParts}
+            missingParts={missingParts}
+          />
+        </>
+      ) : null}
     </div>
   );
 }
 
-function ExampleDisplay({ parts }: { missingParts: string[]; parts: Part[] }) {
+function ExampleDisplay({
+  input,
+  missingParts,
+  parts,
+}: {
+  input: string;
+  missingParts: string[];
+  parts: Part[];
+}) {
+  const { colorMode } = useColorMode();
+  const { prism } = useThemeConfig();
+  const theme = colorMode === "dark" ? prism.darkTheme : prism.theme;
+  const exampleParts = mergeParts(input, parts, missingParts);
+
   return (
     <div
       style={{
@@ -74,6 +123,52 @@ function ExampleDisplay({ parts }: { missingParts: string[]; parts: Part[] }) {
         gap: "1rem",
         marginTop: "1rem",
       }}
-    ></div>
+    >
+      <Highlight
+        language="html"
+        code={renderToString(<Example exampleParts={exampleParts} />)}
+        theme={theme}
+      >
+        {({ className, style, tokens, getLineProps, getTokenProps }) => (
+          <pre className={className} style={style}>
+            {tokens.map((line, i) => (
+              <div key={i} {...getLineProps({ line, key: i })}>
+                {line.map((token, key) => (
+                  <span key={key} {...getTokenProps({ token, key })} />
+                ))}
+              </div>
+            ))}
+          </pre>
+        )}
+      </Highlight>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Example exampleParts={exampleParts} />
+      </div>
+    </div>
+  );
+}
+
+function Example({ exampleParts }: { exampleParts: ExamplePart[] }) {
+  return (
+    <div className="kaomoji">
+      {exampleParts.map((examplePart, index) =>
+        examplePart.type === "part" ? (
+          <div
+            className={(examplePart.part as Part).cssClassName}
+            key={index}
+          ></div>
+        ) : (examplePart.part as string) === " " ? (
+          <span key={index}>&nbsp;</span>
+        ) : (
+          <div key={index}>{examplePart.part as string}</div>
+        )
+      )}
+    </div>
   );
 }
