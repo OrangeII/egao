@@ -1,5 +1,4 @@
 import React, { useMemo, useState } from "react";
-import { renderToString } from "react-dom/server";
 import { Highlight } from "prism-react-renderer";
 import parts from "@site/static/data/parts.json";
 import { PartDisplay, type Part } from "./GroupDisplay";
@@ -101,6 +100,24 @@ export default function PartsFinder() {
   );
 }
 
+function getExampleCode(exampleParts: ExamplePart[]): string {
+  const innerHtml = exampleParts
+    .map((examplePart) => {
+      if (examplePart.type === "part") {
+        return `  <div class="${
+          (examplePart.part as Part).cssClassName
+        }"></div>`;
+      }
+      if ((examplePart.part as string) === " ") {
+        return `  <div>&nbsp;</div>`;
+      }
+      return `  <div>${examplePart.part as string}</div>`;
+    })
+    .join("\n");
+
+  return `<div class="kaomoji">\n${innerHtml}\n</div>`;
+}
+
 function ExampleDisplay({
   input,
   missingParts,
@@ -126,7 +143,7 @@ function ExampleDisplay({
     >
       <Highlight
         language="html"
-        code={renderToString(<Example exampleParts={exampleParts} />)}
+        code={getExampleCode(exampleParts)}
         theme={theme}
       >
         {({ className, style, tokens, getLineProps, getTokenProps }) => (
