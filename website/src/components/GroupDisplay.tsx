@@ -7,20 +7,21 @@ import { useThemeConfig } from "@docusaurus/theme-common";
 const groups = ["body", "face", "eyes", "arms", "mouth"];
 
 // Type definition for a part
-interface Part {
+export interface Part {
   cssClassName: string;
   exampleDiv: string;
   path: string[];
+  content: string;
 }
 
 function getGroupParts(group: string) {
-  return parts.filter((part) => part.path.includes(group));
+  return parts.filter((part) => part.path.includes(group)) as Part[];
 }
 
 function getAccessoryParts() {
   return parts.filter(
     (part) => !groups.some((group) => part.path.includes(group))
-  );
+  ) as Part[];
 }
 
 export function AccessoriesDisplay() {

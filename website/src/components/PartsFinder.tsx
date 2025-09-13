@@ -1,12 +1,14 @@
 import React, { useMemo, useState } from "react";
 import parts from "@site/static/data/parts.json";
-import { PartDisplay } from "./GroupDisplay";
+import { PartDisplay, type Part } from "./GroupDisplay";
 
-function findParts(input: string) {
-  const foundParts = [];
+function findParts(input: string): Part[] {
+  const foundParts: Part[] = [];
   const inputCharacters = input.split("");
   for (const char of inputCharacters) {
-    const matchingParts = parts.filter((part) => part.content === char);
+    const matchingParts = parts.filter(
+      (part) => part.content === char
+    ) as Part[];
     foundParts.push(...matchingParts);
   }
   return foundParts;
@@ -60,5 +62,18 @@ export default function PartsFinder() {
         </>
       ) : null}
     </div>
+  );
+}
+
+function ExampleDisplay({ parts }: { missingParts: string[]; parts: Part[] }) {
+  return (
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "1fr 1fr",
+        gap: "1rem",
+        marginTop: "1rem",
+      }}
+    ></div>
   );
 }
